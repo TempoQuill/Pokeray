@@ -83,7 +83,7 @@ _SlotMachine:
 	call SlotsLoop
 	jr nc, .loop
 	call WaitSFX
-	ld de, SFX_QUIT_SLOTS
+	ld de, SFX_SHUT_DOWN_PC
 	call PlaySFX
 	call WaitSFX
 	call ClearBGPalettes
@@ -1905,7 +1905,7 @@ endr
 	text_end
 
 .LinedUpSevens:
-	ld a, SFX_2ND_PLACE
+	ld a, SFX_GAME_CORNER_WIN
 	call Slots_PlaySFX
 	call WaitSFX
 
@@ -1932,7 +1932,7 @@ endr
 	ret
 
 .LinedUpPokeballs:
-	ld a, SFX_3RD_PLACE
+	ld a, SFX_ITEM
 	call Slots_PlaySFX
 	call WaitSFX
 	ret

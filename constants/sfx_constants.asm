@@ -1,31 +1,30 @@
 ; SFX indexes (see audio/sfx_pointers.asm)
 	const_def
 	const SFX_ITEM                        ; 00
-	const SFX_LEVEL_UP                    ; 01
-	const SFX_EVO_DITTY                   ; 02
-	const SFX_GEN_1_DEX_REWARD            ; 03
-	const SFX_TRADE_COMPLETE              ; 04
-;	const SFX_PL_LONG                     ; 05
-	const SFX_DEX_REWARD                  ; 05
-	const SFX_CAUGHT_MON                  ; 06
-	const SFX_KEY_ITEM                    ; 07
-	const SFX_PL_SHORT                    ; 08
-	const SFX_REGISTER_EMAIL              ; 09
-	const SFX_3RD_PLACE                   ; 0a
-	const SFX_GET_EGG                     ; 0b
-	const SFX_GET_EGG_DUP                 ; 0c
-	const SFX_MOVE_DELETED                ; 0d
-	const SFX_2ND_PLACE                   ; 0e
-	const SFX_1ST_PLACE                   ; 0f
-	const SFX_CHOOSE_A_CARD               ; 10
-	const SFX_GET_TM                      ; 11
-	const SFX_GET_BADGE                   ; 12
-	const SFX_QUIT_SLOTS                  ; 13
-	const SFX_FAIL                        ; 14
-	const SFX_KEEP_AT_IT                  ; 15
-	const SFX_NOT_TOO_SHABBY              ; 16
-	const SFX_ALMOST_FINISHED             ; 17
-	const SFX_COMPLETED_DEX               ; 18
+	const SFX_ENTRUSTMENT                 ; 01
+	const SFX_MEDICINE                    ; 02
+	const SFX_LEVEL_UP                    ; 03
+	const SFX_EVO_DITTY                   ; 04
+	const SFX_KEY_ITEM                    ; 05
+	const SFX_EGG_HATCHED                 ; 06
+	const SFX_CAUGHT_MON                  ; 07
+	const SFX_ASSEMBLED_MON               ; 08
+	const SFX_DEX_REWARD                  ; 09
+	const SFX_GET_TM                      ; 0a
+	const SFX_GET_BADGE                   ; 0b
+	const SFX_FAIL                        ; 0c
+	const SFX_COMPLETED_DEX               ; 0d
+	const SFX_GAME_CORNER_WIN             ; 0e
+	const SFX_REGISTER_EMAIL              ; 0f
+	const SFX_POKE_BALL                   ; 10
+	const SFX_1ST_PLACE                   ; 11
+	const SFX_3RD_PLACE                   ; 12
+	const SFX_GET_EGG                     ; 13
+	const SFX_MOVE_DELETED                ; 14
+	const SFX_QUIT_SLOTS                  ; 15
+	const SFX_KEEP_AT_IT                  ; 16
+	const SFX_NOT_TOO_SHABBY              ; 17
+	const SFX_ALMOST_FINISHED             ; 18
 	const SFX_POKEBALLS_PLACED_ON_TABLE   ; 19
 	const SFX_POTION                      ; 1a
 	const SFX_FULL_HEAL                   ; 1b
@@ -213,7 +212,6 @@
 	const SFX_SHOOTING_STAR               ; cf
 	const SFX_RBY_SING                    ; d0
 	const SFX_POKEFLUTE_HOME              ; d1
-; placeholder
 	const SFX_LOCK_ON                     ; d2
 	const SFX_FLAIL                       ; d3
 	const SFX_BALL_CLOSE                  ; d4
@@ -235,3 +233,16 @@
 	const SFX_RECOVER                     ; e4
 	const SFX_PAY_DAY                     ; e5
 	const SFX_POKEFLUTE_NIGHT             ; e6
+	const SFX_POKEFLUTE_DUNGEON           ; e7
+; Chaos-exclusive
+;	const SFX_BLINK_E8                    ; e8
+;	const SFX_JUMP                        ; e9
+;	const SFX_DESCEND                     ; ea
+;	const SFX_GAME_FREAK_LOGO_CHAOS       ; eb
+;	const SFX_BLINK_EC                    ; ec
+;	const SFX_BURNOUT                     ; ed
+;	const SFX_FALL                        ; ee
+;	const SFX_STOP_IN_MIDAIR              ; ef
+;	const SFX_DASH                        ; f0
+;	const SFX_SONIC_BOOM                  ; f1
+;	const SFX_EMAIL_NOTIFICATION          ; f2

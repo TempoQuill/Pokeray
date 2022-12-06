@@ -1,30 +1,32 @@
 SFX:
 ; entries correspond to SFX_* constants
-	dba Sfx_Item
-	dba Sfx_LevelUp
-	dba Sfx_EvoDitty
-	dba Sfx_Gen1DexReward
-	dba Sfx_TradeComplete
-	dba SFX_PLLong
-	dba Sfx_CaughtMon
-	dba Sfx_KeyItem
-	dba Sfx_PLShort
-	dba Sfx_RegisterPhoneNumber
+	dba Sfx_ObtainItem
+	dba Sfx_Entrustment
+	dba Sfx_GoodDexRating
+	dba Sfx_NewLevel
+	dba Sfx_Evolution
+	dba Sfx_ObtainKeyItem
+	dba Sfx_EggHatched
+	dba Sfx_CaughtNewMon
+	dba Sfx_PokemonAssembled
+	dba Sfx_PokedexReward
+	dba Sfx_TMHM
+	dba Sfx_Badge
+	dba Sfx_BadDexRating
+	dba Sfx_CompleteDex
+	dba Sfx_GameCornerWin
+	dba Sfx_EmailAddressRegistered
+	dba Sfx_PokeBall
+	dba Sfx_Prize
+; leftover from G/S
 	dba Sfx_3rdPlace
 	dba Sfx_GetEgg
-	dba Sfx_GetEgg
 	dba Sfx_MoveDeleted
-	dba Sfx_2ndPlace
-	dba Sfx_1stPlace
-	dba Sfx_ChooseACard
-	dba Sfx_GetTm
-	dba Sfx_GetBadge
 	dba Sfx_QuitSlots
-	dba Sfx_Fail
 	dba Sfx_KeepAtIt
 	dba Sfx_NotTooShabby
 	dba Sfx_AlmostFinished
-	dba Sfx_DexComplete
+; normal SFX
 	dba Sfx_PokeballsPlacedOnTable
 	dba Sfx_Potion
 	dba Sfx_FullHeal
@@ -212,25 +214,25 @@ SFX:
 	dba Sfx_ShootingStar
 	dba Sfx_RBYSing
 	dba Sfx_PokefluteHome
-; placeholders
 	dba Sfx_LockOn
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
-	dba Sfx_ShootingStar
+	dba Sfx_Flail
+	dba Sfx_BallClose
+	dba Sfx_InLove
+	dba Sfx_Amnesia
+	dba Sfx_ExpBarFilled
+	dba Sfx_Mimic1
+	dba Sfx_Mimic2
+	dba Sfx_Mimic3
+	dba Sfx_Mimic4
+	dba Sfx_Mimic5
+	dba Sfx_Mimic6
+	dba Sfx_Mimic7
+	dba Sfx_BallShake
+	dba Sfx_EggRoll
+	dba Sfx_Smokescreen
+	dba Sfx_Spikes1
+	dba Sfx_Spikes2
+	dba Sfx_Recover
+	dba Sfx_PayDay
 	dba Sfx_PokefluteNight
+	dba Sfx_PokefluteDungeon
