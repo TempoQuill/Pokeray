@@ -938,7 +938,7 @@ Music_BugCatchingContestExt_Ch4:
 	sound_call .sub2
 	sound_call .sub2
 	sound_call .sub2
-.loop1
+.loop2:
 	drum_note 3, 4
 	drum_note 3, 4
 	drum_note 3, 2

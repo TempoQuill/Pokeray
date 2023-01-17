@@ -187,6 +187,7 @@ Gym_Ch1:
 	note A_, 8
 	octave 5
 	note D_, 8
+	octave 4
 	note A_, 2
 	note G_, 2
 	note F#, 2
@@ -204,10 +205,10 @@ Gym_Ch1:
 	note A_, 2
 	octave 4
 	note F#, 6
-	note A_, 4
-	note G_, 4
-	note F#, 4
-	note E_, 4
+	note A_, 8
+	note G_, 8
+	note F#, 8
+	note E_, 8
 	note D_, 2
 	sound_ret
 
@@ -344,6 +345,10 @@ Gym_Ch2:
 	octave 2
 	note C_, 2
 	sound_call .sub1
+	octave 2
+	note D_, 1
+	note A_, 2
+	note D_, 2
 	sound_jump Gym_Ch2
 
 .sub1:
@@ -467,7 +472,7 @@ Gym_Ch3:
 	octave 6
 	note C_, 4
 	octave 5
-	note B_, 4
+	note A#, 4
 	note A_, 4
 	note G_, 4
 	volume_envelope 1, 0
