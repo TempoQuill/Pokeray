@@ -118,7 +118,7 @@ YDemo_Ch1:
 	note F#, 1
 	sound_loop 2, .loop1
 	note F_, 1
-	note F#, 4
+	note F#, 2
 	note D#, 1
 	note C#, 1
 	octave 3
@@ -325,9 +325,11 @@ YDemo_Ch3:
 	note B_, 2
 .loop1:
 	rest 2
-	octave 3
+	octave 5
 	note E_, 6
-	sound_loop 6, .loop1
+	sound_loop 5, .loop1
+	rest 2
+	note E_, 5
 	rest 1
 	note D#, 2
 	note E_, 3
@@ -350,15 +352,15 @@ YDemo_Ch3:
 	note A#, 2
 	note B_, 8
 	volume_envelope 1, 0
-	note E_, 1
-	note D#, 1
+	note E_, 2
+	note D#, 2
 	volume_envelope 1, 4
 	note E_, 8
 	note G#, 8
 	note B_, 8
 	octave 5
 	note C#, 16
-	volume_envelope 1, 7
+	volume_envelope 1, 6
 	octave 4
 	note C#, 2
 	octave 3

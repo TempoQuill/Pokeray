@@ -364,10 +364,10 @@ Jitensu_Ch3:
 	rest 2
 	note A_, 2
 	rest 2
-	note G_, 2
-	note A_, 2
-	note B_, 2
-	note A_, 2
+	note G_, 4
+	note A_, 4
+	note B_, 4
+	note A_, 4
 	octave 5
 	note D_, 2
 	rest 6

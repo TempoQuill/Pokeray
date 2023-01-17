@@ -144,28 +144,28 @@ Katsu12_Ch2:
 
 Katsu1_Ch3:
 	vibrato 9, 4, 6
-	note_type 3, 1, 7
+	note_type 3, 1, 6
 	octave 4
 	note B_, 1
-	volume_envelope 2, 7
+	volume_envelope 2, 6
 	note B_, 1
-	volume_envelope 1, 7
+	volume_envelope 1, 6
 	note A_, 1
-	volume_envelope 2, 7
+	volume_envelope 2, 6
 	note A_, 1
-	volume_envelope 1, 7
+	volume_envelope 1, 6
 	note G#, 1
-	volume_envelope 2, 7
+	volume_envelope 2, 6
 	note G#, 1
-	volume_envelope 1, 7
+	volume_envelope 1, 6
 	note F#, 1
-	volume_envelope 2, 7
+	volume_envelope 2, 6
 	note F#, 1
-	volume_envelope 1, 7
+	volume_envelope 1, 6
 	note E_, 8
-	volume_envelope 2, 7
+	volume_envelope 2, 6
 	note E_, 8
-	volume_envelope 3, 7
+	volume_envelope 3, 6
 	note E_, 8
 Katsu12_Ch3:
 	vibrato 9, 4, 6

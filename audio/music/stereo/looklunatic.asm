@@ -25,10 +25,10 @@ Music_LookLunatic_Ch1:
 	note E_, 2
 	note D#, 2
 	sound_call .sub1
+	note D#, 2
 	note E_, 2
 	note F_, 2
 	note F#, 2
-	note G_, 2
 	sound_call .sub1
 	sound_jump .mainloop
 

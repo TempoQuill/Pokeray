@@ -195,7 +195,7 @@ Wakaba_Ch2:
 	note A_, 8
 	octave 2
 	note C#, 4
-	sound_loop 2. .loop1
+	sound_loop 2, .loop1
 .loop2:
 	note_type 6, 9, 7
 	duty_cycle 2
@@ -213,7 +213,7 @@ Wakaba_Ch2:
 	octave 6
 	note D_, 4
 	note C#, 16
-	sound_loop 2. .loop2
+	sound_loop 2, .loop2
 	sound_jump .mainloop
 
 Wakaba_Ch3:

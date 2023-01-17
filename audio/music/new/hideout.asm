@@ -24,7 +24,6 @@ Music_HavocHideout_Ch1:
 	octave 4
 	note B_, 2
 	duty_cycle 1
-	volume_envelope 7, 2
 	sound_call .sub1
 	duty_cycle 2
 	volume_envelope 10, 1
@@ -61,6 +60,7 @@ Music_HavocHideout_Ch1:
 	sound_jump .mainloop
 
 .sub1:
+	volume_envelope 7, 2
 	octave 4
 	note F#, 8
 	volume_envelope 1, -5
@@ -114,6 +114,7 @@ Music_HavocHideout_Ch2:
 	rest 2
 .loop1:
 	rest 2
+	volume_envelope 10, 1
 	octave 3
 	note B_, 8
 	volume_envelope 1, -4

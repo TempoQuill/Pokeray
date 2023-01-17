@@ -56,9 +56,9 @@ Music_Printer_Ch3:
 	octave 4
 	note D#, 1
 	rest 1
-.loop1:
+.loop2:
 	sound_call .sub2
-	sound_loop 4, .loop1
+	sound_loop 4, .loop2
 	sound_call .sub3
 	sound_call .sub1
 	sound_call .sub2
