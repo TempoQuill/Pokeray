@@ -13,18 +13,21 @@ Music_LookPartyHost_Ch1:
 	pitch_inc_switch
 	duty_cycle 3
 	note_type 12, 10, 1
-	rest 5
+	rest 4
 .mainloop:
+	rest 1
 	octave 3
-	note F_, 2
+	note F_, 1
 	sound_loop 10, .mainloop
+	rest 1
 	note E_, 2
-	note E_, 2
+	note E_, 1
+	rest 1
 	note F_, 2
 	note F_, 2
 	note E_, 1
 	note F_, 1
-	note G_, 2
+	note G_, 1
 	sound_jump .mainloop
 
 Music_LookPartyHost_Ch2:

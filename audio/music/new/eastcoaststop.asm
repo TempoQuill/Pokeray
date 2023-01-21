@@ -13,8 +13,8 @@ Music_EastCoastStop_Ch1:
 	pitch_offset 2
 	duty_cycle 1
 	vibrato 5, 6, 3
-	note_type 12, 7, 4
 .mainloop:
+	note_type 12, 7, 4
 	octave 1
 	note A_, 2
 	octave 2
@@ -75,13 +75,18 @@ Music_EastCoastStop_Ch2:
 	duty_cycle 3
 	vibrato 9, 4, 2
 	note_type 6, 10, 4
-	rest 16
-	rest 16
-	rest 16
-	rest 16
-	rest 16
-	rest 14
+	rest 12
+	rest 12
+	rest 12
+	rest 12
+	rest 12
+	rest 12
+	rest 12
+	rest 10
+	octave 4
+	note C_, 2
 	sound_call .sub1
+	note F#, 6
 	note E_, 4
 	note C#, 6
 	octave 3
@@ -100,7 +105,10 @@ Music_EastCoastStop_Ch2:
 	note A_, 6
 	rest 16
 	rest 2
+	octave 4
+	note C_, 2
 	sound_call .sub1
+	note F#, 6
 	note A_, 4
 	note F#, 6
 	note E_, 2
@@ -120,14 +128,18 @@ Music_EastCoastStop_Ch2:
 	rest 12
 	note A_, 2
 	note B_, 4
+	note A_, 2
 	sound_call .sub2
 	sound_call .sub3
+	octave 3
+	note A_, 2
 	sound_call .sub2
 	volume_envelope 10, 2
 	note F#, 4
 	note A_, 6
 	note E_, 12
 	volume_envelope 11, 1
+	note A_, 2
 	sound_call .sub2
 	sound_call .sub3
 	volume_envelope 10, 3
@@ -145,8 +157,6 @@ Music_EastCoastStop_Ch2:
 	sound_jump .mainloop
 
 .sub1:
-	octave 4
-	note C_, 2
 	note C#, 4
 	note E_, 2
 	note C#, 4
@@ -157,20 +167,17 @@ Music_EastCoastStop_Ch2:
 	octave 4
 	note C#, 4
 	note E_, 2
-	note F#, 6
 	sound_ret
 
 .sub2:
-	octave 3
-	note A_, 2
 	volume_envelope 10, 2
 	octave 4
 	note C_, 2
 	octave 3
 	note B_, 2
 	volume_envelope 11, 1
-	sound_loop 4, .sub2
 	note A_, 2
+	sound_loop 4, .sub2
 	sound_ret
 
 .sub3:

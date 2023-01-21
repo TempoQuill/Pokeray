@@ -23,39 +23,59 @@ Music_TradeMenu_Ch1:
 	pitch_inc_switch
 	duty_cycle 1
 	note_type 12, 10, 1
-	rest 4
+	rest 2
 .mainloop:
+	sound_call .sub1
+	sound_call .sub1
+	rest 2
+	note F_, 4
+	note F_, 4
+	note E_, 4
+	note E_, 2
+.loop1:
+	sound_call .sub1
+	sound_loop 3, .loop1
+	rest 2
+	note F_, 4
+	note F_, 4
+	note G_, 4
+	note G_, 2
+	rest 2
+	note G_, 4
+	note G_, 4
+	note G_, 4
+	note A_, 2
+	rest 2
+	note G_, 4
+	note G_, 4
+	note G_, 4
+	note G_, 2
+.loop2:
+	sound_call .sub1
+	sound_loop 6, .loop2
+	rest 2
+	note F_, 4
+	note F_, 4
+	note G_, 4
+	note G_, 2
+	sound_call .sub1
+.loop3:
+	rest 2
+	note G_, 4
+	note G_, 4
+	note G_, 4
+	note G_, 2
+	sound_loop 2, .loop3
+	sound_jump .mainloop
+
+.sub1:
+	rest 2
 	octave 3
 	note F_, 4
-	sound_loop 10, .mainloop
-	note E_, 4
-	note E_, 4
-.loop1:
-	note F_, 4
-	sound_loop 14, .loop2
-	note G_, 4
-	note G_, 4
-	note G_, 4
-	note G_, 4
-	note G_, 4
-	note A_, 4
-	note G_, 4
-	note G_, 4
-	note G_, 4
-	note G_, 4
-.loop2:
-	note F_, 4
-	sound_loop 26, .loop2
-	note G_, 4
-	note G_, 4
 	note F_, 4
 	note F_, 4
-	note F_, 4
-	note F_, 4
-.loop3:
-	note G_, 4
-	sound_loop 8, .loop3
-	sound_jump .mainloop
+	note F_, 2
+	sound_ret
 
 Music_TradeMenu_Ch2:
 	tempo 139
@@ -67,13 +87,15 @@ Music_TradeMenu_Ch2:
 	octave 1
 	note C_, 2
 .mainloop:
+	sound_call .sub1
+	octave 1
+	note A#, 2
+	octave 2
+	note A#, 2
 	octave 1
 	note F_, 2
 	octave 2
-	note A_, 2
-	note C_, 2
-	note A_, 2
-	sound_call .sub1
+	note A#, 2
 	octave 1
 	note A#, 2
 	octave 2
@@ -96,20 +118,8 @@ Music_TradeMenu_Ch2:
 	note G_, 2
 	octave 2
 	note A#, 2
-	octave 1
-	note F_, 2
-	octave 2
-	note A_, 2
-	note C_, 2
-	note A_, 2
 	sound_call .sub1
-	octave 1
-	note A#, 2
-	octave 2
-	note A#, 2
-	note D_, 2
-	note A#, 2
-	sound_call .sub3
+	sound_call .sub2
 	octave 1
 	note G_, 2
 	octave 2
@@ -132,16 +142,9 @@ Music_TradeMenu_Ch2:
 	note A#, 2
 	note D_, 2
 	note A#, 2
-	sound_call .sub5
+	sound_call .sub3
 .loop1:
 	sound_call .sub2
-	octave 1
-	note A#, 2
-	octave 2
-	note A#, 2
-	note D_, 2
-	note A#, 2
-	sound_call .sub3
 	sound_loop 3, .loop1
 	octave 1
 	note G_, 2
@@ -169,11 +172,17 @@ Music_TradeMenu_Ch2:
 	note G_, 2
 	note D_, 2
 	note G_, 2
-	sound_call .sub5
-	sound_call .sub5
+	sound_call .sub3
+	sound_call .sub3
 	sound_jump .mainloop
 
 .sub1:
+	octave 1
+	note F_, 2
+	octave 2
+	note A_, 2
+	note C_, 2
+	note A_, 2
 	octave 1
 	note F_, 2
 	octave 2
@@ -182,6 +191,8 @@ Music_TradeMenu_Ch2:
 	note A_, 2
 	octave 2
 	note A_, 2
+	sound_ret
+
 .sub2:
 	octave 1
 	note A#, 2
@@ -191,10 +202,12 @@ Music_TradeMenu_Ch2:
 	note F_, 2
 	octave 2
 	note A#, 2
-	sound_ret
-
-.sub3:
+	octave 1
+	note A#, 2
 	octave 2
+	note A#, 2
+	note D_, 2
+	note A#, 2
 	note F_, 2
 	note A_, 2
 	note C_, 2
@@ -207,7 +220,7 @@ Music_TradeMenu_Ch2:
 	note A_, 2
 	sound_ret
 
-.sub5:
+.sub3:
 	octave 2
 	note C_, 2
 	octave 3
@@ -361,18 +374,19 @@ Music_TradeMenu_Ch4:
 	rest 4
 .mainloop:
 	vibrato 7, 4, 2
-	note_type 6, 9, 8
+	note_type 12, 9, 8
 	rest 16
-	sound_loop 7, .mainloop
-	rest 8
+	rest 16
+	rest 16
+	rest 12
 	duty_cycle 2
 	octave 3
-	note C_, 2
-	note F_, 2
-	note G_, 2
-	note A_, 2
-	note A#, 12
-	volume_envelope 8, 7
+	note C_, 1
+	note F_, 1
+	note G_, 1
+	note A_, 1
+	note A#, 6
+	note_type 6, 8, 7
 	note A#, 8
 	volume_envelope 9, 8
 	note A#, 4
@@ -504,30 +518,36 @@ Music_TradeMenu_Ch5:
 	rest 1
 .mainloop:
 	sound_call .sub1
-	octave 2
-	note F_, 1
-	sound_call .sub3
-	octave 2
-	note A_, 1
-	sound_call .sub3
-	sound_call .sub4
-	octave 2
-	note A#, 1
-	sound_call .sub5
+	octave 4
+	note C_, 1
+	rest 1
 	octave 2
 	note A_, 1
-	sound_call .sub5
-	sound_call .sub6
+	rest 1
+	octave 4
+	note C_, 1
+	rest 1
+	sound_call .sub2
+	octave 2
+	note A_, 1
+	rest 1
+	octave 4
+	note D_, 1
+	rest 1
+	sound_call .sub3
 	octave 2
 	note A#, 1
-	sound_call .sub3
+	rest 1
+	octave 4
+	note C_, 1
+	rest 1
 	octave 2
 	note G_, 1
-	sound_call .sub3
+	rest 1
+	octave 4
+	note C_, 1
+	rest 1
 	sound_call .sub1
-	octave 2
-	note F_, 1
-	rest 1
 	octave 4
 	note D#, 1
 	rest 1
@@ -537,43 +557,53 @@ Music_TradeMenu_Ch5:
 	octave 4
 	note D#, 1
 	rest 1
+	sound_call .sub2
 	sound_call .sub4
-	sound_call .sub9
-	octave 3
-	note F_, 1
-	sound_call .sub2
-	octave 2
-	note A_, 1
-	sound_call .sub2
 	octave 2
 	note G_, 1
+	rest 1
+	octave 4
+	note D_, 1
+	rest 1
 	sound_call .sub5
 	octave 2
 	note A#, 1
-	sound_call .sub7
-	octave 2
-	note A#, 1
-	sound_call .sub5
-	sound_call .sub10
+	rest 1
+	octave 4
+	note D_, 1
+	rest 1
+	octave 3
+	note C_, 1
+	rest 1
+	octave 4
+	note E_, 1
+	rest 1
+	octave 3
+	note E_, 1
+	rest 1
+	octave 4
+	note E_, 1
+	rest 1
 	octave 3
 	note G_, 1
 	rest 1
 	octave 4
 	note E_, 1
-	sound_call .sub8
-	sound_call .sub10
-	sound_call .sub11
-.loop1:
-	sound_call .sub4
-	sound_call .sub9
+	rest 1
 	octave 3
-	note F_, 1
-	sound_call .sub2
-	octave 2
-	note A_, 1
-	sound_call .sub2
-	sound_loop 3, .loop1
+	note D_, 1
+	rest 1
+	octave 4
+	note D_, 1
+	rest 1
 	sound_call .sub6
+	sound_call .sub2
+	sound_call .sub4
+	sound_call .sub2
+	sound_call .sub4
+	sound_call .sub2
+	sound_call .sub4
+	sound_call .sub3
 	octave 2
 	note A_, 1
 	rest 1
@@ -586,34 +616,42 @@ Music_TradeMenu_Ch5:
 	octave 4
 	note E_, 1
 	rest 1
-	sound_call .sub9
+	sound_call .sub5
 	octave 2
 	note B_, 1
-	sound_call .sub7
-	sound_call .sub10
-	sound_call .sub11
-	sound_call .sub10
-	sound_call .sub11
+	rest 1
+	octave 4
+	note D_, 1
+	rest 1
+	octave 3
+	note D_, 1
+	rest 1
+	octave 4
+	note D_, 1
+	rest 1
+	sound_call .sub6
+	sound_call .sub6
 	sound_jump .mainloop
 
 .sub1:
 	octave 2
 	note F_, 1
-.sub2:
 	rest 1
 	octave 4
 	note C_, 1
 	rest 1
 	octave 3
 	note C_, 1
-.sub3:
 	rest 1
 	octave 4
 	note C_, 1
 	rest 1
+	octave 2
+	note F_, 1
+	rest 1
 	sound_ret
 
-.sub4:
+.sub2:
 	octave 2
 	note A#, 1
 	rest 1
@@ -622,7 +660,75 @@ Music_TradeMenu_Ch5:
 	rest 1
 	octave 2
 	note F_, 1
+	rest 1
+	octave 4
+	note D_, 1
+	rest 1
+	octave 2
+	note A#, 1
+	rest 1
+	octave 4
+	note D_, 1
+	rest 1
+	sound_ret
+
+.sub3:
+	octave 2
+	note G_, 1
+	rest 1
+	octave 4
+	note D_, 1
+	rest 1
+	octave 3
+	note D_, 1
+	rest 1
+	octave 4
+	note D_, 1
+	rest 1
+	sound_ret
+
+.sub4:
+	octave 3
+	note D_, 1
+	rest 1
+	octave 4
+	note D_, 1
+	rest 1
+	octave 3
+	note F_, 1
+	rest 1
+	octave 4
+	note C_, 1
+	rest 1
+	octave 3
+	note C_, 1
+	rest 1
+	octave 4
+	note C_, 1
+	rest 1
+	octave 2
+	note A_, 1
+	rest 1
+	octave 4
+	note C_, 1
+	rest 1
+	octave 3
+	note C_, 1
+	rest 1
+	octave 4
+	note C_, 1
+	rest 1
+	sound_ret
+
 .sub5:
+	octave 2
+	note A#, 1
+	rest 1
+	octave 4
+	note D_, 1
+	rest 1
+	octave 3
+	note D_, 1
 	rest 1
 	octave 4
 	note D_, 1
@@ -630,27 +736,20 @@ Music_TradeMenu_Ch5:
 	sound_ret
 
 .sub6:
-	octave 2
-	note G_, 1
-.sub7:
-	rest 1
-	octave 4
-	note D_, 1
-.sub8:
-	rest 1
-	octave 3
-	note D_, 1
-	sound_jump .sub5
-
-.sub9:
-	octave 2
-	note A#, 1
-	sound_jump .sub7
-
-.sub10:
 	octave 3
 	note C_, 1
-.sub10_f11:
+	rest 1
+	octave 4
+	note E_, 1
+	rest 1
+	octave 3
+	note E_, 1
+	rest 1
+	octave 4
+	note E_, 1
+	rest 1
+	octave 3
+	note G_, 1
 	rest 1
 	octave 4
 	note E_, 1
@@ -662,11 +761,6 @@ Music_TradeMenu_Ch5:
 	note E_, 1
 	rest 1
 	sound_ret
-
-.sub11:
-	octave 3
-	note G_, 1
-	sound_jump .sub10_f11
 
 Music_TradeMenu_Ch6:
 	vibrato 10, 1, 4
@@ -714,13 +808,15 @@ Music_TradeMenu_Ch6:
 	note E_, 4
 	note F_, 4
 	note D_, 12
-	rest 8
+	rest 4
+	rest 4
 	note E_, 1
 	note F_, 3
 	note E_, 4
 	note F_, 4
 	note C_, 12
-	rest 8
+	rest 4
+	rest 4
 	note F_, 8
 	note G#, 1
 	note A_, 3
@@ -845,7 +941,7 @@ Music_TradeMenu_Ch6:
 Music_TradeMenu_Ch7:
 	toggle_noise 2
 	drum_speed 12
-	rest 4
+	rest 2
 .mainloop:
 	sound_call .sub1
 	sound_call .sub3
@@ -860,34 +956,38 @@ Music_TradeMenu_Ch7:
 	sound_jump .mainloop
 
 .sub1:
+	rest 2
 	drum_note 4, 4
 	drum_note 6, 4
 	drum_note 4, 4
-	drum_note 6, 4
+	drum_note 6, 2
 .sub2:
+	rest 2
 	drum_note 4, 4
 	drum_note 6, 4
 	drum_note 4, 2
 	drum_note 4, 2
-	drum_note 6, 4
+	drum_note 6, 2
 	sound_ret
 
 .sub3:
+	rest 2
 	drum_note 4, 4
 	drum_note 6, 4
 	drum_note 4, 4
-	drum_note 6, 4
+	drum_note 6, 2
+	rest 2
 	drum_note 4, 4
 	drum_note 6, 4
 	drum_note 4, 4
 	drum_note 6, 1
-	drum_note 6, 3
+	drum_note 6, 1
 	sound_ret
 
 Music_TradeMenu_Ch8:
 	toggle_noise 2
 	drum_speed 12
-	rest 4
+	rest 2
 .mainloop:
 	sound_call .sub1
 	sound_call .sub3
@@ -902,26 +1002,30 @@ Music_TradeMenu_Ch8:
 	sound_jump .mainloop
 
 .sub1:
+	rest 2
 	drum_note 6, 4
 	drum_note 4, 4
 	drum_note 6, 4
-	drum_note 4, 4
+	drum_note 4, 2
 .sub2:
+	rest 2
 	drum_note 6, 4
 	drum_note 4, 4
 	drum_note 6, 2
 	drum_note 6, 2
-	drum_note 4, 4
+	drum_note 4, 2
 	sound_ret
 
 .sub3:
+	rest 2
 	drum_note 6, 4
 	drum_note 4, 4
 	drum_note 6, 4
-	drum_note 4, 4
+	drum_note 4, 2
+	rest 2
 	drum_note 6, 4
 	drum_note 4, 4
 	drum_note 6, 4
 	drum_note 4, 1
-	drum_note 4, 3
+	drum_note 4, 1
 	sound_ret

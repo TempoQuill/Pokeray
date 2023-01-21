@@ -938,14 +938,14 @@ Contest_Ch4:
 	sound_call .sub2
 	sound_call .sub2
 	sound_call .sub2
-.loop1
+.loop2:
 	drum_note 3, 4
 	drum_note 3, 4
 	drum_note 3, 2
 	drum_note 3, 2
 	drum_note 3, 2
 	drum_note 3, 2
-	sound_loop 2, .loop1
+	sound_loop 2, .loop2
 	sound_call .sub1
 	sound_call .sub2
 	sound_call .sub2

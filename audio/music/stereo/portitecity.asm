@@ -297,10 +297,10 @@ Music_PortiteCity_Ch1:
 	note B_, 1
 	note_type 8, 8, 7
 	octave 4
-	note C_, 4
+	note C_, 3
 	rest 1
 	octave 3
-	note B_, 6
+	note A#, 6
 	note A_, 8
 	rest 6
 	stereo_panning FALSE, TRUE
@@ -599,7 +599,7 @@ Music_PortiteCity_Ch3:
 	rest 11
 	stereo_panning TRUE, TRUE
 	volume_envelope 2, -6
-	octave 2
+	octave 3
 	note C_, 1
 	stereo_panning FALSE, TRUE
 	volume_envelope 1, -6

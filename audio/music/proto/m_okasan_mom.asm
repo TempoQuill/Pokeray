@@ -82,17 +82,17 @@ Okasan_Ch3:
 	note C#, 2
 	rest 2
 	note E_, 2
-	rest 6
+	rest 10
 	note D_, 2
 	rest 2
 	note F#, 2
-	rest 6
+	rest 10
 	note C#, 2
 	rest 2
 	note E_, 2
-	rest 6
+	rest 10
 	note E_, 2
 	rest 2
 	note E_, 2
-	rest 6
+	rest 10
 	sound_jump .mainloop

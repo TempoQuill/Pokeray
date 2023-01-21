@@ -160,108 +160,108 @@ End2_Ch3:
 	note B_, 4
 	volume_envelope 3, -3
 	note B_, 4
-	sound_call .sub1  ; f# 4
-	sound_call .sub2  ; d# 5
-	sound_call .sub3  ; b
+	sound_call .sub1
+	sound_call .sub2
+	sound_call .sub4
 .mainloop:
-	sound_call .sub4  ; e  4
-	sound_call .sub3  ; b
-	sound_call .sub5  ; g# 5
-	sound_call .sub11 ; d#   e
-	sound_call .sub4  ; e  4
-	sound_call .sub6  ; c# 5
-	sound_call .sub7  ; e  5
-	sound_call .sub12 ; g#   a
-	sound_call .sub4  ; e  4
-	sound_call .sub3  ; b
-	sound_call .sub5  ; g# 5
-	sound_call .sub3  ; b
-	sound_call .sub8  ; a
-	sound_call .sub5  ; g# 5
-	sound_call .sub9  ; f#
-	sound_call .sub14 ; g#   f#
-	sound_call .sub4  ; e  4
-	sound_call .sub10 ; g# 4
-	sound_call .sub6  ; c# 5
-	sound_call .sub5  ; g# 5
-	sound_call .sub4  ; e  4
-	sound_call .sub15 ; a    b
-	sound_call .sub6  ; c# 5
-	sound_call .sub7  ; e  5
-	sound_call .sub4  ; e  4
-	sound_call .sub10 ; g# 4
-	sound_call .sub3  ; b
-	sound_call .sub7  ; e  5
-	sound_call .sub2  ; d# 5
-	sound_call .sub6  ; c# 5
+	sound_call .sub6
+	sound_call .sub4
+	sound_call .sub7
+	sound_call .sub14
+	sound_call .sub6
+	sound_call .sub8
+	sound_call .sub9
+	sound_call .sub15
+	sound_call .sub6
+	sound_call .sub4
+	sound_call .sub7
+	sound_call .sub4
+	sound_call .sub10
+	sound_call .sub7
+	sound_call .sub12
+	sound_call .sub17
+	sound_call .sub6
+	sound_call .sub13
+	sound_call .sub8
+	sound_call .sub7
+	sound_call .sub6
+	sound_call .sub18
+	sound_call .sub8
+	sound_call .sub9
+	sound_call .sub6
+	sound_call .sub13
+	sound_call .sub4
+	sound_call .sub9
+	sound_call .sub2
+	sound_call .sub8
 	volume_envelope 1, -3
 	octave 4
 	note B_, 3
-	sound_call .sub3_11
-	sound_call .sub8  ; a
-	sound_call .sub4  ; e  4
-	sound_call .sub3  ; b
-	sound_call .sub5  ; g# 5
-	sound_call .sub11 ; d#   e
-	sound_call .sub4  ; e  4
-	sound_call .sub6  ; c# 5
-	sound_call .sub7  ; e  5
-	sound_call .sub12 ; g#   a
-	sound_call .sub4  ; e  4
-	sound_call .sub3  ; b
-	sound_call .sub5  ; g# 5
-	sound_call .sub3  ; b
-	sound_call .sub8  ; a
-	sound_call .sub5  ; g# 5
-	sound_call .sub9  ; f#
-	sound_call .sub14 ; g#   f#
-	sound_call .sub4  ; e  4
-	sound_call .sub10 ; g# 4
-	sound_call .sub6  ; c# 5
-	sound_call .sub5  ; g# 5
-	sound_call .sub4  ; e  4
-	sound_call .sub15 ; a    b
-	sound_call .sub6  ; c# 5
-	sound_call .sub7  ; e  5
-	sound_call .sub4  ; e  4
-	sound_call .sub10 ; g# 4
-	sound_call .sub3  ; b
-	sound_call .sub7  ; e  5
-	sound_call .sub2  ; d# 5
-	sound_call .sub6  ; c# 5
-	sound_call .sub2  ; d# 5
-	sound_call .sub9  ; f#
-	sound_call .sub4  ; e  4
-	sound_call .sub10 ; g# 4
-	sound_call .sub3  ; b
-	sound_call .sub7  ; e  5
-	sound_call .sub10 ; g# 4
-	sound_call .sub3  ; b
-	sound_call .sub7  ; e  5
-	sound_call .sub3  ; b
-	sound_call .sub1  ; f# 4
-	sound_call .sub8  ; a
-	sound_call .sub6  ; c# 5
-	sound_call .sub7  ; e  5
+	sound_call .sub5
+	sound_call .sub10
+	sound_call .sub6
+	sound_call .sub4
+	sound_call .sub7
+	sound_call .sub14
+	sound_call .sub6
+	sound_call .sub8
+	sound_call .sub9
+	sound_call .sub15
+	sound_call .sub6
+	sound_call .sub4
+	sound_call .sub7
+	sound_call .sub4
+	sound_call .sub10
+	sound_call .sub7
+	sound_call .sub12
+	sound_call .sub17
+	sound_call .sub6
+	sound_call .sub13
+	sound_call .sub8
+	sound_call .sub7
+	sound_call .sub6
+	sound_call .sub18
+	sound_call .sub8
+	sound_call .sub9
+	sound_call .sub6
+	sound_call .sub13
+	sound_call .sub4
+	sound_call .sub9
+	sound_call .sub2
+	sound_call .sub8
+	sound_call .sub2
+	sound_call .sub12
+	sound_call .sub6
+	sound_call .sub13
+	sound_call .sub4
+	sound_call .sub9
+	sound_call .sub13
+	sound_call .sub4
+	sound_call .sub9
+	sound_call .sub4
+	sound_call .sub1
+	sound_call .sub10
+	sound_call .sub8
+	sound_call .sub9
 	volume_envelope 1, -3
 	octave 4
 	note A_, 3
-	sound_call .sub8_12
-	sound_call .sub6  ; c# 5
-	sound_call .sub7  ; e  5
-	sound_call .sub9  ; f#
-	sound_call .sub13 ; b  3
+	sound_call .sub11
+	sound_call .sub8
+	sound_call .sub9
+	sound_call .sub12
+	sound_call .sub16
 	volume_envelope 1, -3
 	octave 4
 	note D#, 3
-	sound_call .sub2_14
-	sound_call .sub9  ; f#
-	sound_call .sub3  ; b
-	sound_call .sub2  ; d# 5
-	sound_call .sub6  ; c# 5
-	sound_call .sub2  ; d# 5
-	sound_call .sub6  ; c# 5
-	sound_call .sub4  ; e  4
+	sound_call .sub3
+	sound_call .sub12
+	sound_call .sub4
+	sound_call .sub2
+	sound_call .sub8
+	sound_call .sub2
+	sound_call .sub8
+	sound_call .sub6
 	volume_envelope 1, -3
 	note G#, 3
 	volume_envelope 2, -3
@@ -269,8 +269,8 @@ End2_Ch3:
 	volume_envelope 3, -3
 	note G#, 4
 	rest 6
-	sound_call .sub3  ; b
-	sound_call .sub13 ; b  3
+	sound_call .sub4
+	sound_call .sub16
 	volume_envelope 1, -3
 	octave 4
 	note D#, 3
@@ -296,46 +296,46 @@ End2_Ch3:
 	volume_envelope 1, -3
 	octave 5
 	note D#, 3
-.sub2_14:
+.sub3:
 	volume_envelope 2, -3
 	note D#, 3
 	volume_envelope 3, -3
 	note D#, 2
 	sound_ret
 
-.sub3:
+.sub4:
 	volume_envelope 1, -3
 	note B_, 3
-.sub3_11:
+.sub5:
 	volume_envelope 2, -3
 	note B_, 3
 	volume_envelope 3, -3
 	note B_, 2
 	sound_ret
 
-.sub4:
+.sub6:
 	volume_envelope 1, -3
 	octave 4
 	note E_, 3
-.sub4_7:
+.sub6_7:
 	volume_envelope 2, -3
 	note E_, 3
 	volume_envelope 3, -3
 	note E_, 2
 	sound_ret
 
-.sub5:
+.sub7:
 	volume_envelope 1, -3
 	octave 5
 	note G#, 3
-.sub5_10:
+.sub7_10:
 	volume_envelope 2, -3
 	note G#, 3
 	volume_envelope 3, -3
 	note G#, 2
 	sound_ret
 
-.sub6:
+.sub8:
 	volume_envelope 1, -3
 	octave 5
 	note C#, 3
@@ -345,34 +345,34 @@ End2_Ch3:
 	note C#, 2
 	sound_ret
 
-.sub7:
+.sub9:
 	volume_envelope 1, -3
 	octave 5
 	note E_, 3
-	sound_jump .sub4_7
+	sound_jump .sub6_7
 
-.sub8:
+.sub10:
 	volume_envelope 1, -3
 	note A_, 3
-.sub8_12:
+.sub11:
 	volume_envelope 2, -3
 	note A_, 3
 	volume_envelope 3, -3
 	note A_, 2
 	sound_ret
 
-.sub9:
+.sub12:
 	volume_envelope 1, -3
 	note F#, 3
 	sound_jump .sub1_9
 
-.sub10:
+.sub13:
 	volume_envelope 1, -3
 	octave 4
 	note G#, 3
-	sound_jump .sub5_10
+	sound_jump .sub7_10
 
-.sub11:
+.sub14:
 	volume_envelope 1, -3
 	note D#, 3
 	volume_envelope 2, -3
@@ -383,7 +383,7 @@ End2_Ch3:
 	note E_, 1
 	sound_ret
 
-.sub12:
+.sub15:
 	volume_envelope 1, -3
 	note G#, 3
 	volume_envelope 2, -3
@@ -394,13 +394,13 @@ End2_Ch3:
 	note A_, 1
 	sound_ret
 
-.sub13:
+.sub16:
 	volume_envelope 1, -3
 	octave 3
 	note B_, 3
-	sound_jump .sub3_11
+	sound_jump .sub5
 
-.sub14:
+.sub17:
 	volume_envelope 1, -3
 	note G#, 3
 	volume_envelope 2, -3
@@ -411,7 +411,7 @@ End2_Ch3:
 	note F#, 1
 	sound_ret
 
-.sub15:
+.sub18:
 	volume_envelope 1, -3
 	note A_, 3
 	volume_envelope 2, -3

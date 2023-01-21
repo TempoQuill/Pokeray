@@ -11,8 +11,9 @@ Music_Bicycle_Ch1:
 	volume 7
 	duty_cycle 3
 	note_type 12, 10, 3
-	rest 4
+	rest 2
 .mainloop:
+	rest 2
 	sound_call .sub1
 	note C_, 4
 	octave 2
@@ -90,7 +91,7 @@ Music_Bicycle_Ch1:
 	note A#, 1
 	rest 1
 	note A_, 1
-	rest 5
+	rest 3
 	sound_jump .mainloop
 
 .sub1:
@@ -111,8 +112,8 @@ Music_Bicycle_Ch2:
 	stereo_panning TRUE, TRUE
 	note_type 12, 10, 3
 	rest 2
-	duty_cycle 2
 .mainloop:
+	duty_cycle 2
 	sound_call .sub1
 	stereo_panning TRUE, TRUE
 	note F_, 2
@@ -334,6 +335,9 @@ Music_Bicycle_Ch3:
 .mainloop:
 	note_type 6, 1, 4
 	transpose 1, 0
+	octave 5
+	note C_, 2
+	note E_, 2
 	sound_call .sub1
 	transpose 0, 0
 	octave 4
@@ -367,6 +371,9 @@ Music_Bicycle_Ch3:
 	note F_, 16
 	rest 12
 	volume_envelope 1, 1
+	octave 5
+	note C_, 2
+	note E_, 2
 	sound_call .sub1
 	volume_envelope 1, 5
 	octave 4
@@ -413,9 +420,6 @@ Music_Bicycle_Ch3:
 	sound_jump .mainloop
 
 .sub1:
-	octave 5
-	note C_, 2
-	note E_, 2
 	note F_, 8
 	rest 4
 	octave 6
@@ -449,33 +453,23 @@ Music_Bicycle_Ch4:
 	stereo_panning TRUE, TRUE
 	drum_speed 6
 .mainloop:
-	rest 8
+	rest 4
 .loop1:
 	sound_call .sub1
-	drum_note 8, 8
-	drum_note 8, 8
-	drum_note 8, 8
-	drum_note 8, 8
-	drum_note 8, 8
+	rest 4
 	drum_note 8, 8
 	drum_note 8, 8
 	drum_note 8, 8
 	drum_note 8, 2
-	drum_note 8, 6
+	drum_note 8, 2
 	sound_loop 2, .loop1
 	sound_call .sub1
-.loop2:
+	rest 4
 	drum_note 8, 8
-	sound_loop 6, .loop2
 	drum_note 8, 4
+.loop2:
 	drum_note 3, 1
-	drum_note 3, 1
-	drum_note 3, 1
-	drum_note 3, 1
-	drum_note 3, 1
-	drum_note 3, 1
-	drum_note 3, 1
-	drum_note 3, 1
+	sound_loop 8, .loop2
 	drum_note 2, 1
 	drum_note 3, 1
 	drum_note 2, 1
@@ -496,7 +490,8 @@ Music_Bicycle_Ch4:
 	drum_note 9, 12
 	drum_note 8, 8
 	drum_note 8, 8
-	drum_note 8, 8
+	drum_note 8, 4
+	rest 4
 	drum_note 8, 8
 	drum_note 8, 8
 	drum_note 8, 4
@@ -504,12 +499,20 @@ Music_Bicycle_Ch4:
 	sound_jump .mainloop
 
 .sub1:
-	drum_note 8, 8
-	drum_note 8, 8
-	drum_note 8, 8
+	rest 4
 	drum_note 8, 8
 	drum_note 8, 8
 	drum_note 8, 8
 	drum_note 8, 4
+	rest 4
+	drum_note 8, 8
+	drum_note 8, 8
+	drum_note 8, 4
+	drum_note 8, 4
+	drum_note 8, 4
+	rest 4
+	drum_note 8, 8
+	drum_note 8, 8
+	drum_note 8, 8
 	drum_note 8, 4
 	sound_ret

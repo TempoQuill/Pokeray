@@ -40,6 +40,9 @@ Music_EquintoLeague_Ch1:
 	note E_, 2
 	sound_loop 2, .loop2
 	sound_call .sub2
+	octave 3
+	note G_, 1
+	note A_, 1
 	sound_call .sub1
 	volume_envelope 10, 3
 	octave 3
@@ -71,13 +74,13 @@ Music_EquintoLeague_Ch1:
 	note E_, 2
 	sound_loop 2, .loop5
 	sound_call .sub2
+	octave 3
+	note G_, 1
+	note A_, 1
 	sound_call .sub1
 	sound_jump .mainloop
 
 .sub1:
-	octave 3
-	note G_, 1
-	note A_, 1
 	volume_envelope 10, 5
 	note B_, 4
 	octave 2
@@ -302,15 +305,16 @@ Music_EquintoLeague_Ch3:
 	sound_ret
 
 .sub3:
+.sub3loop1:
 	stereo_panning TRUE, TRUE
 	note B_, 7
 	rest 1
-	sound_loop 8, .sub3
-.sub3loop1:
+	sound_loop 8, .sub3loop1
+.sub3loop2:
 	octave 5
 	note C_, 7
 	rest 1
-	sound_loop 7, .sub3loop1
+	sound_loop 7, .sub3loop2
 	note C_, 4
 	note D_, 4
 	note E_, 16

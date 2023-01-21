@@ -22,11 +22,12 @@ Music_Larch_Ch1:
 	note E_, 4
 	note C_, 4
 	note C_, 4
-	note C_, 4
+	note C_, 2
+	rest 2
 	note C_, 4
 	note C_, 4
 	note E_, 4
-	note E_, 4
+	note E_, 2
 .mainloop:
 	sound_call .sub1
 	note D_, 4
@@ -34,13 +35,14 @@ Music_Larch_Ch1:
 	note E_, 4
 	note E_, 4
 	note G_, 4
-	note G_, 4
+	note G_, 2
+	rest 2
 	note A_, 4
 	note A_, 2
 	note B_, 2
 	note A_, 2
 	note G_, 2
-	note F_, 4
+	note F_, 2
 	sound_call .sub1
 	note D_, 4
 	note F_, 2
@@ -61,11 +63,13 @@ Music_Larch_Ch1:
 	note G_, 2
 	note E_, 2
 	sound_call .sub1
-	note D_, 6
+	note D_, 4
+	rest 2
 	note F_, 4
 	note F_, 4
 	note G_, 4
-	note G_, 4
+	note G_, 2
+	rest 2
 	note A_, 4
 	note A_, 2
 	note B_, 2
@@ -73,7 +77,7 @@ Music_Larch_Ch1:
 	note B_, 2
 	note G_, 2
 	note E_, 2
-	sound_call .sub1
+	sound_call .sub2
 	octave 4
 	note E_, 2
 	note F_, 2
@@ -97,14 +101,17 @@ Music_Larch_Ch1:
 	note E_, 1
 	rest 1
 	note E_, 1
-	rest 5
+	rest 3
 	sound_jump .mainloop
 
 .sub1:
+	rest 2
+.sub2:
 	note G_, 4
 	note G_, 4
 	note G#, 4
-	note G#, 4
+	note G#, 2
+	rest 2
 	note A_, 4
 	volume_envelope 10, 3
 	note F#, 6
@@ -402,48 +409,58 @@ Music_Larch_Ch4:
 	rest 8
 	drum_note 3, 2
 	drum_note 3, 4
+	drum_note 3, 2
+	rest 2
 	drum_note 3, 4
 	drum_note 3, 4
 	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 4
+	drum_note 3, 2
+	rest 2
 	drum_note 3, 4
 	drum_note 3, 4
 	drum_note 3, 2
 	drum_note 3, 2
 .mainloop:
-	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 4
+	drum_note 3, 2
+	rest 2
 	drum_note 3, 4
 	drum_note 3, 4
 	drum_note 3, 4
 	drum_note 3, 2
+	rest 2
+	drum_note 3, 4
+	drum_note 3, 4
 	drum_note 3, 2
+	drum_note 3, 2
+	drum_note 3, 2
+	rest 2
 	drum_note 3, 4
 	drum_note 3, 4
 	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 4
+	drum_note 3, 2
+	rest 2
 	drum_note 3, 2
 	drum_note 3, 2
 	drum_note 12, 4
 	drum_note 3, 2
-	drum_note 3, 6
 	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 4
+	rest 2
 	drum_note 3, 4
 	drum_note 3, 4
 	drum_note 3, 4
 	drum_note 3, 2
+	rest 2
+	drum_note 3, 4
+	drum_note 3, 4
 	drum_note 3, 2
+	drum_note 3, 2
+	drum_note 3, 2
+	rest 2
 	drum_note 3, 4
 	drum_note 3, 4
 	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 4
+	drum_note 3, 2
+	rest 2
 	drum_note 3, 4
 	drum_note 3, 4
 	drum_note 3, 2

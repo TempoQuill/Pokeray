@@ -30,55 +30,13 @@ Music_Departure_Ch1:
 	note C_, 1
 	rest 3
 	note C_, 1
-	rest 7
-	octave 3
-	note B_, 1
 	rest 3
-	note B_, 1
-	rest 7
-	note B_, 1
-	rest 3
-	note B_, 1
-	rest 7
-	note B_, 1
-	rest 3
-	note B_, 1
-	rest 7
-	note A#, 1
-	rest 5
-	note A#, 2
-	rest 4
-	note B_, 1
-	rest 3
-	note B_, 1
-	rest 7
-	note B_, 1
-	rest 3
-	note B_, 1
-	rest 7
-	note B_, 1
-	rest 3
-	note B_, 1
-	rest 7
-	note B_, 1
-	rest 3
-	note B_, 1
-	rest 7
-	note B_, 1
-	rest 3
-	note B_, 1
-	rest 7
-	note B_, 1
-	rest 3
-	note B_, 1
-	rest 7
-	note B_, 1
-	rest 3
-	note B_, 1
-	rest 7
-	note A#, 1
-	rest 5
-	note A#, 2
+	sound_call .sub1
+	sound_call .sub2
+.loop1:
+	sound_call .sub1
+	sound_loop 3, .loop1
+	sound_call .sub2
 	rest 4
 	octave 4
 	note C#, 4
@@ -165,6 +123,30 @@ Music_Departure_Ch1:
 	octave 3
 	note B_, 12
 	sound_jump .mainloop
+
+.sub1:
+	rest 4
+	octave 3
+	note B_, 1
+	rest 3
+	note B_, 1
+	rest 7
+	note B_, 1
+	rest 3
+	note B_, 1
+	rest 3
+	sound_ret
+
+.sub2:
+	rest 4
+	note B_, 1
+	rest 3
+	note B_, 1
+	rest 7
+	note A#, 1
+	rest 5
+	note A#, 2
+	sound_ret
 
 Music_Departure_Ch2:
 	note_type 6, 12, 7

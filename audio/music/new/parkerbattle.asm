@@ -496,6 +496,7 @@ Music_ParkerBattle_Ch3:
 	sound_call .sub2
 	note D_, 4
 	sound_call .sub2
+	note B_, 4
 	sound_call .sub3
 	octave 5
 	note D#, 8
@@ -602,6 +603,7 @@ Music_ParkerBattle_Ch3:
 	sound_call .sub2
 	note A_, 4
 	sound_call .sub2
+	note B_, 4
 	sound_call .sub3
 	note E_, 8
 	note F#, 8
@@ -638,7 +640,6 @@ Music_ParkerBattle_Ch3:
 	sound_ret
 
 .sub3:
-	note B_, 4
 	note D#, 1
 	rest 1
 	note D#, 1

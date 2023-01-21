@@ -114,8 +114,8 @@ Music_ShaggyBattle_Ch1:
 	note D_, 12
 	note F#, 12
 	note B_, 8
-	vibrato 11, 1, 2
 .loop6:
+	vibrato 11, 1, 2
 	sound_call .sub1
 	note A#, 8
 	note B_, 8
