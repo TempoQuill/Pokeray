@@ -143,6 +143,7 @@ Gym_Ch1:
 	duty_cycle 3
 	volume_envelope 12, 5
 	sound_call .sub1
+	note D_, 2
 	rest 2
 	note D_, 2
 	note E_, 2
@@ -167,6 +168,7 @@ Gym_Ch1:
 	note E_, 8
 	duty_cycle 2
 	sound_call .sub1
+	note D_, 2
 	octave 3
 	note A_, 2
 	note F#, 2
@@ -209,7 +211,6 @@ Gym_Ch1:
 	note G_, 8
 	note F#, 8
 	note E_, 8
-	note D_, 2
 	sound_ret
 
 Gym_Ch2:
@@ -271,7 +272,6 @@ Gym_Ch2:
 	note C_, 4
 	note G_, 4
 	note E_, 4
-	octave 4
 	note D_, 12
 	octave 3
 	note A_, 2
@@ -345,10 +345,6 @@ Gym_Ch2:
 	octave 2
 	note C_, 2
 	sound_call .sub1
-	octave 2
-	note D_, 1
-	note A_, 2
-	note D_, 2
 	sound_jump Gym_Ch2
 
 .sub1:
@@ -363,13 +359,13 @@ Gym_Ch2:
 	note D_, 4
 	octave 1
 	note A_, 1
-	sound_ret
-
-.sub2:
 	octave 2
 	note D_, 1
 	note A_, 2
 	note D_, 2
+	sound_ret
+
+.sub2:
 	note C_, 1
 	rest 1
 	note C_, 1
@@ -438,9 +434,9 @@ Gym_Ch3:
 	note B_, 4
 	octave 6
 	note C#, 4
+.loop1:
 	vibrato 8, 4, 3
 	volume_envelope 1, 6
-.loop1:
 	octave 4
 	note D_, 3
 	octave 3
@@ -462,6 +458,10 @@ Gym_Ch3:
 	vibrato 8, 1, 3
 	volume_envelope 1, -6
 	sound_call .sub1
+	note F#, 1
+	rest 1
+	note F#, 1
+	note G_, 1
 	note A_, 5
 	rest 1
 	note A_, 2
@@ -477,6 +477,10 @@ Gym_Ch3:
 	note G_, 4
 	volume_envelope 1, 0
 	sound_call .sub1
+	note F#, 1
+	rest 1
+	note F#, 1
+	note G_, 1
 	note A_, 4
 	note A_, 1
 	rest 1
@@ -505,10 +509,6 @@ Gym_Ch3:
 	note B_, 4
 	note A_, 4
 	note G_, 4
-	note F#, 1
-	rest 1
-	note F#, 1
-	note G_, 1
 	sound_ret
 
 Gym_Ch4:

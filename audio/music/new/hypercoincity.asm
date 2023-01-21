@@ -185,6 +185,13 @@ Music_HypercoinCity_Ch2:
 	octave 3
 	note D#, 2
 	sound_call .sub2
+	octave 1
+	note G#, 4
+	octave 2
+	note G#, 2
+	octave 3
+	note C_, 2
+	note D#, 4
 	note C_, 4
 	octave 1
 	note D#, 4
@@ -193,6 +200,13 @@ Music_HypercoinCity_Ch2:
 	octave 2
 	note D#, 4
 	sound_call .sub2
+	octave 1
+	note G#, 4
+	octave 2
+	note G#, 2
+	octave 3
+	note C_, 2
+	note D#, 4
 	note C#, 4
 	octave 1
 	note G#, 4
@@ -270,13 +284,6 @@ Music_HypercoinCity_Ch2:
 	octave 3
 	note C#, 2
 	note G_, 8
-	octave 1
-	note G#, 4
-	octave 2
-	note G#, 2
-	octave 3
-	note C_, 2
-	note D#, 4
 	sound_ret
 
 Music_HypercoinCity_Ch3:
@@ -321,6 +328,12 @@ Music_HypercoinCity_Ch3:
 	rest 8
 	volume_envelope 1, -3
 	sound_call .sub2
+	octave 5
+	note C_, 3
+	octave 4
+	note B_, 1
+	note A#, 2
+	rest 2
 	note G#, 6
 	rest 2
 	note A#, 12
@@ -328,6 +341,12 @@ Music_HypercoinCity_Ch3:
 	note C_, 2
 	note C#, 2
 	sound_call .sub2
+	octave 5
+	note C_, 3
+	octave 4
+	note B_, 1
+	note A#, 2
+	rest 2
 	note G#, 2
 	rest 2
 	note A#, 2
@@ -438,12 +457,6 @@ Music_HypercoinCity_Ch3:
 	octave 4
 	note A#, 4
 	rest 4
-	octave 5
-	note C_, 3
-	octave 4
-	note B_, 1
-	note A#, 2
-	rest 2
 	sound_ret
 
 .sub3:

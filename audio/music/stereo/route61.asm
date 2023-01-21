@@ -445,18 +445,18 @@ Music_Route61_Ch4:
 .mainloop:
 	stereo_panning FALSE, TRUE
 	drum_note 5, 4
+	sound_call .sub1
 .loop1:
-	sound_call .sub1
 	drum_note 4, 4
-	sound_loop 7, .loop1
 	sound_call .sub1
+	sound_loop 7, .loop1
 	stereo_panning FALSE, TRUE
 	drum_note 5, 4
+	sound_call .sub1
 .loop2:
-	sound_call .sub1
 	drum_note 4, 4
-	sound_loop 3, .loop2
 	sound_call .sub1
+	sound_loop 3, .loop2
 .loop3:
 	stereo_panning FALSE, TRUE
 	drum_note 5, 8

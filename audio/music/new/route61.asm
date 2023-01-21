@@ -409,17 +409,17 @@ Music_Route61_Ch4:
 	drum_note 9, 1
 .mainloop:
 	drum_note 5, 4
+	sound_call .sub1
 .loop1:
-	sound_call .sub1
 	drum_note 4, 4
+	sound_call .sub1
 	sound_loop 7, .loop1
-	sound_call .sub1
 	drum_note 5, 4
+	sound_call .sub1
 .loop2:
-	sound_call .sub1
 	drum_note 4, 4
-	sound_loop 3, .loop2
 	sound_call .sub1
+	sound_loop 3, .loop2
 .loop3:
 	drum_note 5, 8
 	drum_note 9, 1

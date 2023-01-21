@@ -343,11 +343,24 @@ Katsu3_Ch4:
 	drum_note 1, 4
 	drum_note 1, 8
 .mainloop:
-	sound_call .sub3
+	drum_note 2, 4
+	drum_note 1, 4
+	drum_note 1, 8
+	drum_note 2, 8
 	sound_call .sub1
+	drum_note 1, 8
+	drum_note 2, 4
+	drum_note 1, 4
 	drum_note 1, 16
-	sound_call .sub2
+	drum_note 1, 8
+	drum_note 2, 4
+	drum_note 1, 4
+	drum_note 1, 8
+	drum_note 2, 8
 	sound_call .sub1
+	drum_note 1, 8
+	drum_note 2, 4
+	drum_note 1, 4
 	drum_note 1, 8
 	drum_note 10, 1
 	drum_note 10, 1
@@ -357,39 +370,44 @@ Katsu3_Ch4:
 	drum_note 10, 1
 	drum_note 9, 1
 	drum_note 9, 1
+	sound_call .sub2
+	sound_call .sub2
 	drum_note 7, 8
-	sound_call .sub4
-	sound_call .sub4
 	sound_jump .mainloop
 
 .sub1:
+	drum_note 1, 8
+	drum_note 2, 4
+	drum_note 1, 4
 	drum_note 2, 4
 	drum_note 1, 4
 	drum_note 2, 8
-.sub2:
 	drum_note 1, 8
-.sub3:
 	drum_note 2, 4
 	drum_note 1, 4
 	drum_note 1, 8
 	drum_note 2, 8
-	drum_note 1, 8
-	drum_note 2, 4
-	drum_note 1, 4
 	sound_ret
 
-.sub4:
+.sub2:
+	drum_note 7, 8
 	drum_note 2, 4
 	drum_note 1, 8
 	drum_note 1, 4
 	drum_note 2, 8
+.sub2loop1:
 	drum_note 1, 8
-	sound_loop 7, .sub4
+	drum_note 2, 4
+	drum_note 1, 8
+	drum_note 1, 4
+	drum_note 2, 8
+	sound_loop 6, .sub2loop1
+	drum_note 1, 8
 	drum_note 2, 4
 	drum_note 1, 4
-.sub4loop1:
+.sub2loop2:
 	drum_note 10, 1
-	sound_loop 8, .sub4loop1
+	sound_loop 8, .sub2loop2
 	drum_note 9, 1
 	drum_note 10, 1
 	drum_note 9, 1
@@ -398,5 +416,4 @@ Katsu3_Ch4:
 	drum_note 9, 1
 	drum_note 8, 1
 	drum_note 8, 1
-	drum_note 7, 8
 	sound_ret

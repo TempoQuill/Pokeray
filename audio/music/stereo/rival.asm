@@ -457,7 +457,8 @@ Music_LookRival_Ch4:
 	toggle_noise 6
 	stereo_panning TRUE, TRUE
 	drum_speed 12
-	rest 10
+	rest 1
+	rest 9
 .body:
 	drum_note 10, 1
 	drum_note 10, 1

@@ -441,7 +441,8 @@ Music_AfterTheRivalFight_Ch4:
 Music_LookRival_Ch4:
 	toggle_noise 6
 	drum_speed 12
-	rest 10
+	rest 1
+	rest 9
 .body:
 	drum_note 10, 1
 	drum_note 10, 1

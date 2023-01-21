@@ -551,7 +551,13 @@ Music_StampTown_Ch3:
 	sound_call .sub1
 	rest 3
 	sound_call .sub1
-	sound_call .sub2
+	rest 1
+	volume_envelope 1, 5
+	octave 3
+	note C_, 2
+	note C#, 3
+	rest 1
+	volume_envelope 1, 6
 	note G#, 1
 	rest 3
 	volume_envelope 1, 5
@@ -573,7 +579,13 @@ Music_StampTown_Ch3:
 	volume_envelope 1, 6
 	octave 4
 	note C_, 1
-	sound_call .sub2
+	rest 1
+	volume_envelope 1, 5
+	octave 3
+	note C_, 2
+	note C#, 3
+	rest 1
+	volume_envelope 1, 6
 	note G#, 1
 	rest 3
 	volume_envelope 1, 5
@@ -591,14 +603,20 @@ Music_StampTown_Ch3:
 	octave 4
 	note C_, 1
 	rest 3
-	sound_call .sub3
+	sound_call .sub2
 .loop1:
-	sound_call .sub4
+	sound_call .sub3
 	note A#, 1
 	rest 3
-	sound_call .sub4
+	sound_call .sub3
 	note G#, 1
-	sound_call .sub2
+	rest 1
+	volume_envelope 1, 5
+	octave 3
+	note C_, 2
+	note C#, 3
+	rest 1
+	volume_envelope 1, 6
 	octave 4
 	note C#, 1
 	rest 1
@@ -619,7 +637,7 @@ Music_StampTown_Ch3:
 	rest 1
 	note A#, 1
 	rest 1
-	sound_call .sub3
+	sound_call .sub2
 	sound_loop 3, .loop1
 	stereo_panning TRUE, TRUE
 	volume_envelope 1, -4
@@ -823,16 +841,6 @@ Music_StampTown_Ch3:
 	sound_ret
 
 .sub2:
-	rest 1
-	volume_envelope 1, 5
-	octave 3
-	note C_, 2
-	note C#, 3
-	rest 1
-	volume_envelope 1, 6
-	sound_ret
-
-.sub3:
 	volume_envelope 1, 5
 	octave 2
 	note D#, 3
@@ -843,7 +851,7 @@ Music_StampTown_Ch3:
 	rest 3
 	sound_ret
 
-.sub4:
+.sub3:
 	volume_envelope 1, 5
 	octave 2
 	note G#, 3

@@ -196,6 +196,8 @@ Music_GymVictory_Ch2:
 	note F_, 7
 	sound_loop 2, .mainloop
 	sound_call .sub2
+	octave 2
+	note A#, 1
 	octave 3
 	note E_, 1
 	note G_, 1
@@ -216,6 +218,8 @@ Music_GymVictory_Ch2:
 	note G_, 1
 	note A#, 1
 	sound_call .sub2
+	octave 2
+	note A#, 1
 	octave 3
 	note C_, 1
 	note E_, 1
@@ -286,8 +290,6 @@ Music_GymVictory_Ch2:
 	note A#, 1
 	octave 4
 	note E_, 8
-	octave 2
-	note A#, 1
 	sound_ret
 
 Music_GymVictory_Ch3:
@@ -486,12 +488,14 @@ Music_GymVictory_Ch4:
 	drum_note 1, 8
 	sound_call .sub2
 	sound_call .sub3
+	sound_call .sub4
 	drum_note 1, 4
 	drum_note 2, 8
 	drum_note 1, 4
 	drum_note 2, 4
 	drum_note 2, 4
 	sound_call .sub2
+	sound_call .sub3
 	drum_note 7, 8
 	drum_note 2, 4
 	drum_note 1, 8
@@ -535,12 +539,15 @@ Music_GymVictory_Ch4:
 	drum_note 10, 1
 	drum_note 9, 1
 	drum_note 9, 1
+	sound_ret
+
+.sub3:
 	drum_note 7, 8
-.sub2loop1:
 	drum_note 2, 4
 	drum_note 1, 8
 	drum_note 1, 4
 	drum_note 2, 8
+.sub3loop1:
 	drum_note 1, 4
 	drum_note 2, 8
 	drum_note 1, 4
@@ -551,12 +558,12 @@ Music_GymVictory_Ch4:
 	drum_note 5, 2
 	drum_note 6, 2
 	drum_note 1, 8
-	sound_loop 2, .sub2loop1
 	drum_note 2, 4
 	drum_note 1, 8
 	drum_note 1, 4
 	drum_note 2, 8
-.sub3:
+	sound_loop 2, .sub3loop1
+.sub4:
 	drum_note 1, 8
 	drum_note 2, 4
 	drum_note 1, 8
