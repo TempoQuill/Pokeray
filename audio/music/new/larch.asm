@@ -410,28 +410,10 @@ Music_Larch_Ch4:
 	drum_note 3, 2
 	drum_note 3, 4
 	drum_note 3, 2
-	rest 2
-	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 2
-	rest 2
-	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 2
-	drum_note 3, 2
+	sound_call .sub1
 .mainloop:
 	drum_note 3, 2
-	rest 2
-	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 2
-	rest 2
-	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 2
-	drum_note 3, 2
+	sound_call .sub1
 	drum_note 3, 2
 	rest 2
 	drum_note 3, 4
@@ -444,25 +426,20 @@ Music_Larch_Ch4:
 	drum_note 12, 4
 	drum_note 3, 2
 	drum_note 3, 4
-	rest 2
-	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 4
+	sound_call .sub1
 	drum_note 3, 2
-	rest 2
-	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 2
-	drum_note 3, 2
-	drum_note 3, 2
-	rest 2
-	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 2
-	rest 2
-	drum_note 3, 4
-	drum_note 3, 4
-	drum_note 3, 2
-	drum_note 3, 2
+	sound_call .sub1
 	sound_jump .mainloop
+
+.sub1:
+	rest 2
+	drum_note 3, 4
+	drum_note 3, 4
+	drum_note 3, 4
+	drum_note 3, 2
+	rest 2
+	drum_note 3, 4
+	drum_note 3, 4
+	drum_note 3, 2
+	drum_note 3, 2
+	sound_ret
