@@ -93,7 +93,7 @@ Music_LanaweForest_Ch2:
 	duty_cycle 3
 	sound_call Music_LanaweForest_Ch1.sub1
 	sound_call Music_LanaweForest_Ch1.sub1
-.loop1
+.loop1:
 	sound_call .sub1
 	sound_loop 7, .loop1
 	sound_call Music_LanaweForest_Ch1.sub1

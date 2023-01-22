@@ -357,7 +357,7 @@ Music_Route52_Ch2:
 	stereo_panning TRUE, TRUE
 	duty_cycle 2
 	note_type 6, 9, 7
-.loop1
+.loop1:
 	transpose 1, 10
 	sound_call .sub3
 	sound_call .sub3
