@@ -107,7 +107,7 @@ Music_PortiteCity_Ch1:
 	octave 2
 	note E_, 2
 	duty_cycle 1
-	volume_envelope 10, 1
+	volume_envelope 10, 3
 	note A_, 6
 	duty_cycle 2
 	note_type 4, 13, 1

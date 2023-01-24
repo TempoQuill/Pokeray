@@ -126,7 +126,7 @@ Music_PortiteCity_Ch1:
 	octave 2
 	note E_, 2
 	duty_cycle 1
-	volume_envelope 10, 1
+	volume_envelope 10, 3
 	note A_, 6
 	stereo_panning TRUE, FALSE
 	duty_cycle 2
