@@ -827,7 +827,7 @@ LoadNote:
 .env_ptrn
 	bc_offset CHANNEL_FLAGS2
 	bit SOUND_ENV_PTRN, [hl]
-	jr z, .time_mute
+	jr z, .staccato
 	bc_offset CHANNEL_NOTE_FLAGS
 	res NOTE_ENV_OVERRIDE, [hl]
 	; reset offset
@@ -835,20 +835,20 @@ LoadNote:
 	xor a
 	ld [hl], a
 
-.time_mute
+.staccato
 	bc_offset CHANNEL_FLAGS2
-	bit SOUND_TIME_MUTE, [hl]
+	bit SOUND_STACCATO, [hl]
 	ret z
 	; read main byte
-	bc_offset CHANNEL_MUTE
+	bc_offset CHANNEL_STACCATO
 	ld a, [hl]
 	; copy to counter
-	bc_offset CHANNEL_MUTE_COUNTER
+	bc_offset CHANNEL_STACCATO_COUNTER
 	ld [hl], a
 	ret
 
 GeneralHandler:
-; handle duty, pitch, env ptrn, mute, and vibrato
+; handle duty, pitch, env ptrn, staccato, and vibrato
 	bc_offset CHANNEL_FLAGS2
 	bit SOUND_DUTY_LOOP, [hl] ; duty cycle looping
 	jr z, .relative_pitch
@@ -1011,7 +1011,7 @@ GeneralHandler:
 	; notes reset on envelope change
 	bc_offset CHANNEL_FLAGS2
 	bit SOUND_ENV_PTRN, [hl]
-	jr z, .time_mute
+	jr z, .staccato
 	bc_offset CHANNEL_NOTE_FLAGS
 	set NOTE_ENV_OVERRIDE, [hl]
 	; store group in de
@@ -1033,7 +1033,7 @@ GeneralHandler:
 	or d
 	ld [wCurTrackVolumeEnvelope], a
 	call UpdateChannels.load_wave_pattern
-	jr .time_mute
+	jr .staccato
 
 .not_ch3
 	; envelope group
@@ -1044,18 +1044,18 @@ GeneralHandler:
 	; pause during rest
 	bc_offset CHANNEL_NOTE_FLAGS
 	set NOTE_REST, [hl]
-	jr .time_mute
+	jr .staccato
 .set
 	; store envelope during note
 	ld [wCurTrackVolumeEnvelope], a
 	bc_offset CHANNEL_NOTE_FLAGS
 	set NOTE_NOISE_SAMPLING, [hl]
-.time_mute
+.staccato
 	bc_offset CHANNEL_FLAGS2
-	bit SOUND_TIME_MUTE, [hl]
+	bit SOUND_STACCATO, [hl]
 	ret z
 	; check if the counter is zero
-	bc_offset CHANNEL_MUTE_COUNTER
+	bc_offset CHANNEL_STACCATO_COUNTER
 	ld a, [hl]
 	and a
 	jr z, .zero
@@ -1504,7 +1504,7 @@ MusicCommands:
 	dw Music_ToggleMusic           ; music mode on/off
 	dw Music_PitchSlide            ; pitch slide
 	dw Music_Vibrato               ; vibrato
-	dw Music_TimeMute              ; mute after A frames
+	dw Music_Staccato              ; staccato
 	dw Music_ToggleNoise           ; music noise sampling
 	dw Music_OldPanning            ; old panning
 	dw Music_Volume                ; volume
@@ -1828,15 +1828,15 @@ Music_SetSoundEvent:
 	ld [wSoundEventFlag], a
 	ret
 
-Music_TimeMute:
+Music_Staccato:
 ; cuts a note off after a specified number of frames
 ; useful for optimization
 ; params: 1
 	call GetMusicByte
-	bc_offset CHANNEL_MUTE
+	bc_offset CHANNEL_STACCATO
 	ld [hl], a
 	bc_offset CHANNEL_FLAGS2
-	set SOUND_TIME_MUTE, [hl]
+	set SOUND_STACCATO, [hl]
 	ret
 
 Music_Vibrato:

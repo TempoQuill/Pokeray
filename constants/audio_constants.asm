@@ -69,13 +69,13 @@ NUM_CHANNELS EQU const_value
 	const CHANNEL_PITCH_SLIDE_AMOUNT    ; 23
 	const CHANNEL_PITCH_SLIDE_FRACTION  ; 24
 	const CHANNEL_PITCH_SLIDE_TEMPO     ; 25
-	const CHANNEL_MUTE_COUNTER          ; 26
+	const CHANNEL_STACCATO_COUNTER      ; 26
 	const CHANNEL_PITCH_OFFSET          ; 27
 	const_skip
 	const CHANNEL_RELATIVE_PITCH        ; 29
 	const CHANNEL_ENVELOPE_GROUP        ; 2a
 	const CHANNEL_ENVELOPE_GROUP_OFFSET ; 2b
-	const CHANNEL_MUTE                  ; 2c
+	const CHANNEL_STACCATO              ; 2c
 	const CHANNEL_NOTE_LENGTH           ; 2d
 	const CHANNEL_TEMPO_OFFSET          ; 2e
 	const CHANNEL_STEREO_DELAY          ; 2f
@@ -101,7 +101,7 @@ NOISE_CHAN_F EQU 2 ; bit set in CHAN5-CHAN7
 	const SOUND_VIBRATO        ; 0
 	const SOUND_PITCH_SLIDE    ; 1
 	const SOUND_DUTY_LOOP      ; 2
-	const SOUND_TIME_MUTE      ; 3
+	const SOUND_STACCATO       ; 3
 	const SOUND_PITCH_OFFSET   ; 4
 	const SOUND_ENV_PTRN       ; 5
 	const SOUND_RELATIVE_PITCH ; 6

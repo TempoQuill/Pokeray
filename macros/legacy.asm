@@ -71,7 +71,7 @@ slidepitchto: MACRO
 	pitch_slide \1, (8 - \2), \3
 ENDM
 
-unknownmusic0xe2 EQUS "time_mute"
+unknownmusic0xe2 EQUS "staccato"
 togglenoise      EQUS "toggle_noise"
 
 panning: MACRO

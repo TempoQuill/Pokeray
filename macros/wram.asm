@@ -195,12 +195,12 @@ channel_struct: MACRO
 \1PitchSlideAmount::  db
 \1PitchSlideFractal:: db
 \1PitchSlideTempo::   db
-\1MuteCounter::       db
+\1StaccatoCounter::   db
 \1PitchOffset::       dw
 \1RelativePitch::     db
 \1EnvGroup::          db
 \1EnvGroupOffset::    db
-\1Mute::              db
+\1Staccato::          db
 \1NoteLength::        db ; frames per 16th note
 \1TempoOffset::       db
 \1BCDDelay::          db

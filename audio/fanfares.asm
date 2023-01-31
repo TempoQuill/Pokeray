@@ -1516,7 +1516,7 @@ Sfx_GameCornerWin_Ch5:
 	duty_cycle 1
 	vibrato 5, 3, 2
 	pitch_offset -1
-	time_mute 5
+	staccato 5
 	note_type 12, 12, 1
 	octave 3
 	note B_, 1
@@ -1530,7 +1530,7 @@ Sfx_GameCornerWin_Ch5:
 	note A_, 1
 	note E_, 1
 	note A_, 2
-	time_mute -1
+	staccato -1
 	note_type 6, 10, 2
 	note G_, 4
 	note A_, 4
