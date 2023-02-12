@@ -387,9 +387,9 @@ Music_Route52_Ch2:
 	note C_, 1
 	rest 1
 	sound_loop 2, .loop1
+.loop2:
 	transpose 0, 0
 	note_type 12, 13, 3
-.loop2:
 	rest 16
 	duty_cycle 3
 	note G_, 2
@@ -534,30 +534,12 @@ Music_Route52_Ch3:
 	transpose 0, 0
 	note_type 12, 1, 2
 	rest 2
-	sound_call .sub4
-	note F_, 3
-	rest 1
-	note F_, 3
-	rest 1
-	sound_call .sub4
 	sound_call .sub3
-	sound_call .sub5
-	sound_call .sub3
-	sound_call .sub6
 	octave 4
 	note A#, 1
 	rest 1
 	volume_envelope 1, 4
-	sound_call .sub4
-	note F_, 3
-	rest 1
-	note F_, 3
-	rest 1
-	sound_call .sub4
 	sound_call .sub3
-	sound_call .sub5
-	sound_call .sub3
-	sound_call .sub6
 	note_type 6, 1, -6
 .loop1:
 	transpose 0, 7
@@ -616,14 +598,6 @@ Music_Route52_Ch3:
 	sound_ret
 
 .sub3:
-	note F_, 1
-	rest 1
-	octave 5
-	note C_, 2
-	octave 4
-	note A#, 2
-	rest 2
-.sub4:
 	octave 4
 	note A#, 1
 	octave 5
@@ -635,9 +609,39 @@ Music_Route52_Ch3:
 	rest 1
 	note A#, 1
 	rest 1
-	sound_ret
-
-.sub5:
+	note F_, 3
+	rest 1
+	note F_, 3
+	rest 1
+	octave 4
+	note A#, 1
+	octave 5
+	note C_, 1
+	note D_, 1
+	rest 1
+	octave 4
+	note A#, 1
+	rest 1
+	note A#, 1
+	rest 1
+	note F_, 1
+	rest 1
+	octave 5
+	note C_, 2
+	octave 4
+	note A#, 2
+	rest 2
+	octave 4
+	note A#, 1
+	octave 5
+	note C_, 1
+	note D_, 1
+	rest 1
+	octave 4
+	note A#, 1
+	rest 1
+	note A#, 1
+	rest 1
 	note F_, 3
 	rest 1
 	note A_, 3
@@ -652,9 +656,24 @@ Music_Route52_Ch3:
 	rest 1
 	note A_, 1
 	rest 1
-	sound_ret
-
-.sub6:
+	note F_, 1
+	rest 1
+	octave 5
+	note C_, 2
+	octave 4
+	note A#, 2
+	rest 2
+	octave 4
+	note A#, 1
+	octave 5
+	note C_, 1
+	note D_, 1
+	rest 1
+	octave 4
+	note A#, 1
+	rest 1
+	note A#, 1
+	rest 1
 	octave 5
 	note F_, 1
 	rest 1
@@ -710,8 +729,8 @@ Music_Route52_Ch3:
 
 Music_Route52_Ch4:
 	toggle_noise 5
-	drum_speed 12
 .loop1:
+	drum_speed 12
 	drum_note 12, 2
 	drum_note 5, 2
 	drum_note 5, 2
