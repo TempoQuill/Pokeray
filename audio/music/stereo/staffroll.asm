@@ -1335,7 +1335,6 @@ Music_StaffRoll_Ch4:
 	sound_call .sub3
 	sound_loop 3, .loop4
 	sound_call .sub5
-	sound_call .sub2
 	drum_note 7, 4
 	sound_call .sub3
 	sound_call .sub4
