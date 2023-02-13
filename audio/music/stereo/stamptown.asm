@@ -743,7 +743,7 @@ Music_StampTown_Ch3:
 	note F_, 2
 	note_type 6, 1, 4
 	note D#, 12
-	stereo_panning TRUE, FALSE
+	stereo_panning FALSE, TRUE
 	volume_envelope 1, 5
 	octave 2
 	note D#, 2
