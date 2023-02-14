@@ -768,6 +768,7 @@ Music_TradeMenu_Ch6:
 	octave 4
 	note F_, 4
 .mainloop:
+	volume_envelope 1, 4
 	octave 4
 	note A_, 8
 	note A#, 8
