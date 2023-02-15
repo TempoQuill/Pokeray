@@ -62,7 +62,7 @@ Music_Larch_Ch1:
 	note E_, 2
 	note G_, 2
 	note E_, 2
-	sound_call .sub1
+	sound_call .sub2
 	note D_, 4
 	rest 2
 	note F_, 4
