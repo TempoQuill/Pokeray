@@ -70,17 +70,22 @@
 	const MUSIC_HAVOC_HIDEOUT                ; 40
 	const MUSIC_VS_MENU_1                    ; 41 ; TRADE_MENU_1
 	const MUSIC_VS_MENU_2                    ; 42 ; TRADE_MENU_2
+	const MUSIC_WATCHIN_OVUR_ME_JINGLE       ; 43
+	const MUSIC_TIME_CAPSULE_MENU            ; 44
+	const MUSIC_POKEFLUTE_MEDLEY             ; 45
+	const MUSIC_BEST_FRIENDS_LULLABY         ; 46
+	const MUSIC_MORNING_IN_EQUINTO_MARCH     ; 47
 ; chaos exclusive
-;	const MUSIC_ZACH_ENCOUNTER               ; 43
-;	const MUSIC_MARLOON_ENCOUNTER            ; 44
-;	const MUSIC_EQUINE_TRIO_BATTLE           ; 45
-;	const MUSIC_CHAOS_INTRO__SRB_THEME       ; 46
-;	const MUSIC_PILOT_TUGERE__WBA_THEME      ; 47
-;	const MUSIC_MOBILE_CONNECTION_BALLAD     ; 48
-;	const MUSIC_AT_THE_BATTLE_TOWER          ; 49
-;	const MUSIC_FIND_A_PROFILE_OPTION        ; 4a
-;	const MUSIC_BATTLE_TOWER_LOBBY           ; 4b
-;	const MUSIC_POKEMON_COMMUNICATION_CENTER ; 4c
+;	const MUSIC_ZACH_ENCOUNTER               ; 48
+;	const MUSIC_MARLOON_ENCOUNTER            ; 49
+;	const MUSIC_EQUINE_TRIO_BATTLE           ; 4a
+;	const MUSIC_CHAOS_INTRO__SRB_THEME       ; 4b
+;	const MUSIC_PILOT_TEGERE__WBA_THEME      ; 4c
+;	const MUSIC_MOBILE_CONNECTION_BALLAD     ; 4d
+;	const MUSIC_AT_THE_BATTLE_TOWER          ; 4e
+;	const MUSIC_FIND_A_PROFILE_OPTION        ; 4f
+;	const MUSIC_BATTLE_TOWER_LOBBY           ; 50
+;	const MUSIC_POKEMON_COMMUNICATION_CENTER ; 51
 FINAL_MUSIC_TRACK EQU const_value - 1
 NUM_MUSIC_IDS EQU FINAL_MUSIC_TRACK
 
@@ -94,12 +99,3 @@ SPECIAL_MAP_MUSIC EQU $fd
 ; ExitPokegearRadio_HandleMusic uses these values
 RESTART_MAP_MUSIC EQU $fe
 ENTER_MAP_MUSIC   EQU $ff
-
-; G/S leftovers (rs constants)   ; (gs constants in comment)
-MUSIC_MAGNET_TRAIN       EQU $25 ; $05
-MUSIC_ROUTE_30           EQU $07 ; $2b
-MUSIC_POKE_FLUTE_CHANNEL EQU $41 ; $40
-MUSIC_POKEMON_LULLABY    EQU $42 ; $50
-MUSIC_POKEMON_MARCH      EQU $3c ; $51
-MUSIC_GS_OPENING         EQU $01 ; $52
-MUSIC_GS_OPENING_2       EQU $02 ; $53

@@ -157,7 +157,7 @@ RayToGoldLinkComms:
 	cp USING_INTERNAL_CLOCK
 	ld c, 66
 	call z, DelayFrames
-	ld de, MUSIC_ROUTE_30
+	ld de, MUSIC_TIME_CAPSULE_MENU
 	call PlayMusic
 	jp InitTradeMenuDisplay
 

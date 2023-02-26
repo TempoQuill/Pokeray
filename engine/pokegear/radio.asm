@@ -817,11 +817,11 @@ BenFernMusic7:
 StartPokemonMusicChannel:
 	call RadioTerminator
 	call PrintText
-	ld de, MUSIC_POKEMON_MARCH
+	ld de, MUSIC_MORNING_IN_EQUINTO_MARCH
 	call GetWeekday
 	and 1
 	jr z, .SunTueThurSun
-	ld de, MUSIC_POKEMON_LULLABY
+	ld de, MUSIC_BEST_FRIENDS_LULLABY
 .SunTueThurSun:
 	callfar RadioMusicRestartDE
 	ret

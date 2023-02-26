@@ -1568,7 +1568,7 @@ RadioMusicRestartPokemonChannel:
 	ld de, MUSIC_NONE
 	call PlayMusic
 	pop de
-	ld de, MUSIC_MAGNET_TRAIN
+	ld de, MUSIC_WATCHIN_OVUR_ME_JINGLE
 	call PlayMusic
 	ret
 

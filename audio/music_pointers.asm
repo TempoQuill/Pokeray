@@ -70,3 +70,8 @@ Music:
 	dba Music_HavocHideout
 	dba Music_RBYBike              ; TradeMenuPart1
 	dba Music_BugCatchingConestExt ; TradeMenuPart2
+	dba Music_MagnetTrain          ; WatchinOverMeJingle
+	dba Music_Route30              ; TimeCapsuleMenu
+	dba Music_PokeFluteChannel     ; Meldey
+	dba Music_PokemonLullaby       ; BestFriendsLullaby
+	dba Music_PokemonMarch         ; MorningInEquintoMarch

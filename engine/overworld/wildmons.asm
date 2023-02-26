@@ -241,12 +241,12 @@ GetMapEncounterRate:
 	ret
 
 ApplyMusicEffectOnEncounterRate::
-; Pokemon March and Ruins of Alph signal double encounter rate.
-; Pokemon Lullaby halves encounter rate.
+; Morning in Equinto music doubles encounter rate.
+; Best Friends Lullaby halves encounter rate.
 	ld a, [wMapMusic]
-	cp MUSIC_POKEMON_MARCH
+	cp MUSIC_MORNING_IN_EQUINTO_MARCH
 	jr z, .double
-	cp MUSIC_POKEMON_LULLABY
+	cp MUSIC_BEST_FRIENDS_LULLABY
 	ret nz
 	srl b
 	ret

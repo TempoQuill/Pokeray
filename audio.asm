@@ -30,6 +30,11 @@ INCLUDE "audio/music/new/portitecity.asm"
 INCLUDE "audio/music/titlescreen.asm"
 INCLUDE "audio/music/new/dilappokecenter.asm"
 INCLUDE "audio/music/trainervictory.asm"
+INCLUDE "audio/music/magnettrain.asm"
+INCLUDE "audio/music/route30.asm"
+INCLUDE "audio/music/pokeflutechannel.asm"
+INCLUDE "audio/music/pokemonlullaby.asm"
+INCLUDE "audio/music/pokemonmarch.asm"
 
 
 SECTION "Songs 2", ROMX

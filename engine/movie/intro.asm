@@ -142,7 +142,7 @@ IntroScene1:
 	depixel 28, 28
 	call DmgToCgbObjPals
 	call Intro_InitShellders
-	ld de, MUSIC_GS_OPENING
+	ld de, MUSIC_RS_OPENING
 	call PlayMusic
 	ret
 
@@ -806,7 +806,7 @@ IntroScene10:
 	ld de, MUSIC_NONE
 	call PlayMusic
 	call DelayFrame
-	ld de, MUSIC_GS_OPENING_2
+	ld de, MUSIC_RS_OPENING_2
 	call PlayMusic
 	ret
 
