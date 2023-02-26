@@ -3,75 +3,74 @@
 	const_def
 
 	const MUSIC_NONE                         ; 00
-	const MUSIC_RS_OPENING                   ; 01 ; RS_OPENING
-	const MUSIC_RS_OPENING_2                 ; 02 ; RS_OPENING_2
-	const MUSIC_TITLE                        ; 03
+	const MUSIC_TITLE                        ; 01
+	const MUSIC_RS_OPENING                   ; 02 ; RS_OPENING
+	const MUSIC_RS_OPENING_2                 ; 03 ; RS_OPENING_2
 	const MUSIC_MAIN_MENU                    ; 04
 	const MUSIC_HEAL                         ; 05
-	const MUSIC_ROUTE_29                     ; 06 ; ROUTE_49
-	const MUSIC_ROUTE_52                     ; 07
-	const MUSIC_ROUTE_55                     ; 08
-	const MUSIC_MOM                          ; 09
-	const MUSIC_SHOW_ME_AROUND               ; 0a
-	const MUSIC_RBY_FM_TRADE                 ; 0b ; HOUSE_ENROUTE
-	const MUSIC_POKEMON_CENTER               ; 0c
-	const MUSIC_COTTAGE_TOWN                 ; 0d
-	const MUSIC_TRAVERSAL_CITY               ; 0e
-	const MUSIC_WILD_BATTLE                  ; 0f
-	const MUSIC_TRAINER_BATTLE               ; 10
-	const MUSIC_GYM_LEADER_BATTLE            ; 11
-	const MUSIC_PARTY_HOST_BATTLE            ; 12
-	const MUSIC_SHAGGY_BATTLE                ; 13
-	const MUSIC_PARKER_BATTLE                ; 14
-	const MUSIC_OFFICER_ENCOUNTER            ; 15
-	const MUSIC_LASS_ENCOUNTER               ; 16
-	const MUSIC_HIKER_ENCOUNTER              ; 17
-	const MUSIC_YOUNGSTER_ENCOUNTER          ; 18
-	const MUSIC_BEAUTY_ENCOUNTER             ; 19
-	const MUSIC_SIBLING_ENCOUNTER            ; 1a
-	const MUSIC_PARTY_HOST_ENCOUNTER         ; 1b
-	const MUSIC_ARTIST_ENCOUNTER             ; 1c
-	const MUSIC_RIVAL_ENCOUNTER              ; 1d
-	const MUSIC_PROF_LARCH                   ; 1e
-	const MUSIC_RIVAL_AFTER                  ; 1f
-	const MUSIC_CAPTURE                      ; 20
-	const MUSIC_WILD_VICTORY                 ; 21
-	const MUSIC_TRAINER_VICTORY              ; 22
-	const MUSIC_GYM_VICTORY                  ; 23
-	const MUSIC_GYM                          ; 24
-	const MUSIC_RG_OLD_HEAL                  ; 25 ; NON_PC_HEAL
-; added after demo build
-	const MUSIC_GAME_CORNER                  ; 26
-	const MUSIC_BICYCLE                      ; 27
-	const MUSIC_HALL_OF_FAME                 ; 28
-	const MUSIC_ODDISH_FARM                  ; 29
-	const MUSIC_EVOLUTION                    ; 2a
-	const MUSIC_CREDITS                      ; 2b
-	const MUSIC_LANAWE_FOREST                ; 2c
-	const MUSIC_FIRE_FLOWER                  ; 2d ; SS_VAPOR
-	const MUSIC_DILAP_POKEMON_CENTER         ; 2e
-	const MUSIC_STARMAN                      ; 2f ; LIGHTHOUSE
-	const MUSIC_EAST_COAST_STOP              ; 30
-	const MUSIC_INDIGO_PLATEAU               ; 31 ; EQUINTO_LEAGUE
-	const MUSIC_GOLEM_PALACE                 ; 32
-	const MUSIC_HYPERCOIN_CITY               ; 33
-	const MUSIC_DIGLETT_CAVE                 ; 34 ; MT_VACUUM
-	const MUSIC_NORGEO_TOWN                  ; 35
-	const MUSIC_PORTITE_CITY                 ; 36
-	const MUSIC_POST_CREDITS                 ; 37
-	const MUSIC_PRINTER                      ; 38
-	const MUSIC_ROUTE_61                     ; 39
-	const MUSIC_HAVOC_ENCOUNTER              ; 3a
-	const MUSIC_HAVOC_THEME                  ; 3b
-	const MUSIC_RBY_SURF                     ; 3c ; SS_VAPOR_DEPARTURE
-	const MUSIC_STAMP_TOWN                   ; 3d
-	const MUSIC_SUNKERN_SWAMP                ; 3e
+	const MUSIC_RG_OLD_HEAL                  ; 06 ; NON_PC_HEAL
+	const MUSIC_ROUTE_29                     ; 07 ; ROUTE_49
+	const MUSIC_ROUTE_52                     ; 08
+	const MUSIC_ROUTE_55                     ; 09
+	const MUSIC_INDIGO_PLATEAU               ; 0a ; EQUINTO_LEAGUE
+	const MUSIC_ROUTE_61                     ; 0b
+	const MUSIC_TIME_CAPSULE_MENU            ; 0c
+	const MUSIC_MOM                          ; 0d
+	const MUSIC_SHOW_ME_AROUND               ; 0e
+	const MUSIC_RBY_FM_TRADE                 ; 0f ; HOUSE_ENROUTE
+	const MUSIC_POKEMON_CENTER               ; 10
+	const MUSIC_DILAP_POKEMON_CENTER         ; 11
+	const MUSIC_COTTAGE_TOWN                 ; 12
+	const MUSIC_TRAVERSAL_CITY               ; 13
+	const MUSIC_WILD_BATTLE                  ; 14
+	const MUSIC_TRAINER_BATTLE               ; 15
+	const MUSIC_GYM_LEADER_BATTLE            ; 16
+	const MUSIC_PARTY_HOST_BATTLE            ; 17
+	const MUSIC_SHAGGY_BATTLE                ; 18
+	const MUSIC_PARKER_BATTLE                ; 19
+	const MUSIC_OFFICER_ENCOUNTER            ; 1a
+	const MUSIC_LASS_ENCOUNTER               ; 1b
+	const MUSIC_HIKER_ENCOUNTER              ; 1c
+	const MUSIC_YOUNGSTER_ENCOUNTER          ; 1d
+	const MUSIC_BEAUTY_ENCOUNTER             ; 1e
+	const MUSIC_SIBLING_ENCOUNTER            ; 1f
+	const MUSIC_PARTY_HOST_ENCOUNTER         ; 20
+	const MUSIC_ARTIST_ENCOUNTER             ; 21
+	const MUSIC_HAVOC_ENCOUNTER              ; 22
+	const MUSIC_RIVAL_ENCOUNTER              ; 23
+	const MUSIC_RIVAL_AFTER                  ; 24
+	const MUSIC_PROF_LARCH                   ; 25
+	const MUSIC_CAPTURE                      ; 26
+	const MUSIC_WILD_VICTORY                 ; 27
+	const MUSIC_TRAINER_VICTORY              ; 28
+	const MUSIC_GYM_VICTORY                  ; 29
+	const MUSIC_GYM                          ; 2a
+	const MUSIC_GAME_CORNER                  ; 2b
+	const MUSIC_BICYCLE                      ; 2c
+	const MUSIC_HALL_OF_FAME                 ; 2d
+	const MUSIC_ODDISH_FARM                  ; 2e
+	const MUSIC_GOLEM_PALACE                 ; 2f
+	const MUSIC_SUNKERN_SWAMP                ; 30
+	const MUSIC_EVOLUTION                    ; 31
+	const MUSIC_CREDITS                      ; 32
+	const MUSIC_POST_CREDITS                 ; 33
+	const MUSIC_LANAWE_FOREST                ; 34
+	const MUSIC_FIRE_FLOWER                  ; 35 ; SS_VAPOR
+	const MUSIC_STARMAN                      ; 36 ; LIGHTHOUSE
+	const MUSIC_EAST_COAST_STOP              ; 37
+	const MUSIC_HYPERCOIN_CITY               ; 38
+	const MUSIC_DIGLETT_CAVE                 ; 39 ; MT_VACUUM
+	const MUSIC_HAVOC_THEME                  ; 3a
+	const MUSIC_NORGEO_TOWN                  ; 3b
+	const MUSIC_PORTITE_CITY                 ; 3c
+	const MUSIC_PRINTER                      ; 3d
+	const MUSIC_RBY_SURF                     ; 3e ; SS_VAPOR_DEPARTURE
 	const MUSIC_SURF                         ; 3f
-	const MUSIC_HAVOC_HIDEOUT                ; 40
-	const MUSIC_VS_MENU_1                    ; 41 ; TRADE_MENU_1
-	const MUSIC_VS_MENU_2                    ; 42 ; TRADE_MENU_2
-	const MUSIC_WATCHIN_OVUR_ME_JINGLE       ; 43
-	const MUSIC_TIME_CAPSULE_MENU            ; 44
+	const MUSIC_STAMP_TOWN                   ; 40
+	const MUSIC_HAVOC_HIDEOUT                ; 41
+	const MUSIC_VS_MENU_1                    ; 42 ; TRADE_MENU_1
+	const MUSIC_VS_MENU_2                    ; 43 ; TRADE_MENU_2
+	const MUSIC_WATCHIN_OVUR_ME_JINGLE       ; 44
 	const MUSIC_POKEFLUTE_MEDLEY             ; 45
 	const MUSIC_BEST_FRIENDS_LULLABY         ; 46
 	const MUSIC_MORNING_IN_EQUINTO_MARCH     ; 47
@@ -91,8 +90,8 @@ NUM_MUSIC_IDS EQU FINAL_MUSIC_TRACK
 
 ; speical track behavior regarding linked games
 ; doesn't affect map music behavior
-LINK_MUSIC_1 EQU $41
-LINK_MUSIC_2 EQU $42
+LINK_MUSIC_1 EQU $42
+LINK_MUSIC_2 EQU $43
 
 ; map music with this value will be redirected to a valid track
 SPECIAL_MAP_MUSIC EQU $fd
