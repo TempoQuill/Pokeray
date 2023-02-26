@@ -156,7 +156,7 @@ BillPhoneAssemblyText:
 
 	para "found a few items"
 	line "around me, put 'em"
-	cont "togther, and…"
+	cont "together, and…"
 
 	para "POOF! I literally"
 	line "made a new friend."

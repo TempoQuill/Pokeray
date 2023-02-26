@@ -488,7 +488,7 @@ LarchTalk3Text:
 
 LarchTalk4Text:
 	text "Make sure you talk"
-	line "to your Mom before"
+	line "to your mom before"
 	cont "you leave, okay?"
 
 	para "I'm counting on"

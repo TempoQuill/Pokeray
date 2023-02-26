@@ -102,7 +102,7 @@ FoliageYoungsterText:
 	para "Wait, that was 20"
 	line "years ago."
 
-	para "Did Cindy take the"
+	para "Did CINDY take the"
 	line "gym over yet?"
 	done
 

@@ -47,10 +47,10 @@ MtVacuum_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 23, 15,   MT_VACUUM, 1
+	warp_event 23, 15,  MT_VACUUM, 1
 	warp_event 1,  19,  MT_VACUUM, 3
 	warp_event 3,  27,  MT_VACUUM, 2
-	warp_event 23, 29,   MT_VACUUM, 4
+	warp_event 23, 29,  MT_VACUUM, 4
 	warp_event 25, 33,  MT_VACUUM, 6
 	warp_event 27, 47,  MT_VACUUM, 5
 	warp_event 19, 47,  MT_VACUUM, 8
