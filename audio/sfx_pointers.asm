@@ -2,7 +2,7 @@ SFX:
 ; entries correspond to SFX_* constants
 	dba Sfx_ObtainItem
 	dba Sfx_Entrustment
-	dba Sfx_GoodDexRating
+	dba Sfx_Medicine
 	dba Sfx_NewLevel
 	dba Sfx_Evolution
 	dba Sfx_ObtainKeyItem

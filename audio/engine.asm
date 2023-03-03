@@ -118,6 +118,7 @@ _UpdateSound::
 	; turn vibrato off for now
 	bc_offset CHANNEL_FLAGS2
 	res SOUND_VIBRATO, [hl]
+	res SOUND_PITCH_SLIDE, [hl]
 	; get next note
 	call ParseMusic
 .continue_sound_update

@@ -775,13 +775,13 @@ Sfx_NewLevel_Ch7:
 	note A_, 2
 	sound_ret
 
-Sfx_GoodDexRating:
+Sfx_Medicine:
 	channel_count 3
-	channel 5, Sfx_GoodDexRating_Ch5
-	channel 6, Sfx_GoodDexRating_Ch6
-	channel 7, Sfx_GoodDexRating_Ch7
+	channel 5, Sfx_Medicine_Ch5
+	channel 6, Sfx_Medicine_Ch6
+	channel 7, Sfx_Medicine_Ch7
 
-Sfx_GoodDexRating_Ch5:
+Sfx_Medicine_Ch5:
 	set_music
 	tempo 256
 	volume 7
@@ -803,7 +803,7 @@ Sfx_GoodDexRating_Ch5:
 	note A_, 4
 	sound_ret
 
-Sfx_GoodDexRating_Ch6:
+Sfx_Medicine_Ch6:
 	set_music
 	duty_cycle 2
 	note_type 5, 12, 1
@@ -828,7 +828,7 @@ Sfx_GoodDexRating_Ch6:
 	note F_, 4
 	sound_ret
 
-Sfx_GoodDexRating_Ch7:
+Sfx_Medicine_Ch7:
 	set_music
 	note_type 5, 1, -4
 	octave 6
