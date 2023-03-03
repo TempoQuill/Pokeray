@@ -2,7 +2,6 @@ GiveMoney::
 	ld a, 3
 	call AddMoney
 	ld bc, MaxMoney
-	ld a, 3
 	call CompareMoney
 	jr z, .not_maxed_out
 	jr c, .not_maxed_out
