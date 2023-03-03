@@ -1027,8 +1027,8 @@ GeneralHandler:
 	ld hl, WaveTableGroups
 	call GetByteInEnvelopeGroup
 	jr c, .pause
-	ld d, a
 	and WAVE_TABLE_MASK
+	ld d, a
 	ld a, [wCurTrackVolumeEnvelope]
 	and WAVE_VOLUME_MASK
 	or d
