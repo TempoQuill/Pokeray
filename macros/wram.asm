@@ -239,12 +239,6 @@ roam_struct: MACRO
 \1DVs::       dw
 ENDM
 
-bugcontestwinner: MACRO
-\1WinnerID:: db
-\1Mon::      dw
-\1Score::    dw
-ENDM
-
 hof_mon: MACRO
 \1Species::  dw
 \1ID::       dw
