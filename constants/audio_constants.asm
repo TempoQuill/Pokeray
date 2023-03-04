@@ -73,8 +73,8 @@ NUM_CHANNELS EQU const_value
 	const CHANNEL_PITCH_OFFSET          ; 27
 	const_skip
 	const CHANNEL_RELATIVE_PITCH        ; 29
-	const CHANNEL_ENVELOPE_GROUP        ; 2a
-	const CHANNEL_ENVELOPE_GROUP_OFFSET ; 2b
+	const CHANNEL_ENV_SEQUENCE          ; 2a
+	const CHANNEL_ENV_SEQUENCE_OFFSET   ; 2b
 	const CHANNEL_STACCATO              ; 2c
 	const CHANNEL_NOTE_LENGTH           ; 2d
 	const CHANNEL_TEMPO_OFFSET          ; 2e
@@ -152,22 +152,22 @@ MUSIC_ON_F EQU 0
 
 ; ch3 wavetable constants
 	const_def
-	const RED_POKECENTER ; 0
-	const RED_OAK        ; 1
-	const RED_PALLET     ; 2
-	const RED_CELADON    ; 3
-	const RED_RIVAL      ; 4
-	const PIN_LOW        ; 5
-	const GOLD_ALPH      ; 6
-	const GOLD_DARK_CAVE ; 7
-	const GOLD_MT_MOON   ; 8
-	const GOLD_JOHTO_GYM ; 9
-	const RAY_HAVOC      ; a
-	const YNT_STARMAN    ; b
-	const YNT_MUSHROOM   ; c
-	const RAY_CREDITS    ; d
-	const RAY_NORGEO     ; e
-	const FILLER         ; f
+	const RED_POKECENTER ; 0: 02468acefffeeddccba9876544332211
+	const RED_OAK        ; 1: 02468aceeffffeeeddcba98765432211
+	const RED_PALLET     ; 2: 1369bdeeeeffffeddeffffeeeedb9631
+	const RED_CELADON    ; 3: 02468acdeffedeffeedcba9876543210
+	const RED_RIVAL      ; 4: 012345678acdeef77feedca876543210
+	const PIN_LOW        ; 5: 0011223344332211ffeeccaa88aaccee
+	const GOLD_ALPH      ; 6: 02468acecba98765fffeeddc44332211
+	const GOLD_DARK_CAVE ; 7: c0a987f5fffeeddc443322f102468ace
+	const GOLD_MT_MOON   ; 8: 4433221f00468acef8feeddccba98765
+	const GOLD_JOHTO_GYM ; 9: 110000080013579ab4baa99887654321
+	const RAY_HAVOC      ; a: 012345678acdeeffffeedca876543210
+	const YNT_STARMAN    ; b: bbffffffffffffbb4400000000000044
+	const YNT_MUSHROOM   ; c: 011234579bdffedcba98765443322111
+	const RAY_CREDITS    ; d: 8899aabbccbbaa997766442200224466
+	const RAY_NORGEO     ; e: aabbddeeffeeddbb9988553300335588
+	const FILLER         ; f: 00000000000000000000000000000000
 NUM_WAVS EQU const_value
 
 ; ch3 masks

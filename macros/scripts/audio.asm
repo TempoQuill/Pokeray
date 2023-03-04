@@ -71,7 +71,7 @@ FIRST_MUSIC_CMD EQU const_value
 	const volume_cmd                  ; $e5
 	const pitch_offset_cmd            ; $e6
 	const relative_pitch_cmd          ; $e7
-	const volume_envelope_group_cmd   ; $e8
+	const envenlope_sequence_cmd   ; $e8
 	const tempo_relative_cmd          ; $e9
 	const restart_channel_cmd         ; $ea
 	const new_song_cmd                ; $eb
@@ -229,8 +229,8 @@ relative_pitch: MACRO
 ENDM
 
 ; from Gold/Silver, restored but unused
-volume_envelope_group: MACRO
-	db volume_envelope_group_cmd
+envenlope_sequence: MACRO
+	db envenlope_sequence_cmd
 	db \1 ; group
 ENDM
 
@@ -273,13 +273,8 @@ sound_jump_ram: MACRO
 ENDM
 
 stereo_panning: MACRO
-	; LEGACY: support for PokeRed stereo_panning
-	IF const_value == old_panning_cmd
-		old_panning \1, \2
-	ELSE
-		db stereo_panning_cmd
-		dn \1 * 15, \2 * 15 ; left, right
-	ENDC
+	db stereo_panning_cmd
+	dn \1 * 15, \2 * 15 ; left, right
 ENDM
 
 sfx_toggle_noise: MACRO

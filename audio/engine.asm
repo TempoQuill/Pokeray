@@ -832,7 +832,7 @@ LoadNote:
 	bc_offset CHANNEL_NOTE_FLAGS
 	res NOTE_ENV_OVERRIDE, [hl]
 	; reset offset
-	bc_offset CHANNEL_ENVELOPE_GROUP_OFFSET
+	bc_offset CHANNEL_ENV_SEQUENCE_OFFSET
 	xor a
 	ld [hl], a
 
@@ -1015,17 +1015,17 @@ GeneralHandler:
 	jr z, .staccato
 	bc_offset CHANNEL_NOTE_FLAGS
 	set NOTE_ENV_OVERRIDE, [hl]
-	; store group in de
-	bc_offset CHANNEL_ENVELOPE_GROUP
+	; store sequence in de
+	bc_offset CHANNEL_ENV_SEQUENCE
 	ld e, [hl]
 	ld d, 0
 	ld a, [wCurChannel]
 	maskbits NUM_MUSIC_CHANS
 	cp CHAN3
 	jr nz, .not_ch3
-	; wavetable group
-	ld hl, WaveTableGroups
-	call GetByteInEnvelopeGroup
+	; wavetable sequence
+	ld hl, WaveTableSequences
+	call GetByteInEnvelopeSequence
 	jr c, .pause
 	and WAVE_TABLE_MASK
 	ld d, a
@@ -1037,9 +1037,9 @@ GeneralHandler:
 	jr .staccato
 
 .not_ch3
-	; envelope group
-	ld hl, EnvelopeGroups
-	call GetByteInEnvelopeGroup
+	; envelope sequence
+	ld hl, EnvelopeSequences
+	call GetByteInEnvelopeSequence
 	jr nc, .set
 .pause
 	; pause during rest
@@ -1378,7 +1378,7 @@ ParseSFXOrCry:
 	ld [hl], a
 	ret
 
-GetByteInEnvelopeGroup:
+GetByteInEnvelopeSequence:
 	; get pointer
 	add hl, de
 	add hl, de
@@ -1386,8 +1386,8 @@ GetByteInEnvelopeGroup:
 	inc hl
 	ld d, [hl]
 	; store the offset in hl
-	; each group can only be 256 bytes long
-	bc_offset CHANNEL_ENVELOPE_GROUP_OFFSET
+	; each sequence can only be 256 bytes long
+	bc_offset CHANNEL_ENV_SEQUENCE_OFFSET
 	push hl
 	ld l, [hl]
 	ld h, 0
@@ -1511,7 +1511,7 @@ MusicCommands:
 	dw Music_Volume                ; volume
 	dw Music_PitchOffset           ; pitch offset
 	dw Music_RelativePitch         ; add pitch
-	dw Music_VolumeEnvelopePattern ; envelope group
+	dw Music_VolumeEnvelopePattern ; envelope sequence
 	dw Music_TempoRelative         ; tempo adjust
 	dw Music_RestartChannel        ; restart current channel from header
 	dw Music_NewSong               ; new song
@@ -1957,12 +1957,12 @@ Music_DutyCyclePattern:
 	ret
 
 Music_VolumeEnvelopePattern:
-; envelope group
+; envelope sequence
 ; params: 1
 	bc_offset CHANNEL_FLAGS2
 	set SOUND_ENV_PTRN, [hl]
 	call GetMusicByte
-	bc_offset CHANNEL_ENVELOPE_GROUP
+	bc_offset CHANNEL_ENV_SEQUENCE
 	ld [hl], a
 	ret
 

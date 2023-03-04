@@ -84,7 +84,7 @@ ENDM
 
 tone                 EQUS "pitch_offset"
 unknownmusic0xe7     EQUS "relative_pitch"
-unknownmusic0xe8     EQUS "volume_envelope_group"
+unknownmusic0xe8     EQUS "envenlope_sequence"
 restartchannel       EQUS "restart_channel"
 newsong              EQUS "new_song"
 sfxpriorityon        EQUS "sfx_priority_on"
