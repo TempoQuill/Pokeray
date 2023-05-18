@@ -2155,7 +2155,7 @@ FaintYourPokemon:
 	call StopDangerSound
 	call WaitSFX
 	ld a, $f0
-	ld [wCryTracks], a
+	ld [wSFXTracks], a
 	ld bc, wBattleMonSpecies
 	ld a, [bc]
 	inc bc
@@ -3288,7 +3288,7 @@ Function_SetEnemyMonAndSendOutAnimation:
 
 .cry_no_anim
 	ld a, $f
-	ld [wCryTracks], a
+	ld [wSFXTracks], a
 	ld bc, wTempEnemyMonSpecies
 	ld a, [bc]
 	inc bc
@@ -3756,7 +3756,7 @@ SendOutPlayerMon:
 
 .not_shiny
 	ld a, $f0
-	ld [wCryTracks], a
+	ld [wSFXTracks], a
 	push bc
 	ld bc, wCurPartySpecies
 	ld a, [bc]
@@ -3891,7 +3891,7 @@ PursuitSwitch:
 	jr nz, .done
 
 	ld a, $f0
-	ld [wCryTracks], a
+	ld [wSFXTracks], a
 	push bc
 	ld bc, wBattleMonSpecies
 	ld a, [bc]
@@ -8679,7 +8679,7 @@ BattleStartMessage:
 
 .not_shiny
 	ld a, $f
-	ld [wCryTracks], a
+	ld [wSFXTracks], a
 	ld bc, wTempEnemyMonSpecies
 	ld a, [bc]
 	inc bc

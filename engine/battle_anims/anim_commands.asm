@@ -1099,7 +1099,7 @@ BattleAnimCmd_Sound:
 	ld [wSFXDuration], a
 	call .GetCryTrack
 	maskbits NUM_NOISE_CHANS
-	ld [wCryTracks], a
+	ld [wSFXTracks], a
 
 	ld e, a
 	ld d, 0
@@ -1148,7 +1148,7 @@ endr
 	jr nz, .enemy
 
 	ld a, $f0
-	ld [wCryTracks], a
+	ld [wSFXTracks], a
 	ld a, [wBattleMonSpecies]
 	ld l, a
 	ld a, [wBattleMonSpecies + 1]
@@ -1156,7 +1156,7 @@ endr
 
 .enemy
 	ld a, $0f
-	ld [wCryTracks], a
+	ld [wSFXTracks], a
 	ld a, [wEnemyMonSpecies]
 	ld l, a
 	ld a, [wEnemyMonSpecies + 1]

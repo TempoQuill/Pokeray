@@ -2344,7 +2344,7 @@ SetNoteDuration:
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	; add workflow to the next result
+	; add subdivision to the next result
 	bc_offset CHANNEL_NOTE_DURATION + 1
 	ld l, [hl]
 	; multiply Tempo by last result (NoteLength * LOW(delay))
@@ -2352,7 +2352,7 @@ SetNoteDuration:
 	; copy result to de
 	ld e, l
 	ld d, h
-	; store result in NoteDuration + 1
+	; store result in subdivision
 	bc_offset CHANNEL_NOTE_DURATION + 1
 	ld [hl], e
 	; store result in NoteDuration
@@ -2418,7 +2418,7 @@ Tempo:
 	ld [hl], e
 	inc hl
 	ld [hl], d
-	; clear workflow
+	; clear subdivision
 	xor a
 	bc_offset CHANNEL_NOTE_DURATION + 1
 	ld [hl], a
@@ -2570,10 +2570,10 @@ _PlayCry::
 	bit STEREO, a
 	jr z, .next
 
-; [Tracks] &= [wCryTracks]
+; [Tracks] &= [wSFXTracks]
 	bc_offset CHANNEL_TRACKS
 	ld a, [hl]
-	ld hl, wCryTracks
+	ld hl, wSFXTracks
 	and [hl]
 	bc_offset CHANNEL_TRACKS
 	ld [hl], a
@@ -2769,7 +2769,7 @@ PlayStereoSFX::
 	bc_offset CHANNEL_STEREO_DELAY_COUNTER
 	ld [hl], a
 
-	ld a, [wCryTracks]
+	ld a, [wSFXTracks]
 	cp 2 ; ch 1-2
 	jr c, .skip
 

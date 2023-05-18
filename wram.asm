@@ -98,7 +98,7 @@ wChannel3JumpCondition:: db ; 442 1ba
 wChannel4JumpCondition:: db ; 443 1bb
 wStereoPanningMask::     db ; 444 1bc
 
-wCryTracks:: ; 445 1bd
+wSFXTracks:: ; 445 1bd
 ; plays only in left or right track depending on what side the monster is on
 ; both tracks active outside of battle
 	db

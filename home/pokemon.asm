@@ -117,7 +117,7 @@ PlayMonCry::
 	push af
 	xor a
 	ld [wStereoPanningMask], a
-	ld [wCryTracks], a
+	ld [wSFXTracks], a
 	pop af
 
 _PlayMonCry::
