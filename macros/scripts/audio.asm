@@ -236,10 +236,7 @@ ENDM
 
 tempo_relative: MACRO
 	db tempo_relative_cmd
-	; LEGACY: macro used 2-byte value in gold, fixed in ray
-	IF \1 > 128
-		bigdw \1
-	ELIF \1 < 0
+	IF \1 < 0
 		db 255 - ((\1 * -1) - 1)
 	ELSE
 		db \1 ; tempo adjustment
