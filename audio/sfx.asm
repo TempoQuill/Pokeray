@@ -2324,11 +2324,10 @@ Sfx_Menu_Ch8:
 	sound_ret
 
 Sfx_Pokeflute_Ch7:
-	tempo 256
-	volume 7
+	tempo 235
 	toggle_music
-	vibrato 16, 1, 4
-	note_type 12, 1, 0
+	vibrato 17, 1, 5
+	note_type 12, 1, -3
 	octave 5
 	note E_, 2
 	note F_, 2
@@ -2345,7 +2344,6 @@ Sfx_Pokeflute_Ch7:
 	note A_, 2
 	note F_, 2
 	note G_, 8
-	rest 12
 	sound_ret
 
 Sfx_PlacePuzzlePieceDown_Ch8:
