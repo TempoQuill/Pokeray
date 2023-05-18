@@ -68,10 +68,10 @@ Music_WatchinOverMeJingle_Ch3:
 	vibrato 0, 2, 3
 	note_type 12, 0, 0
 	relative_pitch 2
-	call .sub1
+	sound_call .sub1
 	rest 6
 	relative_pitch 0
-	call .sub1
+	sound_call .sub1
 	vibrato 8, 2, 2
 	note_type 12, 1, -6
 	note E_, 1
