@@ -140,7 +140,7 @@ ItemNames::
 	db "BERRY JUICE@"
 	db "SCOPE LENS@"
 	db "WHOPPER@"
-	db "PIPE@"
+	db "PIPE FEATHER@"
 	db "METAL COAT@"
 	db "DRAGON FANG@"
 	db "SLVRAPRICORN@"

@@ -425,8 +425,8 @@ BattleCommand_HeldConfusion:
 	farcall ChangeQualityOfLife
 	ret
 
-BattleCommand_HeldParalysis:
-; outlet
+BattleCommand_HeldPoison:
+; needle
 
 	ld a, [wAttackMissed]
 	and a
