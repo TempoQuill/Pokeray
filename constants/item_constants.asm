@@ -74,8 +74,8 @@
 	const SPHERE_STONE ; 42
 	const SECRETPOTION ; 43
 	const S_S_TICKET   ; 44
-	const_skip
-	const ITEM_46      ; 46
+	const DUCKY_AMULET ; 45
+	const CORNERTICKET ; 46
 	const NIGHT_ARMOR  ; 47
 	const MOOMOO_MILK  ; 48
 	const QUICK_CLAW   ; 49
@@ -140,9 +140,9 @@
 	const STAR_PIECE   ; 84
 	const BASEMENT_KEY ; 85
 	const FOSSIL_ROCK  ; 86
-	const ITEM_87      ; 87
-	const ITEM_88      ; 88
-	const ITEM_89      ; 89
+	const STADIUM_BAND ; 87
+	const BLUE_LEAF    ; 88
+	const WHITE_LEAF   ; 89
 	const CHARCOAL     ; 8a
 	const BERRY_JUICE  ; 8b
 	const SCOPE_LENS   ; 8c
@@ -154,11 +154,11 @@
 	const LEFTOVERS    ; 92
 	const AQUAAPRICORN ; 93
 	const GOLDAPRICORN ; 94
-	const ITEM_95      ; 95
+	const HEAVY_GENE   ; 95
 	const MYSTERYBERRY ; 96
 	const DRAGON_SCALE ; 97
 	const BERSERK_GENE ; 98
-	const ITEM_99      ; 99
+	const SLEEK_GENE ; 99
 	const POWER_BALL   ; 9a
 	const COMFY_BALL   ; 9b
 	const SACRED_ASH   ; 9c
@@ -195,8 +195,8 @@
 	const BLUESKY_MAIL ; bb
 	const MUSIC_MAIL   ; bc
 	const MIRAGE_MAIL  ; bd
-	const ITEM_BE      ; be
-	const ITEM_BF      ; bf
+	const HELIX_FOSSIL ; be
+	const DOME_FOSSIL  ; bf
 	const OLD_AMBER    ; c0
 	const FURNACE      ; c1
 	const FRIDGE       ; c2
@@ -318,7 +318,6 @@ USE_SCRIPT_VAR EQU $00
 ITEM_FROM_MEM  EQU $ff
 
 ; leftover items from Pokemon Gold
-MYSTERY_EGG EQU $45
 PARK_BALL EQU $b1
 RAINBOW_WING EQU $b2
 TM_DYNAMICPUNCH_GOLD EQU $bf

@@ -68,8 +68,8 @@ ItemDescriptions:
 	dw SphereStoneDesc
 	dw SecretPotionDesc
 	dw SSTicketDesc
-	dw MysteryEggDesc
-	dw TeruSama6Desc
+	dw DuckyAmuletDesc
+	dw CornerTicketDesc
 	dw NightArmorDesc
 	dw MoomooMilkDesc
 	dw QuickClawDesc
@@ -134,8 +134,8 @@ ItemDescriptions:
 	dw StarPieceDesc
 	dw BasementKeyDesc
 	dw FossilRockDesc
-	dw TeruSama13Desc
-	dw TeruSama14Desc
+	dw StadiumBandDesc
+	dw BlueLeafDesc
 	dw TeruSama15Desc
 	dw CharcoalDesc
 	dw BerryJuiceDesc
@@ -189,8 +189,8 @@ ItemDescriptions:
 	dw BlueSkyMailDesc
 	dw MusicMailDesc
 	dw MirageMailDesc
-	dw TeruSama29Desc
-	dw TeruSama30Desc
+	dw HelixFossilDesc
+	dw DomeFossilDesc
 	dw OldAmberDesc
 	dw FurnaceDesc
 	dw FridgeDesc
@@ -428,17 +428,10 @@ DireHitDesc:
 	db   "Raises critical"
 	next "hit ratio.@"
 
-TeruSama6Desc:
 TeruSama9Desc:
 TeruSama10Desc:
 TeruSama12Desc:
-TeruSama13Desc:
-TeruSama14Desc:
-TeruSama15Desc:
-TeruSama21Desc:
 TeruSama22Desc:
-TeruSama29Desc:
-TeruSama30Desc:
 TeruSama32Desc:
 TeruSama33Desc:
 TeruSama34Desc:
@@ -447,7 +440,6 @@ TeruSama36Desc:
 TeruSama37Desc:
 MachinePartDesc:
 LostItemDesc:
-MysteryEggDesc:
 	db   "?@"
 
 SodaPopDesc:
@@ -873,6 +865,8 @@ MusicMailDesc:
 MirageMailDesc:
 	db   "MEW-print MAIL.@"
 
+HelixFossilDesc:
+DomeFossilDesc:
 OldAmberDesc:
 	db   "An old fossil from"
 	next "the KANTO region.@"
@@ -958,6 +952,34 @@ ChordMailDesc:
 PokeFluteDesc:
 	db   "Awakens #MON"
 	next "with a tune.@"
+
+DuckyAmuletDesc:
+	db   "An odd medal. Lend"
+	next "to somebody else.@"
+
+CornerTicketDesc:
+	db   "A game ticket for"
+	next "winning prizes.@"
+
+StadiumBandDesc:
+	db   "Wearing this wrist"
+	next "band is dazzling.@"
+
+BlueLeafDesc:
+	db   "A leaf that blends"
+	next "in with the night.@"
+
+WhiteLeafDesc:
+	db   "A leaf that shines"
+	next "with the sun.@"
+
+HeavyGeneDesc:
+	db   "DEFENSE peaks, but"
+	next "ATTACK plummets.@"
+
+SleekGeneDesc:
+	db   "Holder is sped up,"
+	next "but can miss more.@"
 
 ; unused
 	db   "A TM that teaches"

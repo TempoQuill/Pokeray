@@ -353,7 +353,7 @@ Text_BattleEffectActivate::
 
 _BattleStatWentWayUpText::
 	text_pause
-	text "<SCROLL>soared!"
+	text " soared!"
 	prompt
 
 _BattleStatWentUpText::
@@ -368,7 +368,7 @@ Text_BattleFoeEffectActivate::
 
 _BattleStatSharplyFellText::
 	text_pause
-	text "<SCROLL>tumbled!"
+	text " tumbled!"
 	prompt
 
 _BattleStatFellText::

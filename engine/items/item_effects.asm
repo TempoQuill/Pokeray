@@ -81,8 +81,8 @@ ItemEffects:
 	dw EvoStoneEffect      ; SPHERE_STONE
 	dw NoEffect            ; SECRETPOTION
 	dw NoEffect            ; S_S_TICKET
-	dw NoEffect            ; MYSTERY_EGG
-	dw NoEffect            ; ITEM_46
+	dw NoEffect            ; DUCKY_AMULET
+	dw NoEffect            ; CORNERTICKET
 	dw NoEffect            ; NIGHT_ARMOR
 	dw RestoreHPEffect     ; MOOMOO_MILK
 	dw NoEffect            ; QUICK_CLAW
@@ -147,9 +147,9 @@ ItemEffects:
 	dw NoEffect            ; STAR_PIECE
 	dw BasementKeyEffect   ; BASEMENT_KEY
 	dw NoEffect            ; FOSSIL_ROCK
-	dw NoEffect            ; ITEM_87
-	dw NoEffect            ; ITEM_88
-	dw NoEffect            ; ITEM_89
+	dw NoEffect            ; STADIUM_BAND
+	dw NoEffect            ; BLUE_LEAF
+	dw NoEffect            ; WHITE_LEAF
 	dw NoEffect            ; CHARCOAL
 	dw RestoreHPEffect     ; BERRY_JUICE
 	dw NoEffect            ; SCOPE_LENS
@@ -161,7 +161,7 @@ ItemEffects:
 	dw NoEffect            ; LEFTOVERS
 	dw NoEffect            ; AQUAAPRICORN
 	dw NoEffect            ; GOLDAPRICORN
-	dw NoEffect            ; ITEM_95
+	dw NoEffect            ; HEAVY_GENE
 	dw RestorePPEffect     ; MYSTERYBERRY
 	dw NoEffect            ; DRAGON_SCALE
 	dw NoEffect            ; BERSERK_GENE

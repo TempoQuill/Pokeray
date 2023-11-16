@@ -157,6 +157,8 @@ BattleTurn:
 	ld [wCurDamage + 1], a
 
 	call HandleBerserkGene
+	call HandleHeavyGene
+	call HandleSleekGene
 	call UpdateBattleMonInParty
 	farcall AIChooseMove
 	call CheckPlayerLockedIn
@@ -292,6 +294,172 @@ CheckFaint_EnemyThenPlayer:
 
 .BattleIsOver:
 	scf
+	ret
+
+HandleSleekGene:
+	ldh a, [hSerialConnectionStatus]
+	cp USING_EXTERNAL_CLOCK
+	jr z, .reverse
+
+	call .player
+	jr .enemy
+
+.reverse
+	call .enemy
+	; fallthrough
+
+.player
+	call SetPlayerTurn
+	ld de, wPartyMon1Item
+	ld a, [wCurBattleMon]
+	ld b, a
+	jr .go
+
+.enemy
+	call SetEnemyTurn
+	ld de, wOTPartyMon1Item
+	ld a, [wCurOTMon]
+	ld b, a
+	; fallthrough
+
+.go
+	push de
+	push bc
+	callfar GetUserItem
+	ld a, [hl]
+	ld [wNamedObjectIndexBuffer], a
+	sub SLEEK_GENE
+	pop bc
+	pop de
+	ret nz
+
+	ld [hl], a
+
+	ld h, d
+	ld l, e
+	ld a, b
+	call GetPartyLocation
+	push hl
+	push af
+	xor a
+	ld [hl], a
+	ld [wAttackMissed], a
+	ld [wEffectFailed], a
+	farcall BattleCommand_AttackUp2
+	pop af
+	pop hl
+	push hl
+	push af
+	xor a
+	ld [hl], a
+	ld [wAttackMissed], a
+	ld [wEffectFailed], a
+	farcall BattleCommand_SpeedUp2
+	pop af
+	pop hl
+	push hl
+	push af
+	ld [hl], a
+	call GetItemName
+	ld hl, BattleText_UsersStringBuffer1Activated
+	call StdBattleTextbox
+	callfar BattleCommand_StatUpMessage
+	call SwitchTurnCore
+	pop af
+	pop hl
+	push hl
+	push af
+	xor a
+	ld [hl], a
+	ld [wAttackMissed], a
+	ld [wEffectFailed], a
+	farcall BattleCommand_AccuracyDown2
+	pop af
+	pop hl
+	callfar BattleCommand_StatDownMessage
+	ret
+
+HandleHeavyGene:
+	ldh a, [hSerialConnectionStatus]
+	cp USING_EXTERNAL_CLOCK
+	jr z, .reverse
+
+	call .player
+	jr .enemy
+
+.reverse
+	call .enemy
+	; fallthrough
+
+.player
+	call SetPlayerTurn
+	ld de, wPartyMon1Item
+	ld a, [wCurBattleMon]
+	ld b, a
+	jr .go
+
+.enemy
+	call SetEnemyTurn
+	ld de, wOTPartyMon1Item
+	ld a, [wCurOTMon]
+	ld b, a
+	; fallthrough
+
+.go
+	push de
+	push bc
+	callfar GetUserItem
+	ld a, [hl]
+	ld [wNamedObjectIndexBuffer], a
+	sub HEAVY_GENE
+	pop bc
+	pop de
+	ret nz
+
+	ld [hl], a
+
+	ld h, d
+	ld l, e
+	ld a, b
+	call GetPartyLocation
+	push hl
+	push af
+	xor a
+	ld [hl], a
+	ld [wAttackMissed], a
+	ld [wEffectFailed], a
+	farcall BattleCommand_AttackUp2
+	pop af
+	pop hl
+	push hl
+	push af
+	xor a
+	ld [hl], a
+	ld [wAttackMissed], a
+	ld [wEffectFailed], a
+	farcall BattleCommand_DefenseUp2
+	pop af
+	pop hl
+	push hl
+	push af
+	ld [hl], a
+	call GetItemName
+	ld hl, BattleText_UsersStringBuffer1Activated
+	call StdBattleTextbox
+	callfar BattleCommand_StatUpMessage
+	call SwitchTurnCore
+	pop af
+	pop hl
+	push hl
+	push af
+	xor a
+	ld [hl], a
+	ld [wAttackMissed], a
+	ld [wEffectFailed], a
+	farcall BattleCommand_AttackDown2
+	pop af
+	pop hl
+	callfar BattleCommand_StatDownMessage
 	ret
 
 HandleBerserkGene:
