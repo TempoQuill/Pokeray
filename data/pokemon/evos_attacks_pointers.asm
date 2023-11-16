@@ -298,18 +298,18 @@ endr
 	dw WolfmanEvosAttacks
 	dw WarwolfEvosAttacks
 	dw PorysphiaEvosAttacks
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
+	dw ChoakingEvosAttacks
+	dw SandScourEvosAttacks
+	dw DragonisceEvosAttacks
+	dw RaverminEvosAttacks
+	dw StarelloEvosAttacks
+	dw TearowEvosAttacks
+	dw NohtypEvosAttacks
+	dw VenoknightEvosAttacks
+	dw DugquintetEvosAttacks
+	dw EmpeduckEvosAttacks
+	dw AlphapeEvosAttacks
+	dw TentacrimeEvosAttacks
 	dw -1
 	dw -1
 	dw -1
