@@ -464,19 +464,19 @@ QualityOfLifeCheckScript:
 	special GetFirstPokemonQualityOfLife
 	ifless 50, .Anxious
 	ifless 150, .KindaComfy
-	writetext HappinessText3
+	writetext QualityOfLifeText3
 	waitbutton
 	closetext
 	end
 
 .KindaComfy:
-	writetext HappinessText2
+	writetext QualityOfLifeText2
 	waitbutton
 	closetext
 	end
 
 .Anxious:
-	writetext HappinessText1
+	writetext QualityOfLifeText1
 	waitbutton
 	closetext
 	end

@@ -20,14 +20,6 @@ _Squirtbottle:
 	text_end
 
 .CheckCanUseSquirtbottle:
-	ld a, [wMapGroup]
-	cp GROUP_ROUTE_36
-	jr nz, .nope
-
-	ld a, [wMapNumber]
-	cp MAP_ROUTE_36
-	jr nz, .nope
-
 	farcall GetFacingObject
 	jr c, .nope
 
