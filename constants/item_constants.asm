@@ -120,8 +120,8 @@
 	const EVERSTONE    ; 70
 	const SPELL_TAG    ; 71
 	const RAGECANDYBAR ; 72
-	const ITEM_73      ; 73
-	const ITEM_74      ; 74
+	const ITEM_73      ; 73 ; chaos
+	const ITEM_74      ; 74 ; chaos
 	const MIRACLE_SEED ; 75
 	const THICK_CLUB   ; 76
 	const FOCUS_BAND   ; 77
@@ -133,9 +133,9 @@
 	const HARD_STONE   ; 7d
 	const LUCKY_EGG    ; 7e
 	const CARD_KEY     ; 7f
-	const MACHINE_PART ; 80
-	const ITEM_81      ; 81
-	const LOST_ITEM    ; 82
+	const MACHINE_PART ; 80 ; chaos
+	const ITEM_81      ; 81 ; chaos
+	const LOST_ITEM    ; 82 ; chaos
 	const STARDUST     ; 83
 	const STAR_PIECE   ; 84
 	const BASEMENT_KEY ; 85
