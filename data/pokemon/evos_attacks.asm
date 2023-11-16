@@ -3725,6 +3725,7 @@ SweoteEvosAttacks:
 	db 7, TAIL_WHIP
 	db 8, CONFUSION
 	db 11, THUNDERSHOCK
+	db 13, SING
 	db 15, EMBER
 	db 18, SWORDS_DANCE
 	db 19, LEER
