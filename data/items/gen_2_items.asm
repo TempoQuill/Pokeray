@@ -5,13 +5,13 @@ TimeCapsule_Gen2Items:
 	; gold                   ray
 	db OUTLET,               ITEM_C6
 	db TM_FRUSTRATION,       ITEM_C7
-	db TM_DYNAMICPUNCH_GOLD, TM_DYNAMICPUNCH ; DOME_FOSSIL
+	db DOME_FOSSIL,          TM_DYNAMICPUNCH
 	db OLD_AMBER,            TM_HEADBUTT
 	db FURNACE,              TM_CURSE
 	db FRIDGE,               TM_ROLLOUT
 	db STROBE_LIGHT,         TM_ROAR
 	db NEEDLE,               TM_TOXIC
-	db TM_ZAP_CONNON_GOLD,   TM_ZAP_CONNON
+	db TM_ZAP_CANNON_GOLD,   TM_ZAP_CONNON
 	db TM_ROCK_SMASH_GOLD,   TM_ROCK_SMASH
 	db TM_DYNAMICPUNCH,      TM_PSYCH_UP
 	db TM_HEADBUTT,          TM_HIDDEN_POWER
@@ -61,4 +61,11 @@ TimeCapsule_Gen2Items:
 	db TM_THEIF,             HM_SURF
 	db TM_STEEL_WING,        HM_STRENGTH
 	db TM_FIRE_PUNCH,        HM_FLASH
+	db TM_FURY_CUTTER,       DOME_FOSSIL
+	db TM_NIGHTMARE,         OLD_AMBER
+	db HM_CUT,               FURNACE
+	db HM_FLY,               FRIDGE
+	db HM_SURF,              OUTLET
+	db HM_STRENGTH,          STROBE_LIGHT
+	db HM_FLASH,             NEEDLE
 	db 0, 0 ; end

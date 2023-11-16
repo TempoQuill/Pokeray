@@ -913,7 +913,7 @@ Link_ConvertPartyStructGoldToRay:
 	ld a, [hl]
 	ld b, a
 ; is it a TM or HM from gold?
-	cp TM_DYNAMICPUNCH_GOLD
+	cp TM_DYNAMICPUNCH_GOLD ; DOME_FOSSIL
 ; if so, call to update the constant
 	call nc, TimeCapsule_ItemUpdate
 	pop hl
