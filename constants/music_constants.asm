@@ -13,7 +13,7 @@
 	const MUSIC_ROUTE_55                     ; 08
 	const MUSIC_EQUINTO_LEAGUE               ; 09 ; unused
 	const MUSIC_ROUTE_61                     ; 0a ; unused
-	const MUSIC_ROUTE_52                     ; 0b ; unused
+	const MUSIC_ROUTE_53                     ; 0b ; unused
 	const MUSIC_TIME_CAPSULE_MENU            ; 0c
 	const MUSIC_MOM                          ; 0d
 	const MUSIC_SHOW_ME_AROUND               ; 0e

@@ -13,7 +13,7 @@ Music:
 	dba Music_Route55
 	dba Music_IndigoPlateau        ; PokemonLeague
 	dba Music_Route61
-	dba Music_Route36              ; Route52
+	dba Music_Route53
 	dba Music_Route30              ; TimeCapsuleMenu
 	dba Okasan                     ; Music_Mom
 	dba Tour                       ; Music_HurryAlong
