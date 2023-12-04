@@ -856,7 +856,11 @@ ENDM
 	const autoinput_command ; $88
 autoinput: MACRO
 	db autoinput_command
-	dba \1
+;	dba \1
+ENDM
+
+event_88: MACRO
+	db autoinput_command
 ENDM
 
 	const newloadmap_command ; $89

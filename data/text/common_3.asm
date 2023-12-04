@@ -1,3 +1,4 @@
+; slots text data
 _SlotsStartText::
 	text "Start!"
 	done
@@ -27,6 +28,7 @@ _SlotsDarnText::
 	text "Darn!"
 	done
 
+; pokegear text data
 _GearTodayText::
 	text_today
 	text_end
@@ -81,6 +83,7 @@ _PhoneThankYouText::
 	text "Thank you!"
 	done
 
+; debug text data
 _PasswordAskResetText::
 	text "Password OK."
 	line "Select CONTINUE &"
@@ -105,6 +108,7 @@ _ClearAllSaveDataText::
 	line "data area?"
 	done
 
+; pokemon learning move text data
 _LearnedMoveText::
 	text_ram wMonOrItemNameBuffer
 	text " learned"
@@ -138,21 +142,17 @@ _DidNotLearnMoveText::
 
 _AskForgetMoveText::
 	text_ram wMonOrItemNameBuffer
-	text " is"
-	line "trying to learn"
+	text "'s trying"
+	line "to learn the move,"
 	cont "@"
 	text_ram wStringBuffer2
-	text "."
+	text ","
 
-	para "But @"
-	text_ram wMonOrItemNameBuffer
-	text_start
-	line "can't learn more"
-	cont "than four moves."
+	para "but is unable to"
+	line "learn more."
 
-	para "Delete an older"
-	line "move to make room"
-	cont "for @"
+	para "Replace a move"
+	line "with @"
 	text_ram wStringBuffer2
 	text "?"
 	done
@@ -179,9 +179,10 @@ _MoveForgotText::
 
 _MoveCantForgetHMText::
 	text "HM moves can't be"
-	line "forgotten now."
+	line "replaced now."
 	prompt
 
+; card flip text data
 _CardFlipPlayWithThreeCoinsText::
 	text "Play with three"
 	line "coins?"
@@ -217,7 +218,8 @@ _CardFlipDarnText::
 	text "Darn…"
 	done
 
-_BallDodgedText::
+; ball message data
+_BallDodgedText:: ; leftover from Gen 1
 	text "It dodged the"
 	line "thrown BALL!"
 
@@ -225,7 +227,7 @@ _BallDodgedText::
 	line "can't be caught!"
 	prompt
 
-_BallMissedText::
+_BallMissedText:: ; leftover from Gen 1
 	text "You missed the"
 	line "#MON!"
 	prompt
@@ -284,6 +286,7 @@ _AskGiveNicknameText::
 	text "?"
 	done
 
+; item message data
 _ItemStatRoseText::
 	text_ram wStringBuffer1
 	text "'s"
@@ -440,6 +443,7 @@ _ItemGotOffText::
 	text "."
 	prompt
 
+; tm / hm error message
 _KnowsMoveText::
 	text_ram wStringBuffer1
 	text " knows"
@@ -448,6 +452,7 @@ _KnowsMoveText::
 	text "."
 	prompt
 
+; move deleter text data
 _MoveKnowsOneText::
 	text "That #MON knows"
 	line "only one move."
@@ -495,6 +500,9 @@ _DeleterAskWhichMonText::
 	text "Which #MON?"
 	prompt
 
+; proceeding is leftover data spoken by Gold/Chris' mom in Gen 2
+; These are unused because Sonny's mother is not nearly as involved
+; daylight savings text data
 _DSTIsThatOKText::
 	text " DST,"
 	line "is that OK?"
@@ -544,7 +552,14 @@ _MomLostGearBookletText::
 	line "a while."
 	prompt
 
-_UnusedFilterText::
+; unused message for profanity filter
+_UnusedNicknameFilterText::
 	text "This nickname can-"
 	line "not be chosen."
+	done
+
+; unused Cycling Road message.  No Kanto to be found.
+_UnusedCyclingRoadSurfText::
+	text "Cycling is fun!"
+	line "Forget SURFing!"
 	done

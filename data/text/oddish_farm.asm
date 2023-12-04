@@ -16,10 +16,12 @@
 	line "the fifth HM!"
 	done
 
+	; record, antiquated term for HM
 	text "'tis the record for"
 	line "FLASH! May it show"
 	cont "thee the way!"
 
+	; Hint at the need for the VIDEOBADGE
 	para "Thou ha' th'pin of"
 	line "sequential images?"
 

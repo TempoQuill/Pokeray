@@ -441,15 +441,6 @@ Script_SpecialBillCall::
 	ld e, EMAIL_BILL
 	jp LoadCallerScript
 
-LoadElmCallScript:
-	callasm .LoadElmScript
-	pause 30
-	sjump Script_ReceivePhoneCall
-
-.LoadElmScript:
-	ld e, EMAIL_ELM
-	jp LoadCallerScript
-
 RingTwice_StartCall:
 	call .Ring
 ; fallthrough (rings a second time)

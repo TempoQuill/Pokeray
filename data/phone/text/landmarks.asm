@@ -78,3 +78,15 @@ PhoneRoute50Text:
 
 PhoneTraversalCityText:
 	db "TRAVERSAL CITY@"
+
+PhoneRoute51Text:
+	db "ROUTE 51@"
+
+PhoneFoliageCityText:
+	db "FOLIAGE CITY@"
+
+PhoneMtVacuumText:
+	db "MT.VACUUM@"
+
+PhoneRoute52Text:
+	db "ROUTE 52@"

@@ -182,7 +182,7 @@ ENDM
 
 ; from Gold, restored
 ; similar to (NES)Yoshi's $ef
-; used in VulpReich and Ray
+; used in Ray
 staccato: MACRO
 	db staccato_cmd
 	db \1 ; sound length
@@ -263,7 +263,6 @@ ENDM
 
 ; from Gold, unused
 ; uses exclusive RAM, not set by any scripts
-; used in VulpReich, but not Ray
 sound_jump_ram: MACRO
 	db sound_jump_ram_cmd
 	dw \1 ; address

@@ -287,275 +287,245 @@ If <code><i>item_id</i></code> = `USE_SCRIPT_VAR`, then it uses `[wScriptVar]` i
 ## `$51`: <code>jumptextfaceplayer <i>text_pointer</i></code>
 
 
-## `$52`: <code>farjumptext <i>text_pointer</i></code>
+## `$52`: <code>jumptext <i>text_pointer</i></code>
 
 
-## `$53`: <code>jumptext <i>text_pointer</i></code>
+## `$53`: `waitbutton`
 
 
-## `$54`: `waitbutton`
+## `$54`: `promptbutton`
 
 
-## `$55`: `promptbutton`
+## `$55`: <code>pokepic <i>mon_id</i></code>
 
 
-## `$56`: <code>pokepic <i>mon_id</i></code>
+## `$56`: `closepokepic`
 
 
-## `$57`: `closepokepic`
+## `$57`: `_2dmenu`
 
 
-## `$58`: `_2dmenu`
+## `$58`: `verticalmenu`
 
 
-## `$59`: `verticalmenu`
+## `$59`: `loadpikachudata`
 
 
-## `$5A`: `loadpikachudata`
+## `$5A`: `randomwildmon`
 
 
-## `$5B`: `randomwildmon`
-
-
-## `$5C`: `loadtemptrainer`
+## `$5B`: `loadtemptrainer`
 
 `[wOtherTrainer] = [wTempTrainer]`
 
 
-## `$5D`: <code>loadwildmon <i>mon_id</i>, <i>level</i></code>
+## `$5C`: <code>loadwildmon <i>mon_id</i>, <i>level</i></code>
 
 
-## `$5E`: <code>loadtrainer <i>trainer_group</i>, <i>trainer_id</i></code>
+## `$5D`: <code>loadtrainer <i>trainer_group</i>, <i>trainer_id</i></code>
 
 
-## `$5F`: `startbattle`
+## `$5E`: `startbattle`
 
 
-## `$60`: `reloadmapafterbattle`
+## `$5F`: `reloadmapafterbattle`
 
 
-## `$61`: <code>catchtutorial <i>byte</i></code>
+## `$60`: <code>catchtutorial <i>byte</i></code>
 
 
-## `$62`: <code>trainertext <i>text_id</i></code>
+## `$61`: <code>trainertext <i>text_id</i></code>
 
 
-## `$63`: <code>trainerflagaction <i>action</i></code>
+## `$62`: <code>trainerflagaction <i>action</i></code>
 
 
-## `$64`: <code>winlosstext <i>win_text_pointer</i>, <i>loss_text_pointer</i></code>
+## `$63`: <code>winlosstext <i>win_text_pointer</i>, <i>loss_text_pointer</i></code>
 
 
-## `$65`: `scripttalkafter`
+## `$64`: `scripttalkafter`
 
 
-## `$66`: `endifjustbattled`
+## `$65`: `endifjustbattled`
 
 
-## `$67`: `checkjustbattled`
+## `$66`: `checkjustbattled`
 
 
-## `$68`: <code>setlasttalked <i>object_id</i></code>
+## `$67`: <code>setlasttalked <i>object_id</i></code>
 
 
-## `$69`: <code>applymovement <i>object_id</i>, <i>data_pointer</i></code>
+## `$68`: <code>applymovement <i>object_id</i>, <i>data_pointer</i></code>
 
 
-## `$6A`: <code>applymovementlasttalked <i>data_pointer</i></code>
+## `$69`: <code>applymovementlasttalked <i>data_pointer</i></code>
 
 
-## `$6B`: `faceplayer`
+## `$6A`: `faceplayer`
 
 
-## `$6C`: <code>faceobject <i>object1</i>, <i>object2</i></code>
+## `$6B`: <code>faceobject <i>object1</i>, <i>object2</i></code>
 
 
-## `$6D`: <code>variablesprite <i>variable_sprite_id</i>, <i>sprite_id</i></code>
+## `$6C`: <code>variablesprite <i>variable_sprite_id</i>, <i>sprite_id</i></code>
 
 
-## `$6E`: <code>disappear <i>object_id</i></code>
+## `$6D`: <code>disappear <i>object_id</i></code>
 
 
-## `$6F`: <code>appear <i>object_id</i></code>
+## `$6E`: <code>appear <i>object_id</i></code>
 
 
-## `$70`: <code>follow <i>object2</i>, <i>object1</i></code>
+## `$6F`: <code>follow <i>object2</i>, <i>object1</i></code>
 
 
-## `$71`: `stopfollow`
+## `$70`: `stopfollow`
 
 
-## `$72`: <code>moveobject <i>object_id</i>, <i>x</i>, <i>y</i></code>
+## `$71`: <code>moveobject <i>object_id</i>, <i>x</i>, <i>y</i></code>
 
 
-## `$73`: <code>writeobjectxy <i>object_id</i></code>
+## `$72`: <code>writeobjectxy <i>object_id</i></code>
 
 
-## `$74`: <code>loademote <i>emote_id</i></code>
+## `$73`: <code>loademote <i>emote_id</i></code>
 
 
-## `$75`: <code>showemote <i>emote_id</i>, <i>object_id</i>, <i>length</i></code>
+## `$74`: <code>showemote <i>emote_id</i>, <i>object_id</i>, <i>length</i></code>
 
 
-## `$76`: <code>turnobject <i>object_id</i>, <i>facing</i></code>
+## `$75`: <code>turnobject <i>object_id</i>, <i>facing</i></code>
 
 
-## `$77`: <code>follownotexact <i>object2</i>, <i>object1</i></code>
+## `$76`: <code>follownotexact <i>object2</i>, <i>object1</i></code>
 
 
-## `$78`: <code>earthquake <i>param</i></code>
+## `$77`: <code>earthquake <i>param</i></code>
 
 
-## `$79`: <code>changemapblocks <i>blockdata_pointer</i></code>
+## `$78`: <code>changemapblocks <i>blockdata_pointer</i></code>
 
 <code>ChangeMap(<i>blockdata_pointer</i>)</code>
 
 
-## `$7A`: <code>changeblock <i>x</i>, <i>y</i>, <i>block</i></code>
+## `$79`: <code>changeblock <i>x</i>, <i>y</i>, <i>block</i></code>
 
 
-## `$7B`: `reloadmap`
+## `$7A`: `reloadmap`
 
 
-## `$7C`: `reloadmappart`
+## `$7B`: `reloadmappart`
 
 
-## `$7D`: <code>writecmdqueue <i>queue_pointer</i></code>
+## `$7C`: <code>writecmdqueue <i>queue_pointer</i></code>
 
 
-## `$7E`: <code>delcmdqueue <i>byte</i></code>
+## `$7D`: <code>delcmdqueue <i>byte</i></code>
 
 
-## `$7F`: <code>playmusic <i>music_id</i></code>
+## `$7E`: <code>playmusic <i>music_id</i></code>
 
 
-## `$80`: `encountermusic`
+## `$7F`: `encountermusic`
 
 
-## `$81`: <code>musicfadeout <i>music_id</i>, <i>length</i></code>
+## `$80`: <code>musicfadeout <i>music_id</i>, <i>length</i></code>
 
 
-## `$82`: `playmapmusic`
+## `$81`: `playmapmusic`
 
 
-## `$83`: `dontrestartmapmusic`
+## `$82`: `dontrestartmapmusic`
 
 
-## `$84`: <code>cry <i>mon_id</i></code>
+## `$83`: <code>cry <i>mon_id</i></code>
 
 
-## `$85`: <code>playsound <i>sfx_id</i></code>
+## `$84`: <code>playsound <i>sfx_id</i></code>
 
 
-## `$86`: `waitsfx`
+## `$85`: `waitsfx`
 
 
-## `$87`: `warpsound`
+## `$86`: `warpsound`
 
 
-## `$88`: `specialsound`
+## `$87`: `specialsound`
 
 
-## `$89`: <code>autoinput <i>input_pointer</i></code>
+## `$88`: <code>autoinput <i>input_pointer</i></code>
 
 
-## `$8A`: <code>newloadmap <i>which_method</i></code>
+## `$89`: <code>newloadmap <i>which_method</i></code>
 
 
-## `$8B`: <code>pause <i>length</i></code>
+## `$8A`: <code>pause <i>length</i></code>
 
 
-## `$8C`: <code>deactivatefacing <i>length</i></code>
+## `$8B`: <code>deactivatefacing <i>length</i></code>
 
 
-## `$8D`: <code>prioritysjump <i>script</i></code>
+## `$8C`: <code>prioritysjump <i>script</i></code>
 
 
-## `$8E`: `warpcheck`
+## `$8D`: `warpcheck`
 
 
-## `$8F`: <code>stopandsjump <i>script</i></code>
+## `$8E`: <code>stopandsjump <i>script</i></code>
 
 
-## `$90`: `endcallback`
+## `$8F`: `endcallback`
 
 
-## `$91`: `end`
+## `$90`: `end`
 
 
-## `$92`: <code>reloadend <i>which_method</i></code>
+## `$91`: <code>reloadend <i>which_method</i></code>
 
 
-## `$93`: `endall`
+## `$92`: `endall`
 
 
-## `$94`: <code>pokemart <i>mart_type</i>, <i>mart_id</i></code>
+## `$93`: <code>pokemart <i>mart_type</i>, <i>mart_id</i></code>
 
 
-## `$95`: <code>elevator <i>floor_list</i></code>
+## `$94`: <code>elevator <i>floor_list</i></code>
 
 
-## `$96`: <code>trade <i>trade_id</i></code>
+## `$95`: <code>trade <i>trade_id</i></code>
 
 
-## `$97`: <code>askforphonenumber <i>contact_id</i></code>
+## `$96`: <code>askforemailaddr <i>contact_id</i></code>
 
 
-## `$98`: <code>phonecall <i>call_id</i></code>
+## `$97`: <code>email <i>call_id</i></code>
 
 
-## `$99`: `hangup`
+## `$98`: `endofmessage`
 
 
-## `$9A`: <code>describedecoration <i>byte</i></code>
+## `$99`: <code>describedecoration <i>byte</i></code>
 
 
-## `$9B`: <code>fruittree <i>tree_id</i></code>
+## `$9A`: <code>fruittree <i>tree_id</i></code>
 
 
-## `$9C`: <code>specialphonecall <i>call_id</i></code>
+## `$9B`: <code>specialemail <i>call_id</i></code>
 
 
-## `$9D`: `checkphonecall`
+## `$9C`: `checkemail`
 
 
-## `$9E`: <code>verbosegiveitem <i>item_id</i>[, <i>quantity</i>=1]</code>
+## `$9D`: <code>verbosegiveitem <i>item_id</i>[, <i>quantity</i>=1]</code>
 
 
-## `$9F`: <code>verbosegiveitemvar <i>item_id</i>, <i>variable</i></code>
+## `$9E`: <code>swarm <i>swarm_id</i>, <i>map</i></code>
 
 
-## `$A0`: <code>swarm <i>swarm_id</i>, <i>map</i></code>
+## `$9F`: `halloffame`
 
 
-## `$A1`: `halloffame`
+## `$A0`: `credits`
 
 
-## `$A2`: `credits`
-
-
-## `$A3`: <code>warpfacing <i>facing</i>, <i>map</i>, <i>x</i>, <i>y</i></code>
-
-
-## `$A4`: <code>battletowertext <i>bttext_id</i></code>
-
-
-## `$A5`: <code>getlandmarkname <i>string_buffer</i>, <i>landmark_id</i></code>
-
-<code>GetStringBuffer(<i>string_buffer</i>) = GetLandmarkName(<i>landmark_id</i>)</code>
-
-
-## `$A6`: <code>gettrainerclassname <i>string_buffer</i>, <i>trainer_group</i></code>
-
-<code>GetStringBuffer(<i>string_buffer</i>) = GetName(TRAINER_NAME, <i>trainer_group</i>)</code>
-
-
-## `$A7`: <code>getname <i>string_buffer</i>, <i>type</i>, <i>id</i></code>
-
-<code>GetStringBuffer(<i>string_buffer</i>) = GetName(<i>type</i>, <i>id</i>)</code>
-
-
-## `$A8`: <code>wait <i>duration</i></code>
-
-
-## `$A9`: `checksave`
+## `$A1`: <code>warpfacing <i>facing</i>, <i>map</i>, <i>x</i>, <i>y</i></code>

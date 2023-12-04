@@ -66,6 +66,7 @@ LarchScript:
 	writetext LarchTalk3Text
 	promptbutton
 	takeitem OLD_AMBER
+	setevent EVENT_SHOWED_OLD_AMBER
 .ShowedOldAmber:
 	writetext LarchTalk4Text
 	waitbutton
@@ -493,6 +494,11 @@ LarchTalk4Text:
 
 	para "I'm counting on"
 	line "you!"
+	done
+
+LarchTalk5Text:
+	text "<PLAYER>! I'll call"
+	line "if something's up."
 	done
 
 LabIntroText:

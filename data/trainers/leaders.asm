@@ -6,26 +6,17 @@
 
 GymLeaders:
 	db JAMES
-	db WHITNEY
-	db BUGSY
-	db MORTY
-	db PRYCE
-	db JASMINE
-	db CHUCK
-	db CLAIR
+	db CINDY
+	db ZACH
+	db GLADMAN
+	db WOODY
+	db GORDON
+	db BRAIN
+	db BELLE
 	db CHRIS
 	db CHRIS
 	db CHRIS
 	db CHRIS
 	db CHAMPION
 	db RED
-	; unused, no second region
-	db CHRIS
-	db CHRIS
-	db CHRIS
-	db CHRIS
-	db CHRIS
-	db CHRIS
-	db CHRIS
-	db CHRIS
 	db -1

@@ -407,6 +407,8 @@ SpecialMapMusic::
 	jr z, .surf
 	cp PLAYER_SURF_PIKA
 	jr z, .surf
+	cp PLAYER_SURF_BOARD
+	jr z, .surf
 	and a
 	ret
 

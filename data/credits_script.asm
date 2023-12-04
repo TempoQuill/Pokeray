@@ -100,7 +100,7 @@ CreditsScript:
 
 	db         CREDIT_MUSIC, 0
 	db         JOSHUA_CRAPO, 1
-	db         ANDREW_STEIN, 2
+;	db         ANDREW_STEIN, 2
 	db        SOLO_ACAPELLO, 3
 
 	db CREDITS_WAIT, 12

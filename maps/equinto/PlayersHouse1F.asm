@@ -21,6 +21,7 @@ PlayersHouse1F_MapScripts:
 	special NameRival
 	special SetDayOfWeek
 	turnobject MOM_DEFAULT, UP
+	playsound SFX_EMOTE
 	showemote EMOTE_SHOCK, MOM_DEFAULT, 15
 	opentext
 	writetext MomGreetText

@@ -1,4 +1,3 @@
-
 	db "WOOD FOX@" ; species name
 	dw 204, 15 ; height, weight
 

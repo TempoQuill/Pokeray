@@ -403,12 +403,6 @@ PromptButton::
 	push af
 	ld a, $1
 	ldh [hOAMUpdate], a
-	ld a, [wInputType]
-	or a
-	jr z, .input_wait_loop
-	farcall _AutoInput_A
-
-.input_wait_loop
 	call .blink_cursor
 	call JoyTextDelay
 	ldh a, [hJoyPressed]

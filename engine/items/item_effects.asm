@@ -191,7 +191,7 @@ ItemEffects:
 	dw NoEffect            ; CHORD_MAIL
 	dw NoEffect            ; SOFT_PILLOW
 	dw NoEffect            ; LARGE_PIN
-	dw NoEffect            ; SURF_BOARD
+	dw SurfBoardEffect     ; SURF_BOARD
 	dw NoEffect            ; BRICK_PIECE
 	dw NoEffect            ; SURF_MAIL
 	dw NoEffect            ; LITEBLUEMAIL
@@ -256,8 +256,6 @@ PokeBallEffect:
 	ld a, [wEnemyMonCatchRate]
 	ld b, a
 	ld a, [wBattleType]
-	cp BATTLETYPE_TUTORIAL
-	jp z, .catch_without_fail
 	cp BATTLETYPE_DEBUG
 	jp z, .catch_without_fail
 	ld a, [wBallUsedBuffer]
@@ -524,8 +522,6 @@ PokeBallEffect:
 	ld [wCurPartySpecies + 1], a
 	ld [wTempSpecies + 1], a
 	ld a, [wBattleType]
-	cp BATTLETYPE_TUTORIAL
-	jp z, .FinishAuto
 
 	ld hl, Text_GotchaMonWasCaught
 	call PrintText
@@ -736,10 +732,6 @@ PokeBallEffect:
 	call LoadStandardFont
 	jr .return_from_capture
 
-.FinishAuto:
-	ld hl, Text_GotchaMonWasCaught
-	jr .shake_and_break_free
-
 .miss
 	ld hl, BallMissedText
 
@@ -749,8 +741,6 @@ PokeBallEffect:
 
 .return_from_capture
 	ld a, [wBattleType]
-	cp BATTLETYPE_TUTORIAL
-	ret z
 	cp BATTLETYPE_DEBUG
 	ret z
 	ld a, [wWildMon]
@@ -793,17 +783,15 @@ ToolBallMultiplier:
 	push af
 	ld a, b
 	sla b
-	jr c, .max_1
+	jr c, .max
 	add b
 	ld b, a
 	sla b
-	pop af
-	jr c, .max_2
+	jr c, .max
 	ret
 
-.max_1
+.max
 	pop af
-.max_2
 	ld b, -1
 	ret
 
@@ -1129,12 +1117,13 @@ LevelBallMultiplier:
 	ret
 
 ; These two texts were carried over from gen 1.
-; They are not used in gen 2 or 3, and are dummied out.
+; They are not used in gen 2 and are dummied out.
 
 BallDodgedText:
 	text_far _BallDodgedText
 	text_end
 
+; strangely enough, there is a check for a new animation that leads us here now
 BallMissedText:
 	text_far _BallMissedText
 	text_end
@@ -1184,6 +1173,10 @@ NewDexDataText:
 
 AskGiveNicknameText:
 	text_far _AskGiveNicknameText
+	text_end
+
+NicknameFilterText:
+	farcall _UnusedNicknameFilterText
 	text_end
 
 ReturnToBattle_UseBall:
@@ -2265,11 +2258,6 @@ XItemEffect:
 INCLUDE "data/items/x_stats.asm"
 
 PokeFluteEffect:
-	ld a, [wBattleMode]
-	and a
-	jr nz, .dummy
-.dummy
-
 	xor a
 	ld [wceed], a
 
@@ -2277,6 +2265,10 @@ PokeFluteEffect:
 
 	ld hl, wPartyMon1Status
 	call .CureSleep
+
+	ld a, [wBattleMode]
+	and a
+	jr z, .overworld
 
 	ld a, [wBattleMode]
 	cp WILD_BATTLE
@@ -2294,6 +2286,7 @@ PokeFluteEffect:
 	and b
 	ld [hl], a
 
+.overworld
 	ld a, [wceed]
 	and a
 	ld hl, .PlayedFluteText
@@ -2348,6 +2341,11 @@ PokeFluteEffect:
 	pop de
 
 .battle
+	push de
+	ld de, SFX_POKEFLUTE
+	call WaitPlaySFX
+	call WaitSFX
+	pop de
 	ld hl, .terminator
 	ret
 

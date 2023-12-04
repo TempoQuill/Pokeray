@@ -267,15 +267,15 @@ PokemonCries::
 	mon_cry CRY_MILTANK,      112,  160 ; ORKID
 	mon_cry CRY_MILTANK,       92,  192 ; SYNTIQUE
 	mon_cry CRY_COTTONCAT,     19,  448 ; PHOTORDEN
-	mon_cry CRY_ROAR_30,       28,    0 ; FLAMBEAR
-	mon_cry CRY_ROAR_30,     1767,  128 ; VOLBEAR
-	mon_cry CRY_ROAR_10,     1835,  212 ; DYNABEAR
-	mon_cry CRY_36,           560,  203 ; CRUZ
-	mon_cry CRY_36,           487,  272 ; AQUACENT
-	mon_cry CRY_ROAR_60,      802,  349 ; AQUARIA
+	mon_cry CRY_ROAR_30,       28,    0 ; FLAMBEAR	; TSK
+	mon_cry CRY_ROAR_30,     1767,  128 ; VOLBEAR	; TSK
+	mon_cry CRY_ROAR_10,     1835,  212 ; DYNABEAR	; TSK
+	mon_cry CRY_36,           560,  203 ; CRUZ	; TSK
+	mon_cry CRY_36,           487,  272 ; AQUACENT	; TSK
+	mon_cry CRY_ROAR_60,      802,  349 ; AQUARIA	; TSK
 	mon_cry CRY_OMOM,         300,   72 ; CROVEN
 	mon_cry CRY_OMOM,         265,  387 ; ASTROVEN
-	mon_cry CRY_STEGON,       160,  176 ; TRIFOX
+	mon_cry CRY_STEGON,       160,  176 ; TRIFOX	; TSK
 	mon_cry CRY_CROW,        1868,  272 ; BURGELA
 	mon_cry CRY_SLOWKING,    1998,  352 ; NUMPUFF
 	mon_cry CRY_SCYTHER,      137,  208 ; ORSCHUL

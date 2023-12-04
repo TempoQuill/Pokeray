@@ -1774,7 +1774,6 @@ Music_JumpIf:
 Music_JumpRAM:
 ; conditional jump
 ; checks for active condition in exclusive RAM
-; use for the sink sound effect in VulpReich
 ; params: 2
 ; ll hh ; pointer
 

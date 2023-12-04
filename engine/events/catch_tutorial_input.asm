@@ -1,20 +1,3 @@
-_AutoInput_A::
-	ld hl, AutoInput_A
-	jr _AutoInput
-
-_AutoInput_RightA:
-	ld hl, AutoInput_RightA
-	jr _AutoInput
-
-_AutoInput_DownA:
-	ld hl, AutoInput_DownA
-	jr _AutoInput
-
-_AutoInput:
-	ld a, BANK(AutoInputs)
-	call StartAutoInput
-	ret
-
 AutoInputs: ; used only for BANK(AutoInputs)
 
 AutoInput_A:

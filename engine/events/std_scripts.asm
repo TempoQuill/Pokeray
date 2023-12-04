@@ -46,6 +46,13 @@ StdScripts::
 	add_stdscript HappinessCheckScript
 	add_stdscript ReceiveMultipleItemsScript
 	add_stdscript AssemblePokemonScript
+	add_stdscript AskNumber1NScript
+	add_stdscript AskNumber2NScript
+	add_stdscript RegisteredNumberNScript
+	add_stdscript NumberAcceptedNScript
+	add_stdscript NumberDeclinedNScript
+	add_stdscript PhoneFullNScript
+	add_stdscript RematchNScript
 
 PokecenterNurseScript:
 	opentext
@@ -70,7 +77,6 @@ PokecenterNurseScript:
 .nite
 	writetext NurseNiteText
 	promptbutton
-	sjump .ok
 
 .ok
 	writetext NurseAskHealText
@@ -244,6 +250,32 @@ DayToTextScript:
 InitializeEventsScript:
 	endcallback
 
+AskNumber1NScript:
+	writetext AskNumber1NText
+	end
+
+AskNumber2NScript:
+	writetext AskNumber2NText
+	end
+
+NumberAcceptedNScript:
+	writetext NumberAcceptedNText
+	waitbutton
+	closetext
+	end
+
+NumberDeclinedNScript:
+	writetext NumberDeclinedNText
+	waitbutton
+	closetext
+	end
+
+RematchNScript:
+	writetext RematchNText
+	waitbutton
+	closetext
+	end
+
 AskNumber1MScript:
 	writetext AskNumber1MText
 	end
@@ -253,6 +285,7 @@ AskNumber2MScript:
 	end
 
 RegisteredNumberMScript:
+RegisteredNumberNScript:
 	writetext RegisteredNumberMText
 	playsound SFX_REGISTER_EMAIL
 	waitsfx
@@ -272,6 +305,7 @@ NumberDeclinedMScript:
 	end
 
 PhoneFullMScript:
+PhoneFullNScript:
 	writetext PhoneFullMText
 	waitbutton
 	closetext

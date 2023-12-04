@@ -1,5 +1,5 @@
 	object_const_def
-	const R50_FERNACE_GUY
+	const R50_FURNACE_GUY
 	const R50_FRUIT_TREE_1
 	const R50_FRUIT_TREE_2
 
@@ -38,7 +38,7 @@ R50_PokemonFantedText:
 	cont "sudden burn."
 
 	para "He said something"
-	line "about a FERNACE,"
+	line "about a FURNACE,"
 
 	para "but I don't know"
 	line "what he meant."

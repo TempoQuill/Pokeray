@@ -398,27 +398,25 @@ AI_Smart_EffectHandlers:
 	db -1 ; end
 
 AI_Smart_Smokescreen:
-; accuracy down, but with skewed scoring, depending on poison
+; accuracy down, but can reverse scoring, depending on poison and final score
 	call AI_Smart_AccuracyDown
 	ld a, [wBattleMonStatus]
-	cp 1 << PSN
-	ret nz
+	and 1 << PSN
+	ret z
 	; default score
 	ld a, 20
 	push af
 	sub [hl] ; how much did we run off?
 	ld c, a
+	jr c, .no_reverse ; return if already discouraged
+	; the previous scoring will now be reversed
 	pop af
-	jr c, .negative
-	sra c
-	sub c
+	add c
 	ld [hl], a
 	ret
 
-.negative
-	sla c
-	sub c
-	ld [hl], a
+.no_reverse
+	pop af
 	ret
 
 AI_Smart_FunnyStuff:
@@ -875,6 +873,11 @@ AI_Smart_AccuracyDown:
 ; ...and enemy's HP is above 50%...
 	call AICheckEnemyHalfHP
 	jr nc, .asm_38981
+
+; ...and the player hasn't used X Accuracy...
+	ld a, [wPlayerSubStatus4]
+	bit SUBSTATUS_X_ACCURACY, a
+	jp nz, AIDiscourageMove ; Dismiss if the latter of the 3 was the case
 
 ; ...greatly encourage this move if player is badly poisoned.
 	ld a, [wPlayerSubStatus5]
@@ -2927,6 +2930,45 @@ AIHasMoveInArray:
 	pop bc
 	pop de
 	pop hl
+	ret
+
+AIHasLowAccuracy:
+; used to determine whether it's worth using X Accuracy
+;	(Using X Accuracy makes moves always hit)
+	push hl
+	ld hl, wEnemyMonMoves
+	ld c, NUM_MOVES
+.checkmove
+	; is there a move to begin with?
+	ld a, [hli]
+	and a
+	jr z, .no
+
+	; yes, then generate the move's current stats
+	call AIGetEnemyMove
+
+	; check the move's accuracy, automatically use X Accuracy if 0%
+	ld a [wEnemyMoveStruct + MOVE_ACC]
+	and a
+	jr z, .yes
+
+	; use X Accuracy if the move is less than 75% accurate
+	cp 75 percent
+	jr c, .yes
+
+	; Next move!
+	dec c
+	jr nz, .checkmove
+	jr .no
+
+.yes
+	pop hl
+	and a
+	ret
+
+.no
+	pop hl
+	scf
 	ret
 
 INCLUDE "data/battle/ai/useful_moves.asm"

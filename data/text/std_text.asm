@@ -169,6 +169,7 @@ AskNumber2MText:
 	done
 
 RegisteredNumberMText:
+RegisteredNumberNText:
 RegisteredNumberFText:
 	text "<PLAYER> registered"
 	line "@"
@@ -190,6 +191,8 @@ NumberDeclinedMText:
 	done
 
 PhoneFullMText:
+PhoneFullNText:
+PhoneFullFText:
 	text "Your e-mail doesn't"
 	line "have enough memory"
 	cont "for more users."
@@ -198,6 +201,40 @@ PhoneFullMText:
 RematchMText:
 	text "I was waiting for"
 	line "you. Let's battle!"
+	done
+
+AskNumber1NText:
+	text "Whoa! Battling you"
+	line "was really fun."
+
+	para "Would you like my"
+	line "e-mail address?"
+
+	para "I'll contact you"
+	line "for a rematch."
+	done
+
+AskNumber2NText:
+	text "Register their e-"
+	line "mail address?"
+	done
+
+NumberAcceptedNText:
+	text "I'll e-mail you for"
+	line "any news here."
+	done
+
+NumberDeclinedNText:
+	text "Ah, I see. Just"
+	line "talk if you'd like"
+
+	para "to register my e-"
+	line "mail address."
+	done
+
+RematchNText:
+	text "Hiya <PLAYER>! You"
+	line "ready to battle?"
 	done
 
 AskNumber1FText:
@@ -227,12 +264,6 @@ NumberDeclinedFText:
 
 	para "my e-mail, just"
 	line "tell me."
-	done
-
-PhoneFullFText:
-	text "Your e-mail doesn't"
-	line "have enough memory"
-	cont "for more users."
 	done
 
 RematchFText:

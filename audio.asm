@@ -56,7 +56,7 @@ INCLUDE "audio/music/new/lookartist.asm"
 INCLUDE "audio/music/rby/oldheal.asm"
 INCLUDE "audio/music/rby/trade.asm"
 INCLUDE "audio/music/new/lookpartyhost.asm"
-INCLUDE "audio/music/new/route52.asm"
+INCLUDE "audio/music/route36.asm"
 
 
 SECTION "Songs 3", ROMX

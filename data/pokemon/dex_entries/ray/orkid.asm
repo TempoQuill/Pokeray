@@ -1,4 +1,3 @@
-
 	db "WOOD PUP@" ; species name
 	dw 105, 7 ; height, weight
 

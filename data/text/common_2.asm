@@ -1155,7 +1155,7 @@ _CoordinatesEventText::
 
 _ReceivedItemText::
 	text "<PLAYER> recieved"
-	line "a @"
+	line "a(n) @"
 	text_ram wStringBuffer4
 	text "."
 	done

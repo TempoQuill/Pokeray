@@ -4,7 +4,7 @@ _FruitBearingTreeText::
 	done
 
 _HeyItsFruitText::
-	text "Hey! It's a"
+	text "Hey! It's a(n)"
 	line "@"
 	text_ram wStringBuffer3
 	text "!"
@@ -231,37 +231,6 @@ _LookAdorableDecoText::
 _LookGiantDecoText::
 	text "A giant doll! It's"
 	line "fluffy and cuddly."
-	done
-
-_MomHiHowAreYouText::
-	text "Hi, <PLAYER>!"
-	line "How are you?"
-	prompt
-
-_MomFoundAnItemText::
-	text "I found a useful"
-	line "item shopping, so"
-	prompt
-
-_MomBoughtWithYourMoneyText::
-	text "I bought it with"
-	line "your money. Sorry!"
-	prompt
-
-_MomItsInPCText::
-	text "It's in your PC."
-	line "You'll like it!"
-	done
-
-_MomFoundADollText::
-	text "While shopping"
-	line "today, I saw this"
-	cont "adorable doll, so"
-	prompt
-
-_MomItsInYourRoomText::
-	text "It's in your room."
-	line "You'll love it!"
 	done
 
 _MonWasSentToText::

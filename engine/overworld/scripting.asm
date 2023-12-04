@@ -1117,7 +1117,6 @@ Script_reloadmapafterbattle:
 .notblackedout
 	bit 0, d
 	jr z, .was_wild
-	farcall MomTriesToBuySomething
 	jr .done
 
 .was_wild
@@ -2128,14 +2127,6 @@ Script_closetext:
 	ret
 
 Script_autoinput:
-	call GetScriptByte
-	push af
-	call GetScriptByte
-	ld l, a
-	call GetScriptByte
-	ld h, a
-	pop af
-	call StartAutoInput
 	ret
 
 Script_pause:

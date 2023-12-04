@@ -299,7 +299,7 @@ endr
 	dw WarwolfEvosAttacks
 	dw PorysphiaEvosAttacks
 	dw ChoakingEvosAttacks
-	dw SandScourEvosAttacks
+	dw SandscourEvosAttacks
 	dw DragonisceEvosAttacks
 	dw RaverminEvosAttacks
 	dw StarelloEvosAttacks

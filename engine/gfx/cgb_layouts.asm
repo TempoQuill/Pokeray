@@ -625,22 +625,22 @@ _CGB_TrainerCard:
 	ld a, JAMES
 	call GetTrainerPalettePointer
 	call Load3ColorPalette
-	ld a, BUGSY
+	ld a, CINDY
 	call GetTrainerPalettePointer
 	call Load3ColorPalette
-	ld a, WHITNEY
+	ld a, ZACH
 	call GetTrainerPalettePointer
 	call Load3ColorPalette
-	ld a, MORTY
+	ld a, GLADMAN
 	call GetTrainerPalettePointer
 	call Load3ColorPalette
-	ld a, CHUCK
+	ld a, WOODY
 	call GetTrainerPalettePointer
 	call Load3ColorPalette
-	ld a, JASMINE
+	ld a, GORDON
 	call GetTrainerPalettePointer
 	call Load3ColorPalette
-	ld a, PRYCE
+	ld a, BRAIN
 	call GetTrainerPalettePointer
 	call Load3ColorPalette
 	ld a, PREDEFPAL_CGB_BADGE

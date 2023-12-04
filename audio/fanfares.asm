@@ -59,7 +59,7 @@ Sfx_PokemonAssembled_Ch6:
 	note E_, 6
 	sound_ret
 
-Sfx_PokemonAssembled_Ch7
+Sfx_PokemonAssembled_Ch7:
 	set_music
 	note_type 6, 1, 5
 	rest 8
@@ -1798,7 +1798,7 @@ Sfx_Prize:
 
 Sfx_Prize_Ch5:
 	set_music
-	tempo 223
+	tempo 239
 	volume 7
 	pitch_offset -1
 	duty_cycle 1

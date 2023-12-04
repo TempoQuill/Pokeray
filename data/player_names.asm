@@ -11,10 +11,10 @@ NameMenuHeader:
 
 PlayerNameArray:
 IF DEF(_RAY)
-	db "SONNY@"
-	db "DJINN@"
-	db "INALI@"
-	db "TYR@"
+	db "SONNY@" ; SEREN
+	db "DJINN@" ; LUCY
+	db "INALI@" ; GAIA
+	db "TYR@"   ; MEEKA
 ELIF DEF(_SHADE)
 	db "SHAGGY@"
 	db "KAMON@"

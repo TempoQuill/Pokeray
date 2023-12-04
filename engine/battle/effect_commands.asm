@@ -1679,9 +1679,9 @@ BattleCommand_CheckHit:
 .skip_brightpowder
 
 	; in Red, there was an accuracy bug for moves that use this check
-	;	every move had a least 1 parameter that can result in a miss
+	;	every move had a least 1 value that can result in a miss
 	; in Gold, perfect vanilla accuracy moves skip this check
-	; in Ray, this check will loop as long as the parameter is $ff
+	; in Ray, this check will loop as long as the value is $ff
 	;	this essentially evens out accuracy estimates
 	call BattleRandom
 	ld c, a

@@ -19,21 +19,21 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Morty
-	db NO_ITEM, NO_ITEM ; items
-	db 25 ; base reward
+; Morty (leftover), Gladman
+	db SUPER_POTION, X_ACCURACY ; items
+	db 77 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Pryce
-	db HYPER_POTION, NO_ITEM ; items
-	db 25 ; base reward
+; Pryce (leftover), Woody
+	db HYPER_POTION, DIRE_HIT ; items
+	db 77 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Jasmine
-	db HYPER_POTION, NO_ITEM ; items
-	db 25 ; base reward
+; Jasmine (leftover), Gordon
+	db MAX_POTION, X_ACCURACY ; items
+	db 77 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 

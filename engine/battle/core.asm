@@ -55,8 +55,6 @@ DoBattle:
 	ld a, [wBattleType]
 	cp BATTLETYPE_DEBUG
 	jp z, .auto_debug
-	cp BATTLETYPE_TUTORIAL
-	jp z, .auto_debug
 	xor a
 	ld [wCurPartyMon], a
 .loop2
@@ -3560,8 +3558,6 @@ TryToRunAwayFromBattle:
 	ld a, [wBattleType]
 	cp BATTLETYPE_DEBUG
 	jp z, .can_escape
-	cp BATTLETYPE_CONTEST
-	jp z, .can_escape
 	cp BATTLETYPE_TRAP
 	jp z, .cant_escape
 	cp BATTLETYPE_SHINY
@@ -4752,20 +4748,12 @@ BattleMenu:
 	ld a, [wBattleType]
 	cp BATTLETYPE_DEBUG
 	jr z, .ok
-	cp BATTLETYPE_TUTORIAL
-	jr z, .ok
 	call UpdateBattleHuds
 	call EmptyBattleTextbox
 	call LoadTilemapToTempTilemap
 .ok
 
 .loop
-	; Auto input: choose "ITEM"
-	ld a, [wInputType]
-	or a
-	jr z, .skip_dude_pack_select
-	farcall _AutoInput_DownA
-.skip_dude_pack_select
 	callfar LoadBattleMenu
 
 .next

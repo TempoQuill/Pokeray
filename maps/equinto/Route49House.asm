@@ -13,6 +13,7 @@ Route49House_MapScripts:
 .InitialEntrance:
 	turnobject ROUTE49HOUSE_GENTLEMAN, DOWN
 	showemote EMOTE_SHOCK, ROUTE49HOUSE_GENTLEMAN, 15
+	playsound SFX_EMOTE
 	opentext
 	writetext InitialEntranceText1
 	promptbutton
@@ -38,6 +39,7 @@ Route49House_MapScripts:
 	writetext InitialEntranceText4
 	waitbutton
 	closetext
+	playsound SFX_SHOCK_EMOTE
 	showemote EMOTE_SHOCK, ROUTE49HOUSE_EEVEE, 15
 	applymovement ROUTE49HOUSE_EEVEE, ApproachPlayerMovement
 	cry EEVEE

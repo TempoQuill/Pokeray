@@ -54,7 +54,7 @@ CreditsStringsPointers:
 	dw Credits_GeronimoChavez
 	dw Credits_SoloAcapello
 	dw Credits_JackGetschman
-	dw Credits_AndrewStein
+	dw ;Credits_AndrewStein
 	dw Credits_ScottCheney
 	dw Credits_SamuelKerssy
 	dw Credits_JenniferNicholson

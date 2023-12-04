@@ -24,6 +24,7 @@ CottageTown_MapScripts:
 YounsterCatchesYouSceneNorth:
 	playmusic MUSIC_YOUNGSTER_ENCOUNTER
 	turnobject COTTAGETOWN_YOUNGSTER, RIGHT
+	playsound SFX_SHOCK_EMOTE
 	showemote EMOTE_SHOCK, COTTAGETOWN_YOUNGSTER, 15
 	opentext
 	writetext PlayerStopText

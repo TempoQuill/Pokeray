@@ -3725,12 +3725,11 @@ ChoakingEvosAttacks:
 	db 1, POISON_GAS
 	db 1, TACKLE
 	db 1, SMOG
-	db 1, SELFDESTRUCT
-	db 48, EXPLOSION
+	db 1, EXPLOSION
 	db 56, DESTINY_BOND
 	db 0 ; no more level-up moves
 
-SandScourEvosAttacks:
+SandscourEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, DEFENSE_CURL
@@ -3779,8 +3778,6 @@ TearowEvosAttacks:
 	db 1, LEER
 	db 1, FURY_ATTACK
 	db 31, CRUNCH
-	db 38, MIRROR_MOVE
-	db 48, DRILL_PECK
 	db 56, AGILITY
 	db 0 ; no more level-up moves
 
@@ -3802,9 +3799,6 @@ VenoknightEvosAttacks:
 	db 1, DISABLE
 	db 1, FORESIGHT
 	db 1, SUPERSONIC
-	db 37, GUST
-	db 43, PSYBEAM
-	db 50, SLEEP_POWDER
 	db 62, PSYCHIC_M
 	db 0 ; no more level-up moves
 
@@ -3813,8 +3807,6 @@ DugquintetEvosAttacks:
 	db 1, SCRATCH
 	db 1, GROWL
 	db 1, MAGNITUDE
-	db 40, SLASH
-	db 53, EARTHQUAKE
 	db 67, FISSURE
 	db 0 ; no more level-up moves
 
@@ -3824,8 +3816,6 @@ EmpeduckEvosAttacks:
 	db 1, TAIL_WHIP
 	db 1, DISABLE
 	db 1, CONFUSION
-	db 39, BITTER_BITE
-	db 52, FURY_SWIPES
 	db 69, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -3835,10 +3825,6 @@ AlphapeEvosAttacks:
 	db 1, LEER
 	db 1, LOW_KICK
 	db 1, RAGE
-	db 30, RAGE
-	db 39, SEISMIC_TOSS
-	db 49, CROSS_CHOP
-	db 59, SCREECH
 	db 69, THRASH
 	db 0 ; no more level-up moves
 
@@ -3847,9 +3833,6 @@ TentacrimeEvosAttacks:
 	db 1, POISON_STING
 	db 1, SUPERSONIC
 	db 1, CONSTRICT
-	db 33, WRAP
-	db 41, BARRIER
-	db 51, SCREECH
 	db 60, HYDRO_PUMP
 	db 0 ; no more level-up moves
 

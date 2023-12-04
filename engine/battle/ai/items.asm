@@ -431,7 +431,8 @@ AI_Items:
 	jp .DontUse
 
 .XAccuracy:
-	call .XItem
+; Doesn't call typical X Item sub due to X Accuracy making moves never miss
+	call AIHasLowAccuracy
 	jp c, .DontUse
 	call EnemyUsedXAccuracy
 	jp .Use

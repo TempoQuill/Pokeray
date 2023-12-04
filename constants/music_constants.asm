@@ -10,10 +10,10 @@
 	const MUSIC_HEAL                         ; 05
 	const MUSIC_RG_OLD_HEAL                  ; 06 ; NON_PC_HEAL
 	const MUSIC_ROUTE_29                     ; 07 ; ROUTE_49
-	const MUSIC_ROUTE_52                     ; 08 ; unused
-	const MUSIC_ROUTE_55                     ; 09
-	const MUSIC_EQUINTO_LEAGUE               ; 0a ; unused
-	const MUSIC_ROUTE_61                     ; 0b ; unused
+	const MUSIC_ROUTE_55                     ; 08
+	const MUSIC_EQUINTO_LEAGUE               ; 09 ; unused
+	const MUSIC_ROUTE_61                     ; 0a ; unused
+	const MUSIC_ROUTE_52                     ; 0b ; unused
 	const MUSIC_TIME_CAPSULE_MENU            ; 0c
 	const MUSIC_MOM                          ; 0d
 	const MUSIC_SHOW_ME_AROUND               ; 0e
@@ -33,8 +33,8 @@
 	const MUSIC_HIKER_ENCOUNTER              ; 1c
 	const MUSIC_YOUNGSTER_ENCOUNTER          ; 1d
 	const MUSIC_BEAUTY_ENCOUNTER             ; 1e
-	const MUSIC_SIBLING_ENCOUNTER            ; 1f ; unused
-	const MUSIC_PARTY_HOST_ENCOUNTER         ; 20 ; unused
+	const MUSIC_SIBLING_ENCOUNTER            ; 1f
+	const MUSIC_PARTY_HOST_ENCOUNTER         ; 20
 	const MUSIC_ARTIST_ENCOUNTER             ; 21
 	const MUSIC_HAVOC_ENCOUNTER              ; 22
 	const MUSIC_RIVAL_ENCOUNTER              ; 23

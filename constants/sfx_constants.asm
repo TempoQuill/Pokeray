@@ -194,10 +194,10 @@
 	const SFX_INTRO_UNOWN_1               ; be
 	const SFX_INTRO_UNOWN_2               ; bf
 	const SFX_INTRO_UNOWN_3               ; c0
-	const SFX_DITTO_POP_UP                ; c1
+	const SFX_SHOCK_EMOTE                 ; c1
 	const SFX_DITTO_TRANSFORM             ; c2
 	const SFX_INTRO_SUICUNE_1             ; c3
-	const SFX_INTRO_PICHU                 ; c4
+	const SFX_EMOTE                       ; c4
 	const SFX_INTRO_SUICUNE_2             ; c5
 	const SFX_INTRO_SUICUNE_3             ; c6
 	const SFX_DITTO_BOUNCE                ; c7

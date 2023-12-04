@@ -23,32 +23,39 @@ CHRIS EQU __trainer_class__
 	const EMAILCONTACT_BILL
 	const EMAILCONTACT_ELM
 	const EMAILCONTACT_LARCH
+NUM_NONTRAINER_EMAILCONTACTS EQU const_value - 1
 
 	trainerclass JAMES ; 1
 	const FALKNER1
 	const JAMES1
 
-	trainerclass WHITNEY ; 2
+	trainerclass CINDY ; 2
 	const WHITNEY1
 	const CINDY1
 
-	trainerclass BUGSY ; 3
+	trainerclass ZACH ; 3
 	const BUGSY1
+	const ZACH1
 
-	trainerclass MORTY ; 4
+	trainerclass GLADMAN ; 4
 	const MORTY1
+	const GLADMAN1
 
-	trainerclass PRYCE ; 5
+	trainerclass WOODY ; 5
 	const PRYCE1
+	const WOODY1
 
-	trainerclass JASMINE ; 6
+	trainerclass GORDON ; 6
 	const JASMINE1
+	const GORDON1
 
-	trainerclass CHUCK ; 7
+	trainerclass BRAIN ; 7
 	const CHUCK1
+	const BRIAN1
 
-	trainerclass CLAIR ; 8
+	trainerclass BELLE ; 8
 	const CLAIR1
+	const BELLE1
 
 	trainerclass RIVAL1 ; 9
 	const RIVAL1_1_ORKID
