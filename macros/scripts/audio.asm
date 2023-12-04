@@ -185,7 +185,11 @@ ENDM
 ; used in Ray
 staccato: MACRO
 	db staccato_cmd
-	db \1 ; sound length
+	IF \1 < 0
+		db $100 - (\1 * -1)
+	ELSE
+		db \1 ; sound length
+	ENDC
 ENDM
 
 toggle_noise: MACRO
