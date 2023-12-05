@@ -71,7 +71,7 @@ FIRST_MUSIC_CMD EQU const_value
 	const volume_cmd                  ; $e5
 	const pitch_offset_cmd            ; $e6
 	const relative_pitch_cmd          ; $e7
-	const envenlope_sequence_cmd   ; $e8
+	const envenlope_sequence_cmd      ; $e8
 	const tempo_relative_cmd          ; $e9
 	const restart_channel_cmd         ; $ea
 	const new_song_cmd                ; $eb
