@@ -64,4 +64,14 @@ MAP_DUNGEON EQU const_value
 
 	map_const MT_VACUUM,             15, 55 ; 1
 
+	newgroup                        ; 5
+
+	map_const ROUTE_52,              20, 30 ; 1
+	map_const ROUTE_53,              40, 20 ; 2
+	map_const PORTITE¯CITY,          40, 20 ; 3
+
+	newgroup
+
+	map_const SOLAR_LEAGUE_ENTRANCE  15, 10 ; 1
+
 NUM_MAP_GROUPS EQU const_value
