@@ -2355,19 +2355,19 @@ PokeFluteEffect:
 	jr nz, .get_tune_check_dungeon
 	ld a, [wMapNumber]
 	dec a ; are we in COTTAGE_TOWN?
-	ld de, SFX_POKEFLUTE_HOME
+	ld de, SFX_POKEFLUTE_HOME ; Celestia's castle
 	ret z
 .get_tune_check_dungeon
 	ld a, [wMapGroup]
 	cp MAP_DUNGEON
-	ld de, SFX_POKEFLUTE_DUNGEON
+	ld de, SFX_POKEFLUTE_DUNGEON ; Chrysalis' castle
 	ret z
 .get_tune_checkday
 	ld a, [wTimeOfDay]
 	bit NITE_F, a
-	ld de, SFX_POKEFLUTE_NIGHT
+	ld de, SFX_POKEFLUTE_NIGHT ; Luna's castle
 	ret z
-	ld de, SFX_POKEFLUTE
+	ld de, SFX_POKEFLUTE ; OG flute theme
 	ret
 
 .terminator

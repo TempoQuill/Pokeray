@@ -28,7 +28,7 @@ MtVacuum_Item5:
 MtVacuum_HiddenFullHeal:
 	hiddenitem FULL_HEAL, EVENT_MT_VACUUM_FULL_HEAL
 
-MtVacuum_HiddenNightArmer:
+MtVacuum_HiddenNightArmor:
 	hiddenitem NIGHT_ARMOR, EVENT_MT_VACUUM_HIDDEN_NIGHT_ARMOR
 
 MtVacuum_HiddenFireStone:
@@ -47,28 +47,28 @@ MtVacuum_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 23, 15,  MT_VACUUM, 1
-	warp_event 1,  19,  MT_VACUUM, 3
-	warp_event 3,  27,  MT_VACUUM, 2
-	warp_event 23, 29,  MT_VACUUM, 4
-	warp_event 25, 33,  MT_VACUUM, 6
-	warp_event 27, 47,  MT_VACUUM, 5
-	warp_event 19, 47,  MT_VACUUM, 8
-	warp_event 1,  51,  MT_VACUUM, 7
-	warp_event 27, 61,  MT_VACUUM, 10
-	warp_event 7,  65,  MT_VACUUM, 9
-	warp_event 13, 69,  MT_VACUUM, 12
-	warp_event 13, 73,  MT_VACUUM, 11
-	warp_event 3,  82,  MT_VACUUM, 14
-	warp_event 23, 91,  MT_VACUUM, 13
-	warp_event 29, 99,  MT_VACUUM, 16
-	warp_event 15, 101, MT_VACUUM, 15
+	warp_event 23, 15,  MT_VACUUM, 1  ; 4F ; ROUTE 52
+	warp_event 1,  19,  MT_VACUUM, 3  ; 4F
+	warp_event 3,  27,  MT_VACUUM, 2  ; 5F
+	warp_event 23, 29,  MT_VACUUM, 4  ; 5F ; LEAGUE
+	warp_event 25, 33,  MT_VACUUM, 6  ; 5F
+	warp_event 27, 47,  MT_VACUUM, 5  ; 5F
+	warp_event 19, 47,  MT_VACUUM, 8  ; 5F
+	warp_event 1,  51,  MT_VACUUM, 7  ; 4F
+	warp_event 27, 61,  MT_VACUUM, 10 ; 4F
+	warp_event 7,  65,  MT_VACUUM, 9  ; 3F
+	warp_event 13, 69,  MT_VACUUM, 12 ; 3F
+	warp_event 13, 73,  MT_VACUUM, 11 ; 3F
+	warp_event 3,  85,  MT_VACUUM, 14 ; 3F
+	warp_event 23, 91,  MT_VACUUM, 13 ; 2F
+	warp_event 29, 99,  MT_VACUUM, 16 ; 2F
+	warp_event 15, 101, MT_VACUUM, 15 ; 1F
 	warp_event 13, 107, ROUTE_49_VACUUM_GATE, 3
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 4,  95,  BGEVENT_ITEM, MtVacuum_HiddenNightArmer
+	bg_event 4,  95,  BGEVENT_ITEM, MtVacuum_HiddenNightArmor
 	bg_event 19, 100, BGEVENT_ITEM, MtVacuum_HiddenFireStone
 	bg_event 12, 83,  BGEVENT_ITEM, MtVacuum_HiddenWaterStone
 	bg_event 21, 52,  BGEVENT_ITEM, MtVacuum_HiddenStrobeLight
