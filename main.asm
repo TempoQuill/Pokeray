@@ -206,11 +206,14 @@ INCLUDE "engine/pokemon/experience.asm"
 INCLUDE "engine/pokemon/switchpartymons.asm"
 INCLUDE "engine/gfx/load_pics.asm"
 INCLUDE "engine/pokemon/move_mon_wo_mail.asm"
-INCLUDE "data/pokemon/base_stats.asm"
 INCLUDE "data/pokemon/unused_pic_banks.asm"
 
 EggPic::
 INCBIN "gfx/pokemon/egg/front.2bpp.lz"
+
+SECTION "Base Stats", ROMX`
+
+INCLUDE "data/pokemon/base_stats.asm"
 
 
 SECTION "bank21", ROMX

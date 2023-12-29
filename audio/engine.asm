@@ -438,6 +438,7 @@ UpdateChannels:
 	; so seeking is done in $10s
 	ld de, WaveSamples
 	add hl, de
+	; load wavepattern into rWave_0-rWave_f
 	ld a, [hli]
 	ldh [rWave_0], a
 	ld a, [hli]
@@ -2292,6 +2293,7 @@ GetPitch:
 	ld a, [hl]
 	swap a ; hi nybble
 	and $f
+	; add current octave
 	add d
 	push af ; save octave
 	; add pitch
@@ -2498,7 +2500,7 @@ _PlayCry::
 
 ; reset sweep
 	xor a
-	ld [wPitchSweep], a
+	ldh [rNR10], a
 
 ; Overload the music id with the cry id
 	ld hl, wMusicID
@@ -2716,7 +2718,8 @@ PlayStereoSFX::
 ; else, let's go ahead with this
 ; reset sweep
 	xor a
-	ld [wPitchSweep], a
+	ldh [rNR10], a
+
 	ld hl, wMusicID
 	ld [hl], e
 	inc hl

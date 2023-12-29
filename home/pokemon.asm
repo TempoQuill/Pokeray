@@ -236,17 +236,25 @@ GetBaseData::
 	rst Bankswitch
 
 ; Egg doesn't have BaseData
-	ld a, [wCurSpecies]
-	cp LOW(EGG)
-	jr nz, .get_base_data
 	ld a, [wCurSpecies + 1]
+	ld d, a
+	ld a, [wCurSpecies]
+	ld e, a
+	cp LOW(EGG)
+	ld d, a
+	jr nz, .get_base_data
 	cp HIGH(EGG)
 	jr z, .egg
 
 .get_base_data
-	dec a
+	dec de
+	ld a, d
+	and a
 	ld bc, BASE_DATA_SIZE
 	ld hl, BaseData
+	jr z, .got_dest
+	ld hl, BaseData + (BASE_DATA_SIZE * $100)
+.got_dest
 	call AddNTimes
 	ld de, wCurBaseData
 	ld bc, BASE_DATA_SIZE

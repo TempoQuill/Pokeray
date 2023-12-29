@@ -1,4 +1,4 @@
-	dw LINKSICLE ; 335
+	dw WINDKITT ; 335
 
 	db  90,  51, 126, 111, 124,  98
 	;   hp  atk  def  spd  sat  sdf

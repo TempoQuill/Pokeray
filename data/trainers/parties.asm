@@ -44,7 +44,7 @@ FalknerGroup:
 	db "JAMES@", TRAINERTYPE_ITEM_MOVES
 	trainim 12, DROWZEE,   OUTLET,       POUND, HYPNOSIS, PSYCHIC_M, REST
 	trainim 11, SWEOTE,    STROBE_LIGHT, THUNDERSHOCK, ICY_WIND, HIDDEN_POWER, REST
-	trainim 10, ROGUENECA, FRIDGE,       ROCK_SMASH, DIG, CONFUSION, REST
+	trainim 10, SEWMA,     FRIDGE,       PSYCHIC, JUMP_KICK, FALSE_SWIPE, REST
 	db -1 ; end
 
 WhitneyGroup:
@@ -93,14 +93,15 @@ MortyGroup:
 
 	; GLADMAN
 	; comes with Super Potion and X Accuracy
-	; all mons have Zap Cannon, a 50% accurate move
-	; of course Gladman will use it on Elekid
+	; last 3 mons have Zap Cannon, a 50% accurate move
+	; However, Gladman may use X Accuracy on Molambino
+	; Flash is 70% accurate.
 	db "GLADMAN@", TRAINERTYPE_ITEM_MOVES
+	trainim 22, NUMPUFF,   BRIGHTPOWDER, TACKLE, WATER_GUN, HARDEN, MINIMIZE
+	trainim 25, MOLAMBINO, FURNACE,      FLASH, THUNDERBOLT, WATER_GUN, ICE_BEAM
 	trainim 25, ELEKID,    SLEEK_GENE,   ZAP_CANNON, SWIFT, LEER, LIGHT_SCREEN
 	trainim 24, RAITORA,   MAGNET,       ZAP_CANNON, LEER, QUICK_ATTACK, PURSUIT
 	trainim 23, CHINCHOU,  STROBE_LIGHT, ZAP_CANNON, WATER_GUN, THUNDER_WAVE, FLAIL
-	trainim 22, NEUNIUS,   METAL_COAT,   ZAP_CANNON, DIG, EMBER, TAIL_WHIP
-	trainim 25, TREAKAROS, FURNACE,      ZAP_CANNON, ICE_BEAM, EMBER, AMNESIA
 	db -1 ; end
 
 PryceGroup:

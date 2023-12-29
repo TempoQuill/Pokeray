@@ -283,6 +283,11 @@ INCLUDE "data/pokemon/base_stats/tyranitar.asm"
 INCLUDE "data/pokemon/base_stats/lugia.asm"
 INCLUDE "data/pokemon/base_stats/ho_oh.asm"
 INCLUDE "data/pokemon/base_stats/celebi.asm"
+	ds BASE_DATA_SIZE, 0
+	ds BASE_DATA_SIZE, 0
+	ds BASE_DATA_SIZE, 0
+	ds BASE_DATA_SIZE, 0
+	ds BASE_DATA_SIZE, 0
 INCLUDE "data/pokemon/base_stats/orkid.asm"
 INCLUDE "data/pokemon/base_stats/syntique.asm"
 INCLUDE "data/pokemon/base_stats/photorden.asm"
@@ -328,12 +333,47 @@ INCLUDE "data/pokemon/base_stats/warwolf.asm"
 INCLUDE "data/pokemon/base_stats/porysphia.asm"
 INCLUDE "data/pokemon/base_stats/alphape.asm"
 INCLUDE "data/pokemon/base_stats/alrem.asm"
+	ds BASE_DATA_SIZE, 0 ; pinchler
+	ds BASE_DATA_SIZE, 0 ; pouchent
+	ds BASE_DATA_SIZE, 0 ; mightalex
+	ds BASE_DATA_SIZE, 0 ; murphelt
+	ds BASE_DATA_SIZE, 0 ; omanova
+	ds BASE_DATA_SIZE, 0 ; kaboulder
+	ds BASE_DATA_SIZE, 0 ; reclinax
+	ds BASE_DATA_SIZE, 0 ; coatret
+	ds BASE_DATA_SIZE, 0 ; noctglide
+	ds BASE_DATA_SIZE, 0 ; lediury
+	ds BASE_DATA_SIZE, 0 ; tieracnid
+	ds BASE_DATA_SIZE, 0 ; sunthesia
+	ds BASE_DATA_SIZE, 0 ; guagami
+	ds BASE_DATA_SIZE, 0 ; shuvel
+	ds BASE_DATA_SIZE, 0 ; delflap
+	ds BASE_DATA_SIZE, 0 ; metabeak
+	ds BASE_DATA_SIZE, 0 ; cranest
+	ds BASE_DATA_SIZE, 0 ; houndread
+	ds BASE_DATA_SIZE, 0 ; milcalf
 INCLUDE "data/pokemon/base_stats/abream.asm"
 INCLUDE "data/pokemon/base_stats/linksicle.asm"
 INCLUDE "data/pokemon/base_stats/pennidae.asm"
+	ds BASE_DATA_SIZE, 0 ; 
+	ds BASE_DATA_SIZE, 0 ; 
+	ds BASE_DATA_SIZE, 0 ; 
+	ds BASE_DATA_SIZE, 0 ; 
+	ds BASE_DATA_SIZE, 0 ; 
+	ds BASE_DATA_SIZE, 0 ; 
 INCLUDE "data/pokemon/base_stats/unlight.asm"
 INCLUDE "data/pokemon/base_stats/alidusk.asm"
+	ds BASE_DATA_SIZE, 0 ; kicloud
+	ds BASE_DATA_SIZE, 0 ; appuck
+	ds BASE_DATA_SIZE, 0 ; sewma
 INCLUDE "data/pokemon/base_stats/animadise.asm"
+	ds BASE_DATA_SIZE, 0 ; marloon
+	ds BASE_DATA_SIZE, 0 ; assisdra
+	ds BASE_DATA_SIZE, 0 ; scooten
+	ds BASE_DATA_SIZE, 0 ; searchle
+	ds BASE_DATA_SIZE, 0 ; sweote
+	ds BASE_DATA_SIZE, 0 ; tiarant
+	ds BASE_DATA_SIZE, 0 ; silvealth
 INCLUDE "data/pokemon/base_stats/hyrogryph.asm"
 INCLUDE "data/pokemon/base_stats/aeroglyph.asm"
 INCLUDE "data/pokemon/base_stats/gryphuum.asm"

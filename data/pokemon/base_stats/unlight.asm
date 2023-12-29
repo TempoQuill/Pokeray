@@ -1,9 +1,9 @@
 	dw UNILIGHT ; species name
 
-	db  55,  41,  41,  70,  74,  80
+	db  55,  41,  74,  70,  41,  80
 	;   hp  atk  def  spd  sat  sdf
 
-	db PSYCHIC_TYPE, DARK ; type
+	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type
 	db 180 ; catch rate
 	db 111 ; base exp
 	db TWISTEDSPOON, NO_ITEM ; items

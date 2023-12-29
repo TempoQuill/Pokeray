@@ -1,4 +1,4 @@
-	dw ABREAM ; 334
+	dw COAZIGOAST ; 334
 
 	db  70,  34,  97,  85,  95,  75
 	;   hp  atk  def  spd  sat  sdf

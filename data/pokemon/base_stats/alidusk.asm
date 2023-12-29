@@ -1,6 +1,6 @@
 	dw ALIDUSK ; species name
 
-	db  94,  70,  70, 119, 126, 136
+	db  94,  70, 126, 119,  70, 136
 	;   hp  atk  def  spd  sat  sdf
 
 	db PSYCHIC_TYPE, FLYING ; type

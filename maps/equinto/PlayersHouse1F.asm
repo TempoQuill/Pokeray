@@ -122,7 +122,7 @@ DresserText:
 	text "Lots of personal"
 	line "items."
 
-	para "better leave 'em"
+	para "Better leave 'em"
 	line "alone."
 	done
 
@@ -238,7 +238,7 @@ RivalDonatedGearText:
 
 	para "<PLAYER> recieved"
 	line "the #GEAR!"
-	sound_gen_1_dex_reward
+	sound_medicine
 	done
 
 NoNeedToExplainThisText:

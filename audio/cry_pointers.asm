@@ -72,5 +72,19 @@ Cries:
 
 ; new pointers
 	dba Cry_Earthtron
-	dba Cry_H45
-	dba Cry_H46
+	dba Cry_SpearowOld
+	dba Cry_Yoshi
+	dba Cry_BigYoshi
+	dba Cry_Fosslix
+	dba Cry_Pouchent
+	dba Cry_Murphelt
+	dba Cry_Assisdra
+	dba Cry_Kicloud
+	dba Cry_Dugquintet
+	dba Cry_Coazigoast
+	dba Cry_Appuck
+	dba Cry_Toufense
+	dba Cry_Antlog
+	dba Cry_Glabbit
+	dba Cry_Guarnid
+	dba Cry_Driscorina

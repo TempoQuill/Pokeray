@@ -2933,7 +2933,7 @@ AIHasMoveInArray:
 	ret
 
 AIHasLowAccuracy:
-; used to determine whether it's worth using X Accuracy
+; used to determine if it's worth using X Accuracy
 ;	(Using X Accuracy makes moves always hit)
 	push hl
 	ld hl, wEnemyMonMoves

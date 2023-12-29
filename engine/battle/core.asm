@@ -3197,9 +3197,17 @@ IsThePlayerMonTypesEffectiveAgainstOTMon:
 	ld c, a
 	ld b, 0
 	add hl, bc
+	ld a, [hli]
+	ld e, a
 	ld a, [hl]
-	dec a
+	ld d, a
+	dec de
+	and a
+	ld a, e
 	ld hl, BaseData + BASE_TYPES
+	jr z, .got_dest
+	ld hl, BaseData + (BASE_DATA_SIZE * $100) + BASE_TYPES
+.got_dest
 	ld bc, BASE_DATA_SIZE
 	call AddNTimes
 	ld de, wEnemyMonType

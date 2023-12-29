@@ -3836,6 +3836,56 @@ TentacrimeEvosAttacks:
 	db 60, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
+UnilightEvosAttacks:
+	evolve ITEM, FLASH_STONE, ALIDUSK
+	db 0 ; no more evolutions
+	db 1, PSYWAVE		; S.T.A.B.
+	db 1, PSYCH_UP
+	db 5, EMBER		; Bug/Steel-type coverage
+	db 5, TELEPORT		; Of course!
+	db 6, PSYBEAM		; S.T.A.B.
+	db 13, ENCORE		; Trap the foe in a status move
+	db 18, AGILITY
+	db 22, GLARE		; Parahax!
+	db 23, SLAM
+	db 24, SING		; Sleep Hax!
+	db 25, GROWTH
+	db 30, METRONOME
+	db 33, WING_ATTACK	; Bug-type coverage
+	db 34, RAIN_DANCE
+	db 38, ROCK_SMASH	; Dark-type coverage
+	db 40, PSYCHIC_M	; S.T.A.B.
+	db 0 ; no more level-up moves
+
+AliduskEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, PSYWAVE		; S.T.A.B.
+	db 1, PSYCH_UP
+	db 1, EMBER		; Bug/Steel-type coverage
+	db 1, TELEPORT		; Of course!
+	db 30, GROWTH
+	db 45, ROCK_SMASH	; Dark-type coverage
+	db 48, PSYCHIC_M	; S.T.A.B.
+	db 0 ; no more level-up moves
+
+SewmaEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, PSYWAVE
+	db 1, PAY_DAY
+	db 3, JUMP_KICK
+	db 5, FALSE_SWIPE
+	db 7, DOUBLESLAP
+	db 9, PSYCHIC_M
+	db 10, BIND
+	db 11, KINESIS
+	db 13, CURSE
+	db 14, RECOVER
+	db 16, PSYBEAM
+	db 18, SPIDER_WEB
+	db 20, ROCK_THROW
+	db 21, LIGHT_SCREEN
+	db 0 ; no more level-up moves
+
 SweoteEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE

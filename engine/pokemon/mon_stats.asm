@@ -204,7 +204,13 @@ GetGender:
 	ld a, [wCurPartySpecies]
 	dec a
 	ld e, a
+	ld a, d
+	and a
+	ld e, a
 	ld hl, BaseData + BASE_GENDER
+	jr z, .got_dest
+	ld hl, BaseData + (BASE_DATA_SIZE * $100) + BASE_GENDER
+.got_dest
 	ld bc, BASE_DATA_SIZE
 	call AddNTimes
 	pop bc

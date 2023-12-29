@@ -552,7 +552,7 @@ TextCommands::
 	dw TextCommand_SOUND         ; TX_SOUND_LEVEL_UP
 	dw TextCommand_DOTS          ; TX_DOTS
 	dw TextCommand_WAIT_BUTTON   ; TX_WAIT_BUTTON
-	dw TextCommand_SOUND         ; TX_SOUND_GEN_1_DEX_REWARD
+	dw TextCommand_SOUND         ; TX_SOUND_MEDICINE
 	dw TextCommand_SOUND         ; TX_SOUND_ITEM
 	dw TextCommand_SOUND         ; TX_SOUND_EGG
 	dw TextCommand_SOUND         ; TX_SOUND_TRADE_COMPLETE
@@ -778,7 +778,7 @@ TextCommand_CRY:: ; unreferenced
 TextSFX::
 	dbw TX_SOUND_LEVEL_UP,           SFX_LEVEL_UP
 	dbw TX_SOUND_ASSEMBLED_MON,      SFX_ASSEMBLED_MON
-	dbw TX_SOUND_GEN_1_DEX_REWARD,   SFX_MEDICINE
+	dbw TX_SOUND_MEDICINE,           SFX_MEDICINE
 	dbw TX_SOUND_ITEM,               SFX_ITEM
 	dbw TX_SOUND_EGG,                SFX_EGG_HATCHED
 	dbw TX_SOUND_TRADE_COMPLETE,     SFX_KEY_ITEM

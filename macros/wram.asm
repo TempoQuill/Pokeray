@@ -167,7 +167,7 @@ channel_struct: MACRO
 \1MusicID::           dw
 \1MusicBank::         db
 \1Flags1::            db ; 0:pow 1:sub 2:loop 3:read 4:noise 5:cry 6:pitch inc
-\1Flags2::            db ; 0:vib pow 1:slide pow 2:cycle 4:pitch offs 5:env 6:rel pitch 7:bcd
+\1Flags2::            db ; 0:vib pow 1:slide pow 2:cycle 4:pitch offs 5:env 6:rel pitch 7:Stereo
 \1Flags3::            db ; 0:vib dir 1:slide dir 3:rel pitch flag
 \1MusicAddress::      dw
 \1LastMusicAddress::  dw ; 4-byte music stack
@@ -203,8 +203,8 @@ channel_struct: MACRO
 \1Staccato::          db
 \1NoteLength::        db ; frames per 16th note
 \1TempoOffset::       db
-\1BCDDelay::          db
-\1BCDDelayCounter::   db
+\1StereoDelay::       db
+\1StereoDelayCounter:: db
                       ds 1
 ENDM
 

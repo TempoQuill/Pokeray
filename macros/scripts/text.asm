@@ -91,9 +91,9 @@ text_waitbutton: MACRO
 ENDM
 
 ; play SFX_MEDICINE
-	const TX_SOUND_GEN_1_DEX_REWARD ; $0e
-sound_gen_1_dex_reward: MACRO
-	db TX_SOUND_GEN_1_DEX_REWARD
+	const TX_SOUND_MEDICINE ; $0e
+sound_medicine: MACRO
+	db TX_SOUND_MEDICINE
 ENDM
 
 ; play SFX_ITEM

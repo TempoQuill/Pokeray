@@ -1,4 +1,4 @@
-	dw PENNIDAE ; 336
+	dw TODBRUSH ; 336
 
 	db 117,  77, 164, 144, 161, 127
 	;   hp  atk  def  spd  sat  sdf

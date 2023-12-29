@@ -285,125 +285,125 @@ EQUINTO_MONS    EQU 1
 	const AQUARIA    ; 109 ; TSK
 	const CROVEN     ; 10a
 	const ASTROVEN   ; 10b
-	const TRIFOX     ; 10c ; TSK
-	const BURGELA    ; 10d ; nob
-	const NUMPUFF    ; 10e ; TSK
-	const ORSCHUL    ; 10f
-	const MOUNDIVER  ; 110
-	const MOLAMBINO  ; 111 ; nob
-	const ANGORE     ; 112 ; nob
-	const GROTESS    ; 113 ; TSK
-	const PARABUD    ; 114
-	const LYKWYSE    ; 115 ; TSK
-	const DODAERIE   ; 116 ; nob
-	const SIAMAIS    ; 117
-	const COINTEN    ; 118
-	const GATOLL     ; 119
-	const BELLBOYANT ; 11a ; TSK
-	const FOLICORN   ; 11b
-	const WHISPEON   ; 11c
-	const ASSEMBLEON ; 11d
-	const TURBANN    ; 11e ; TSK
-	const SMUJJ      ; 11f ; nob
-	const TIRUFF     ; 120
-	const BELMITT    ; 121 ; TSK
-	const BOMOCA     ; 122
-	const KOTORA     ; 123 ; TSK
-	const RAITORA    ; 124 ; TSK
-	const MADAME     ; 125 ; TSK
-	const KURSTRAW   ; 126 ; TSK
-	const PANGSHI    ; 127 ; TSK
-	const PLUX       ; 128 ; TSK
-	const WOLFMAN    ; 129 ; TSK
-	const WARWOLF    ; 12a ; TSK
-	const PORYSPHIA  ; 12b
-	const CHOAKING   ; 12c
-	const SANDSCOUR  ; 12d
-	const DRAGONISCE ; 12e
-	const RAVERMIN   ; 12f
-	const STARELLO   ; 130
-	const TEAROW     ; 131
-	const NOHTYP     ; 132
-	const VENOKNIGHT ; 133
-	const DUGQUINTET ; 134
-	const EMPEDUCK   ; 135
-	const ALPHAPE    ; 136
-	const TENTACRIME ; 137
-	const LIODEW     ; 138
-	const FOSSLIX    ; 139
+	const NOCTGLIDE  ; 10c
+	const SNOBURI    ; 10d
+	const SNOBUSTER  ; 10e
+	const ARBUGS     ; 10f
+	const WILLOFUDD  ; 110
+	const TRIFOX     ; 111 ; TSK
+	const BURGELA    ; 112 ; nob
+	const TENTACRIME ; 113
+	const NUMPUFF    ; 114 ; TSK
+	const MIGHTALEX  ; 115
+	const QUAGAMI    ; 116
+	const QUAILTER   ; 117
+	const STAFFBIRD  ; 118
+	const ORSCHUL    ; 119
+	const MOUNDIVER  ; 11a
+	const MOLAMBINO  ; 11b ; nob
+	const ANGORE     ; 11c ; nob
+	const GROTESS    ; 11d ; TSK
+	const SAILWING   ; 11e ; nob
+	const PARABUD    ; 11f
+	const TIERACNID  ; 120
+	const METABEAK   ; 121
+	const CRANEST    ; 122
+	const LYKWYSE    ; 123 ; TSK
+	const DODAERIE   ; 124 ; nob
+	const SUNTHESIA  ; 125
+	const TOUFENSE   ; 126
+	const SIAMAIS    ; 127
+	const RAKUKI     ; 128
+	const COINTEN    ; 129
+	const GATOLL     ; 12a
+	const BELLBOYANT ; 12b ; TSK
+	const STARELLO   ; 12c
+	const LIODEW     ; 12d
+	const UNILIGHT   ; 12e
+	const ALIDUSK    ; 12f
+	const LEDIURY    ; 130
+	const FOLICORN   ; 131
+	const WHISPEON   ; 132
+	const ASSEMBLEON ; 133
+	const TURBANN    ; 134 ; TSK
+	const SMUJJ      ; 135 ; nob
+	const DRAGONISCE ; 136
+	const KICLOUD    ; 137
+	const TIRUFF     ; 138
+	const APPUCK     ; 139
 	const ALREM      ; 13a
-	const PINCHLER   ; 13b
-	const POUCHENT   ; 13c
-	const MIGHTALEX  ; 13d
-	const MURPHELT   ; 13e
-	const OMANOVA    ; 13f
-	const KABOULDER  ; 140
-	const RECLINAX   ; 141
-	const COATRET    ; 142
-	const NOCTGLIDE  ; 143
-	const LEDIURY    ; 144
-	const TIERACNID  ; 145
-	const SUNTHESIA  ; 146
-	const QUAGAMI    ; 147
-	const SHUVEL     ; 148
-	const DELFLAP    ; 149
-	const METABEAK   ; 14a
-	const CRANEST    ; 14b
-	const HOUNDREAD  ; 14c
-	const MILCALF    ; 14d
-	const ABREAM     ; 14e
-	const LINKSICLE  ; 14f
-	const PENNIDAE   ; 150
-	const GEODAM     ; 151
-	const WASHEAVY   ; 152
-	const TONAQUART  ; 153
-	const DAWNESP    ; 154
-	const SOLCHIC    ; 155
-	const TELORCH    ; 156
-	const UNILIGHT   ; 157
-	const ALIDUSK    ; 158
-	const KICLOUD    ; 159
-	const APPUCK     ; 15a
-	const SEWMA      ; 15b
-	const ANIMADISE  ; 15c
-	const MARLOON    ; 15d
-	const ASSISDRA   ; 15e
-	const SCOOTEN    ; 15f
-	const SEARCHLE   ; 160
-	const SWEOTE     ; 161
-	const TIARANT    ; 162
-	const SILVEALTH  ; 163
-	const HYROGRYPH  ; 164
-	const AEROGLYPH  ; 165
-	const GRYPHUUM   ; 166
-	const LAROON     ; 167
-	const CADITIN    ; 168
-	const CHRYSALTY  ; 169
-	const MAGNEVEN   ; 16a
-	const DONKRANK   ; 16b
-	const CANAUTIC   ; 16c
-	const RAKUKI     ; 16d
-	const SCARIDE    ; 16e
-	const SIMBIDE    ; 16f
-	const MUFRIDE    ; 170
-	const ROGUENECA  ; 171
-	const QUASIER    ; 172
-	const TREAKAROS  ; 173
-	const PODRIMALA  ; 174
-	const NEUNIUS    ; 175
-	const BIONIUS    ; 176
-	const PHYNIUS    ; 177
-	const ERANIUS    ; 178
-	const ESPAGLIDE  ; 179
-	const TRAVETINE  ; 17a
-	const CORCARA    ; 17b
-	const SHINALE    ; 17c
+	const MURPHELT   ; 13b
+	const TIARANT    ; 13c
+	const SILVEALTH  ; 13d
+	const SEARCHLE   ; 13e
+	const BELMITT    ; 13f ; TSK
+	const MILCALF    ; 140
+	const BOMOCA     ; 141
+	const DELFLAP    ; 142
+	const KOTORA     ; 143 ; TSK
+	const RAITORA    ; 144 ; TSK
+	const MADAME     ; 145 ; TSK
+	const KURSTRAW   ; 146 ; TSK
+	const PANGSHI    ; 147 ; TSK
+	const SCAFAROW   ; 148
+	const RECLINAX   ; 149
+	const MOSCARF    ; 14a
+	const FLIDER     ; 14b
+	const PLUX       ; 14c ; TSK
+	const HOUNDREAD  ; 14d
+	const WOLFMAN    ; 14e ; TSK
+	const WARWOLF    ; 14f ; TSK
+	const PORYSPHIA  ; 150
+	const RAVERMIN   ; 151
+	const FOSSLIX    ; 152
+	const MAGNEVEN   ; 153
+	const DONKRANK   ; 154
+	const CHOAKING   ; 155
+	const SANDSCOUR  ; 156
+	const TEAROW     ; 157
+	const NOHTYP     ; 158
+	const VENOKNIGHT ; 159
+	const DUGQUINTET ; 15a
+	const EMPEDUCK   ; 15b
+	const ALPHAPE    ; 15c
+	const PINCHLER   ; 15d
+	const POUCHENT   ; 15e
+	const OMANOVA    ; 15f
+	const KABOULDER  ; 160
+	const COATRET    ; 161
+	const SHUVEL     ; 162
+	const COAZIGOAST ; 163
+	const WINDKITT   ; 164
+	const TODBRUSH   ; 165
+	const SEWMA      ; 166
+	const ANIMADISE  ; 165
+	const MARLOON    ; 166
+	const ASSISDRA   ; 169
+	const SCOOTEN    ; 16a
+	const SWEOTE     ; 16b
+	const GRIFLET    ; 16c
+	const CIRRIFFON  ; 16d
+	const COSMOREAS  ; 16e
+	const LAROON     ; 16f
+	const CADITIN    ; 170
+	const CHRYSALTY  ; 171
+	const DRYTHON    ; 172
+	const ANTLOG     ; 173
+	const KOALIMB    ; 174
+	const HIGHPO     ; 175
+	const GLABBIT    ; 176
+	const CYCORPION  ; 177
+	const GUARNID    ; 178
+	const SQUIDRILL  ; 179
+	const PARROBRASS ; 17a
+	const FLINJA     ; 17b
+	const SHELLAPTOR ; 17c
 	const GOBELDORL  ; 17d
 	const CENTIR     ; 17e
 	const DRISCORINA ; 17f
-	const COQUIRITO  ; 180
-	const MEDIOQUIRA ; 181
-	const GUIGAPICA  ; 182
+	const ARLURRY    ; 180
+	const MAGENZA    ; 181
+	const ILLUSIRO   ; 182
 	const HELICELIA  ; 183
 	const SELENUMIA  ; 184
 	const PARBELL    ; 185

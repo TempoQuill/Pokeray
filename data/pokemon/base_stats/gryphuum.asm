@@ -1,4 +1,4 @@
-	dw GRYPHUUM ; 063
+	dw COSMOREAS ; 063
 
 	db  56, 115,  86, 135, 106,  99
 	;   hp  atk  def  spd  sat  sdf

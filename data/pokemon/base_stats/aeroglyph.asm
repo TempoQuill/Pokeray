@@ -1,4 +1,4 @@
-	dw AEROGLYPH ; 063
+	dw CIRRIFFON ; 063
 
 	db  38,  77,  57,  90,  71,  66
 	;   hp  atk  def  spd  sat  sdf

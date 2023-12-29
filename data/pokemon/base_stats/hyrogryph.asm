@@ -1,4 +1,4 @@
-	dw HYROGRYPH ; 063
+	dw GRIFLET ; 063
 
 	db  25,  51,  38,  60,  47,  44
 	;   hp  atk  def  spd  sat  sdf
