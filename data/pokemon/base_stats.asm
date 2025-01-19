@@ -353,8 +353,8 @@ INCLUDE "data/pokemon/base_stats/alrem.asm"
 	ds BASE_DATA_SIZE, 0 ; houndread
 	ds BASE_DATA_SIZE, 0 ; milcalf
 INCLUDE "data/pokemon/base_stats/abream.asm"
-INCLUDE "data/pokemon/base_stats/linksicle.asm"
-INCLUDE "data/pokemon/base_stats/pennidae.asm"
+INCLUDE "data/pokemon/base_stats/windkitt.asm"
+INCLUDE "data/pokemon/base_stats/todbrush.asm"
 	ds BASE_DATA_SIZE, 0 ; 
 	ds BASE_DATA_SIZE, 0 ; 
 	ds BASE_DATA_SIZE, 0 ; 
@@ -374,7 +374,7 @@ INCLUDE "data/pokemon/base_stats/animadise.asm"
 	ds BASE_DATA_SIZE, 0 ; sweote
 	ds BASE_DATA_SIZE, 0 ; tiarant
 	ds BASE_DATA_SIZE, 0 ; silvealth
-INCLUDE "data/pokemon/base_stats/hyrogryph.asm"
-INCLUDE "data/pokemon/base_stats/aeroglyph.asm"
-INCLUDE "data/pokemon/base_stats/gryphuum.asm"
+INCLUDE "data/pokemon/base_stats/griflet.asm"
+INCLUDE "data/pokemon/base_stats/cirriffon.asm"
+INCLUDE "data/pokemon/base_stats/cosmoreas.asm"
 

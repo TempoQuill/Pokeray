@@ -881,5 +881,12 @@ QuailterEggMoves:
 	db TRI_ATTACK
 	db -1 ; end
 
+CoaziGoastEggMoves:
+	db PSYWAVE
+	db CONFUSION
+	db THUNDERSHOCK
+	db FUNNY_STUFF
+	db -1 ; end
+
 NoEggMoves:
 	db -1 ; end

@@ -376,8 +376,8 @@ EQUINTO_MONS    EQU 1
 	const WINDKITT   ; 164
 	const TODBRUSH   ; 165
 	const SEWMA      ; 166
-	const ANIMADISE  ; 165
-	const MARLOON    ; 166
+	const ANIMADISE  ; 167
+	const MARLOON    ; 168
 	const ASSISDRA   ; 169
 	const SCOOTEN    ; 16a
 	const SWEOTE     ; 16b
@@ -390,8 +390,8 @@ EQUINTO_MONS    EQU 1
 	const DRYTHON    ; 172
 	const ANTLOG     ; 173
 	const KOALIMB    ; 174
-	const HIGHPO     ; 175
-	const GLABBIT    ; 176
+	const GLABBIT    ; 175
+	const HIGHPO     ; 176
 	const CYCORPION  ; 177
 	const GUARNID    ; 178
 	const SQUIDRILL  ; 179

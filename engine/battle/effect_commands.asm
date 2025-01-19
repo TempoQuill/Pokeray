@@ -2845,6 +2845,7 @@ SpeciesItemBoost:
 ; If the attacking monster is species b or c and
 ; it's holding item d, double it.
 
+; NOTE: no Equinto pokemon have any special item boosts
 	ld a, [hli]
 	ld l, [hl]
 	ld h, a

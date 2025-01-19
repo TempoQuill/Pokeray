@@ -832,7 +832,7 @@ SharpenDescription:
 	next "the user's ATTACK.@"
 
 ConversionDescription:
-	db   "Change user's type"
+	db   "Changes user's type"
 	next "to a move's type.@"
 
 TriAttackDescription:

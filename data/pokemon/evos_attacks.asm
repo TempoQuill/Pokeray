@@ -3931,3 +3931,24 @@ SweoteEvosAttacks:
 	db 32, FLAME_WHEEL
 	db 33, PSYCHIC_M
 	db 0 ; no more level-up moves
+
+CoazigoastEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, ATTRACT
+	db 1, CHARM
+	db 5, PAY_DAY
+	db 8, MINIMIZE
+	db 11, SUBMISSION
+	db 15, SING
+	db 19, LEECH_SEED
+	db 21, NIGHT_SHADE
+	db 24, LEER
+	db 27, DRAGON_RAGE
+	db 30, SCREECH
+	db 33, THRASH
+	db 36, MIST
+	db 39, THUNDERBOLT
+	db 51, PSYBEAM
+	db 51, SHADOW_BALL
+	db 53, PSYCHIC_M
+	db 0 ; no more level-up moves

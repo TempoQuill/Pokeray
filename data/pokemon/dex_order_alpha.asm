@@ -78,16 +78,17 @@ AlphabeticalPokedexOrder:
 	dw DODUO
 	dw DONKRANK
 	dw DONPHAN
-	dw DYNABEAR
 	dw DRAGONAIR
 	dw DRAGONISCE
 	dw DRAGONITE
 	dw DRATINI
 	dw DRISCORINA
 	dw DROWZEE
+	dw DRYTHON
 	dw DUGQUINTET
 	dw DUGTRIO
 	dw DUNSPARCE
+	dw DYNABEAR
 	dw EEVEE
 	dw EKANS
 	dw ELECTABUZZ
@@ -240,6 +241,7 @@ AlphabeticalPokedexOrder:
 	dw PARASECT
 	dw PARROBRASS
 	dw PARBELL
+	dw PARROBRASS
 	dw PERSIAN
 	dw PHANPY
 	dw PHOTORDEN

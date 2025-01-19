@@ -266,35 +266,72 @@ endr
 	dw AquariaEvosAttacks
 	dw CrovenEvosAttacks
 	dw AstrovenEvosAttacks
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
 	dw TrifoxEvosAttacks
 	dw BurgelaEvosAttacks
+	dw -1
 	dw NumpuffEvosAttacks
+	dw -1
+	dw -1
+	dw -1
+	dw -1
 	dw OrschulEvosAttacks
 	dw MoundiverEvosAttacks
 	dw MolambinoEvosAttacks
 	dw AngoreEvosAttacks
 	dw GrotessEvosAttacks
+	dw -1
 	dw ParabudEvosAttacks
+	dw -1
+	dw -1
+	dw -1
 	dw LykwyseEvosAttacks
 	dw DodaerieEvosAttacks
+	dw -1
+	dw -1
 	dw SiamaisEvosAttacks
+	dw -1
 	dw CointenEvosAttacks
 	dw GatollEvosAttacks
 	dw BellboyantEvosAttacks
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
 	dw FolicornEvosAttacks
 	dw WhispeonEvosAttacks
 	dw AssembleonEvosAttacks
 	dw TurbannEvosAttacks
 	dw SmujjEvosAttacks
+	dw -1
+	dw -1
 	dw TiruffEvosAttacks
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
 	dw BelmittEvosAttacks
+	dw -1
 	dw BomocaEvosAttacks
+	dw -1
 	dw KotoraEvosAttacks
 	dw RaitoraEvosAttacks
 	dw MadameEvosAttacks
 	dw KurstrawEvosAttacks
 	dw PangshiEvosAttacks
+	dw -1
+	dw -1
+	dw -1
+	dw -1
 	dw PluxEvosAttacks
+	dw -1
 	dw WolfmanEvosAttacks
 	dw WarwolfEvosAttacks
 	dw PorysphiaEvosAttacks
@@ -316,33 +353,7 @@ endr
 	dw -1
 	dw -1
 	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
-	dw -1
+	dw CoazigoastEvosAttacks
 	dw -1
 	dw -1
 	dw -1
@@ -351,3 +362,29 @@ endr
 	dw -1
 	dw -1
 	dw SweoteEvosAttacks
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1
+	dw -1

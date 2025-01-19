@@ -388,4 +388,3 @@ PokemonNames::
 	db "HELICELIA@"
 	db "SELENUMIA@"
 	db "PARBELL@@@"
-	db "?@@@@@@@@@"
