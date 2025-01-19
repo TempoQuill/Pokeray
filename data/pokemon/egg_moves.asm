@@ -874,5 +874,12 @@ WolfmanEggMoves:
 	db ICY_WIND
 	db -1 ; end
 
+QuailterEggMoves:
+	db FAINT_ATTACK
+	db FALSE_SWIPE
+	db QUICK_ATTACK
+	db TRI_ATTACK
+	db -1 ; end
+
 NoEggMoves:
 	db -1 ; end

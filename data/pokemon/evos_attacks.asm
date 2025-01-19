@@ -3354,6 +3354,35 @@ NumpuffEvosAttacks:
 	db 53, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
+QuailterEvosAttacks:
+	evolve LEVEL, 23, STAFFBIRD
+	db 0 ; no more evolutions
+	db 1, PECK
+	db 1, TAIL_WHIP
+	db 5, FUNNY_STUFF
+	db 8, GUST
+	db 9, SING
+	db 12, WING_ATTACK
+	db 16, QUICK_ATTACK
+	db 18, FLAIL
+	db 20, CHARM
+	db 26, SKY_ATTACK
+	db 0 ; no more level-up moves
+
+StaffBirdEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, PECK
+	db 1, TAIL_WHIP
+	db 1, FUNNY_STUFF
+	db 1, GUST
+	db 13, SING
+	db 18, WING_ATTACK
+	db 24, QUICK_ATTACK
+	db 27, FLAIL
+	db 30, CHARM
+	db 39, SKY_ATTACK
+	db 0 ; no more level-up moves
+
 OrschulEvosAttacks:
 	evolve LEVEL, 18, GOLDEEN
 	db 0 ; no more evolutions
@@ -3901,13 +3930,4 @@ SweoteEvosAttacks:
 	db 30, THUNDERBOLT
 	db 32, FLAME_WHEEL
 	db 33, PSYCHIC_M
-	db 0 ; no more level-up moves
-
-RoguenecaEvosAttacks:
-	db 0 ; no more evolutions
-	db 1, FUNNY_STUFF
-	db 1, TAIL_WHIP
-	db 9, CONFUSION
-	db 16, PSYWAVE
-	db 29, PSYBEAM
 	db 0 ; no more level-up moves

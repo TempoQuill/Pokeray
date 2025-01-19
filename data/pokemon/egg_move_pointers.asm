@@ -266,8 +266,17 @@ EggMovePointers::
 	dw NoEggMoves
 	dw CrovenEggMoves
 	dw NoEggMoves
+	dw NoEggMoves ; snoburi
+	dw NoEggMoves
+	dw NoEggMoves
+	dw NoEggMoves
 	dw TrifoxEggMoves
 	dw BurgelaEggMoves
+	dw NoEggMoves
+	dw NoEggMoves
+	dw NoEggMoves ; mightalex
+	dw NoEggMoves
+	dw QuailterEggMoves
 	dw NoEggMoves
 	dw OrschulEggMoves
 	dw NoEggMoves
