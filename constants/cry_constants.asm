@@ -75,20 +75,42 @@
 	const CRY_DONPHAN     ; 43
 
 ; new cries
-	const CRY_EARTHTRON   ; 44
-	const CRY_SPEAROW_OLD ; 45
-	const CRY_YOSHI       ; 46 ; from yoshi
-	const CRY_BIG_YOSHI   ; 47 ; from yoshi
-	const CRY_FOSSLIX     ; 48
-	const CRY_POUCHENT    ; 49
-	const CRY_MURPHELT    ; 4a
-	const CRY_ASSISDRA    ; 4b
-	const CRY_KICLOUD     ; 4c
-	const CRY_DUGQUINTET  ; 4d
-	const CRY_COAZIGOAST  ; 4e
-	const CRY_APPUCK      ; 4f
-	const CRY_TOUFENSE    ; 50
-	const CRY_ANTLOG      ; 51
-	const CRY_GLABBIT     ; 52
-	const CRY_GUARNID     ; 53
-	const CRY_DRISCORINA  ; 54
+	const CRY_EARTHTRON      ; 44
+	const CRY_SPEAROW_OLD    ; 45
+	const CRY_ROAR_1_OLD     ; 46
+	const CRY_CROW_OLD       ; 47
+	const CRY_DERBLE_4_OLD   ; 48
+	const CRY_ROAR_2_OLD     ; 49
+	const CRY_TRIFOX         ; 4a
+	const CRY_HOOTHOOT_OLD   ; 4b
+	const CRY_DODAERIE       ; 4c
+	const CRY_CROCODILE      ; 4d
+	const CRY_SMUJJ          ; 4e
+	const CRY_TIGER_OLD      ; 4f
+	const CRY_SNEASEL_OLD    ; 50
+	const CRY_FOLICORN       ; 51
+	const CRY_LEDIURY        ; 52
+	const CRY_YOSHI          ; 53
+	const CRY_BIG_YOSHI      ; 54
+	const CRY_FOSSLIX        ; 55
+	const CRY_POUCHENT       ; 56
+	const CRY_MURPHELT       ; 57
+	const CRY_ASSISDRA       ; 58
+	const CRY_KICLOUD        ; 59
+	const CRY_DUGQUINTET     ; 5a
+	const CRY_COAZIGOAST     ; 5b
+	const CRY_APPUCK         ; 5c
+	const CRY_TOUFENSE       ; 5d
+	const CRY_ANTLOG         ; 5e
+	const CRY_GLABBIT        ; 5f
+	const CRY_GUARNID        ; 60
+	const CRY_DRISCORINA     ; 61
+	const CRY_ORKID          ; 62
+	const CRY_CROVEN         ; 63
+	const CRY_BOMOCA         ; 64
+	const CRY_SELENUMIA      ; 65
+	const CRY_RECLINAX       ; 66
+	const CRY_SANDSCOUR      ; 67
+	const CRY_TEAROW         ; 68
+	const CRY_WINDKITT       ; 69
+	const CRY_COSMOREAS      ; 6a
