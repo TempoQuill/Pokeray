@@ -115,6 +115,7 @@ INCLUDE "audio/cries.asm"
 SECTION "Cries", ROMX
 
 INCLUDE "data/pokemon/cries.asm"
+INCLUDE "data/pokemon/cries_proto.asm"
 
 SECTION "New Sound Effects", ROMX
 
