@@ -1,4 +1,4 @@
-	dw ROGUENECA ; 220
+	dw SHELLAPTOR ; 220
 
 	db  84,  74,  79, 145, 100, 111
 	;   hp  atk  def  spd  sat  sdf

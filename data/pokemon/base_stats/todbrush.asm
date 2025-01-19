@@ -1,15 +1,15 @@
-	dw ABREAM ; 334
+	dw TODBRUSH ; 336
 
-	db  70,  34,  97,  85,  95,  75
+	db 117,  77, 164, 144, 161, 127
 	;   hp  atk  def  spd  sat  sdf
 
-	db ICE, GRASS ; type
-	db 217 ; catch rate
-	db 130 ; base exp
+	db GROUND, FIRE ; type
+	db 128 ; catch rate
+	db 219 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 49 ; step cycles to hatch
-INCBIN "gfx/pokemon/abream/front.dimensions"
+INCBIN "gfx/pokemon/todbrush/front.dimensions"
 	db GROWTH_FAST ; growth rate
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 

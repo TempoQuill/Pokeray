@@ -71,6 +71,8 @@ NewPokedexOrder:
 	dw NOHTYP
 	dw DUNSPARCE
 	dw ASSISDRA
+	dw DRYTHON
+	dw CYCORPION
 	; light-aided
 	dw MAREEP
 	dw FLAAFFY
@@ -78,19 +80,12 @@ NewPokedexOrder:
 	dw WOOPER
 	dw QUAGSIRE
 	dw QUAGAMI
-	dw GASTLY
-	dw HAUNTER
-	dw GENGAR
 	dw UNOWN
 	dw FOSSLIX
 	dw ONIX
 	dw STEELIX
-	dw DAWNESP
-	dw SOLCHIC
-	dw TELORCH
 	dw UNILIGHT
 	dw ALIDUSK
-	dw SHINALE
 	; grass-dwelling
 	dw BELLSPROUT
 	dw WEEPINBELL
@@ -102,9 +97,6 @@ NewPokedexOrder:
 	dw PARABUD
 	dw PARAS
 	dw PARASECT
-	dw SCARIDE
-	dw SIMBIDE
-	dw MUFRIDE
 	; sea-dwelling
 	dw POLIWAG
 	dw POLIWHIRL
@@ -122,6 +114,7 @@ NewPokedexOrder:
 	dw MOLAMBINO
 	dw ANGORE
 	dw GROTESS
+	dw SQUIDRILL
 	; mid-game
 	dw ODDISH
 	dw GLOOM
@@ -135,7 +128,8 @@ NewPokedexOrder:
 	dw ALAKAZAM
 	dw DITTO
 	dw LYKWYSE
-	dw RAKUKI
+	dw ANTLOG
+	dw FLINJA
 	; suburban
 	dw PINECO
 	dw FORRETRESS
@@ -145,6 +139,7 @@ NewPokedexOrder:
 	dw NIDORAN_M
 	dw NIDORINO
 	dw NIDOKING
+	dw RAKUKI
 	; landscape
 	dw YANMA
 	dw SUNKERN
@@ -154,6 +149,7 @@ NewPokedexOrder:
 	dw EXEGGUTOR
 	dw SUDOWOODO
 	dw WOBBUFFET
+	dw KOALIMB
 	; middle bugs
 	dw VENONAT
 	dw VENOMOTH
@@ -166,6 +162,8 @@ NewPokedexOrder:
 	dw LAROON
 	dw CADITIN
 	dw CHRYSALTY
+	dw MOSCARF
+	dw FLIDER
 	; industrious
 	dw KOFFING
 	dw WEEZING
@@ -181,7 +179,6 @@ NewPokedexOrder:
 	dw RAITORA
 	dw TIARANT
 	dw SILVEALTH
-	dw TREAKAROS
 	; wildlife
 	dw AIPOM
 	dw SNUBBULL
@@ -189,6 +186,8 @@ NewPokedexOrder:
 	dw TRIFOX
 	dw VULPIX
 	dw NINETALES
+	dw WINDKITT
+	dw TODBRUSH
 	dw TIRUFF
 	dw GROWLITHE
 	dw ARCANINE
@@ -239,7 +238,6 @@ NewPokedexOrder:
 	dw XATU
 	dw SEWMA
 	dw SWEOTE
-	dw ROGUENECA
 	; intertidal
 	dw QWILFISH
 	dw NUMPUFF
@@ -265,10 +263,7 @@ NewPokedexOrder:
 	dw SEEL
 	dw DEWGONG
 	dw LIODEW
-	dw GEODAM
-	dw WASHEAVY
-	dw TONAQUART
-	dw CANAUTIC
+	dw HIGHPO
 	; domestic
 	dw LICKITUNG
 	dw BURGELA
@@ -289,6 +284,7 @@ NewPokedexOrder:
 	dw MARLOON
 	dw SEARCHLE
 	dw DONKRANK
+	dw PARROBRASS
 	; cool-aclimates
 	dw GLIGAR
 	dw DELFLAP
@@ -301,12 +297,13 @@ NewPokedexOrder:
 	dw DONPHAN
 	dw WOLFMAN
 	dw WARWOLF
-	dw ABREAM
-	dw LINKSICLE
-	dw PENNIDAE
-	dw HYROGRYPH
-	dw AEROGLYPH
-	dw GRYPHUUM
+	dw GRIFLET
+	dw CIRRIFFON
+	dw COSMOREAS
+	dw SNOBURI
+	dw SNOBUSTER
+	dw ARBUGS
+	dw WILLOFUDD
 	; unusual-flyers
 	dw MANTINE
 	dw METABEAK
@@ -316,7 +313,11 @@ NewPokedexOrder:
 	dw DODUO
 	dw DODRIO
 	dw SCOOTEN
-	dw ESPAGLIDE
+	dw QUAILTER
+	dw STAFFBIRD
+	dw SAILWING
+	dw SCAFAROW
+	dw GLABBIT
 	; rare
 	dw FOLICORN
 	dw PONYTA
@@ -329,12 +330,8 @@ NewPokedexOrder:
 	dw RHYHORN
 	dw RHYDON
 	dw BOMOCA
-	dw QUASIER
-	dw PODRIMALA
-	dw NEUNIUS
-	dw BIONIUS
-	dw PHYNIUS
-	dw ERANIUS
+	dw TOUFENSE
+	dw GUARNID
 	dw DRATINI
 	dw DRAGONAIR
 	dw DRAGONITE
@@ -342,17 +339,21 @@ NewPokedexOrder:
 	dw LARVITAR
 	dw PUPITAR
 	dw TYRANITAR
-	dw COQUIRITO
-	dw MEDIOQUIRA
-	dw GUIGAPICA
+	dw ARLURRY
+	dw MAGENZA
+	dw ILLUSIRO
 	; dark
 	dw MURKROW
 	dw HOUNDOUR
 	dw HOUNDOOM
 	dw HOUNDREAD
+	dw GASTLY
+	dw HAUNTER
+	dw GENGAR
 	dw SLUGMA
 	dw MAGCARGO
 	dw SNEASEL
+	dw COAZIGOAST
 	dw MISDREAVUS
 	dw KURSTRAW
 	dw PANGSHI
@@ -363,8 +364,6 @@ NewPokedexOrder:
 	dw CHANSEY
 	dw BLISSEY
 	dw MAGNEVEN
-	dw TRAVETINE
-	dw CORCARA
 	; fossils
 	dw LAPRAS
 	dw OMANYTE
@@ -374,6 +373,7 @@ NewPokedexOrder:
 	dw KABUTOPS
 	dw KABOULDER
 	dw AERODACTYL
+	dw SHELLAPTOR
 	; imports
 	dw SNORLAX
 	dw RECLINAX

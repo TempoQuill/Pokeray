@@ -1,15 +1,15 @@
-	dw PENNIDAE ; 336
+	dw WINDKITT ; 335
 
-	db 117,  77, 164, 144, 161, 127
+	db  90,  51, 126, 111, 124,  98
 	;   hp  atk  def  spd  sat  sdf
 
-	db ICE, STEEL ; type
-	db 128 ; catch rate
-	db 219 ; base exp
+	db GROUND, FIRE ; type
+	db 167 ; catch rate
+	db 168 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 49 ; step cycles to hatch
-INCBIN "gfx/pokemon/pennidae/front.dimensions"
+INCBIN "gfx/pokemon/windkitt/front.dimensions"
 	db GROWTH_FAST ; growth rate
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 

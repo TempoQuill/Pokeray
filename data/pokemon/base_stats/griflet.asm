@@ -1,15 +1,15 @@
-	dw GRYPHUUM ; 063
+	dw GRIFLET ; 063
 
-	db  56, 115,  86, 135, 106,  99
+	db  25,  51,  38,  60,  47,  44
 	;   hp  atk  def  spd  sat  sdf
 
 	db FLYING, FLYING ; type
-	db 99 ; catch rate
-	db 178 ; base exp
+	db 222 ; catch rate
+	db 55 ; base exp
 	db WHOPPER, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 15 ; step cycles to hatch
-INCBIN "gfx/pokemon/gryphuum/front.dimensions"
+INCBIN "gfx/pokemon/griflet/front.dimensions"
 	db GROWTH_MEDIUM_SLOW ; growth rate
 	dn EGG_FLYING, EGG_FLYING ; egg groups
 

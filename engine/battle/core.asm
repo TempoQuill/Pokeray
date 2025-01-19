@@ -4955,6 +4955,7 @@ CheckAmuletCoin:
 	ret
 
 CheckPowerBallFlag:
+; add ¥100 any time a Pokemon caught in a Power Ball is sent out
 	ld a, [wBattleMonBuild]
 	bit POWER_BALL_F, a
 	ret z

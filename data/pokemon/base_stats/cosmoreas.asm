@@ -1,15 +1,15 @@
-	dw AEROGLYPH ; 063
+	dw COSMOREAS ; 063
 
-	db  38,  77,  57,  90,  71,  66
+	db  56, 115,  86, 135, 106,  99
 	;   hp  atk  def  spd  sat  sdf
 
 	db FLYING, FLYING ; type
-	db 148 ; catch rate
-	db 99 ; base exp
+	db 99 ; catch rate
+	db 178 ; base exp
 	db WHOPPER, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 15 ; step cycles to hatch
-INCBIN "gfx/pokemon/aeroglyph/front.dimensions"
+INCBIN "gfx/pokemon/cosmoreas/front.dimensions"
 	db GROWTH_MEDIUM_SLOW ; growth rate
 	dn EGG_FLYING, EGG_FLYING ; egg groups
 

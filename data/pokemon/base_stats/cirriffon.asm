@@ -1,15 +1,15 @@
-	dw HYROGRYPH ; 063
+	dw CIRRIFFON ; 063
 
-	db  25,  51,  38,  60,  47,  44
+	db  38,  77,  57,  90,  71,  66
 	;   hp  atk  def  spd  sat  sdf
 
 	db FLYING, FLYING ; type
-	db 222 ; catch rate
-	db 55 ; base exp
+	db 148 ; catch rate
+	db 99 ; base exp
 	db WHOPPER, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 15 ; step cycles to hatch
-INCBIN "gfx/pokemon/hyrogryph/front.dimensions"
+INCBIN "gfx/pokemon/cirriffon/front.dimensions"
 	db GROWTH_MEDIUM_SLOW ; growth rate
 	dn EGG_FLYING, EGG_FLYING ; egg groups
 
