@@ -640,7 +640,7 @@ _CGB_TrainerCard:
 	ld a, GORDON
 	call GetTrainerPalettePointer
 	call Load3ColorPalette
-	ld a, BRAIN
+	ld a, BRIAN
 	call GetTrainerPalettePointer
 	call Load3ColorPalette
 	ld a, PREDEFPAL_CGB_BADGE

@@ -49,7 +49,7 @@ NUM_NONTRAINER_EMAILCONTACTS EQU const_value - 1
 	const JASMINE1
 	const GORDON1
 
-	trainerclass BRAIN ; 7
+	trainerclass BRIAN ; 7
 	const CHUCK1
 	const BRIAN1
 

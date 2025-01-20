@@ -213,7 +213,9 @@ SFX:
 ; imported
 	dba Sfx_ShootingStar
 	dba Sfx_RBYSing
-	dba Sfx_PokefluteHome
+	dba Sfx_Hip
+	dba Sfx_Hop
+	dba Sfx_RBYWhoosh
 	dba Sfx_LockOn
 	dba Sfx_Flail
 	dba Sfx_BallClose
@@ -234,5 +236,6 @@ SFX:
 	dba Sfx_Spikes2
 	dba Sfx_Recover
 	dba Sfx_PayDay
+	dba Sfx_PokefluteHome
 	dba Sfx_PokefluteNight
 	dba Sfx_PokefluteDungeon

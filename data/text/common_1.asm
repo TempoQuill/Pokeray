@@ -554,12 +554,12 @@ _BenFernText2B::
 
 _BenFernText3A::
 	text_start
-	line "#MON March!"
+	line "Morning March!"
 	done
 
 _BenFernText3B::
 	text_start
-	line "#MON Lullaby!"
+	line "BFF Lullaby!"
 	done
 
 ; Lucky Channel

@@ -410,3 +410,39 @@ Sfx_PokefluteDungeon_Ch7:
 	note A_, 2
 	note A_, 6
 	sound_ret
+
+Sfx_Hip:
+	channel_count 1
+	channel 5, Sfx_Hip_Ch5
+
+Sfx_Hip_Ch5:
+_chan = 1
+	duty_cycle 2
+	pitch_sweep 2, 6
+	square_note 12, 12, 2, 1856
+	pitch_sweep 0, 8
+	sound_ret
+
+Sfx_Hop:
+	channel_count 1
+	channel 5, Sfx_Hop_Ch5
+
+Sfx_Hop_Ch5:
+_chan = 1
+	duty_cycle 2
+	pitch_sweep 2, 6
+	square_note 12, 12, 2, 1664
+	pitch_sweep 0, 8
+	sound_ret
+
+Sfx_RBYWhoosh:
+	channel_count 1
+	channel 8, Sfx_RBYWhoosh_Ch8
+
+Sfx_RBYWhoosh_Ch8:
+	noise_note 4, 2, -4, 32
+	noise_note 3, 10, 0, 32
+	noise_note 3, 11, 0, 33
+	noise_note 3, 12, 0, 34
+	noise_note 15, 13, 2, 36
+	sound_ret

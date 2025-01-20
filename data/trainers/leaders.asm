@@ -11,7 +11,7 @@ GymLeaders:
 	db GLADMAN
 	db WOODY
 	db GORDON
-	db BRAIN
+	db BRIAN
 	db BELLE
 	db CHRIS
 	db CHRIS
