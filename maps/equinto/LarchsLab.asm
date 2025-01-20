@@ -427,7 +427,7 @@ ChoseMonText:
 	done
 
 GotMonText:
-	text "<PLAYER> got a"
+	text "<PLAYER> got a(n)"
 	line "@"
 	text_ram wStringBuffer3
 	text "!"
