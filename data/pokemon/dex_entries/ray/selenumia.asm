@@ -1,10 +1,18 @@
 	db "MOONLIGHT" ; species name
 	dw 807, 1399 ; height, weight
 
-	db   "It soars around"
-	next "EQUINTO at night,"
-	next "looking for its"
+	db   "It shares a home"
+	next "with HELICELIA in"
+	next "MT VACUUM's summit."
 
-	page "own place in #-"
-	next "MON. It likes to"
-	next "prank trainers.@"
+	page "It roams the land"
+	next "to connect with"
+	next "people & #MON.@"
+
+	db   "Roams the night"
+	next "sky, looking for a"
+	next "place to call its"
+
+	page "own. Its howl can"
+	next "be heard past many"
+	next "nearby regions.@"

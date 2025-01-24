@@ -8,3 +8,11 @@
 	page "are only possible"
 	next "now due to SILPH"
 	next "CO.'s FLASH STONE.@"
+
+	db   "Preceded GYARADOS"
+	next "as MAGIKARP's evo-"
+	next "lution, as numbers"
+
+	page "had fallen greatly"
+	next "thanks to human"
+	next "intervention.@"
