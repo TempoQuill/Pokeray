@@ -700,6 +700,11 @@ AI_Smart_EvasionUp:
 	cp MAX_STAT_LEVEL
 	jp nc, AIDiscourageMove
 
+; Also dismiss if the player used X Accuracy
+	ld a, [wPlayerSubStatus4]
+	bit SUBSTATUS_X_ACCURACY, a
+	jp nc, AIDiscourageMove
+
 ; If enemy's HP is full...
 	call AICheckEnemyMaxHP
 	jr nc, .asm_388d3
