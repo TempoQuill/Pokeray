@@ -395,7 +395,32 @@ AI_Smart_EffectHandlers:
 	dbw EFFECT_FREEZE,           AI_Smart_Freeze
 	dbw EFFECT_FUNNY_STUFF,      AI_Smart_FunnyStuff
 	dbw EFFECT_SMOKESCREEN,      AI_Smart_Smokescreen
+	dbw EFFECT_SPEED_UP,         AI_Smart_SpeedUp
+	dbw EFFECT_SPEED_UP_2,       AI_Smart_SpeedUp
 	db -1 ; end
+
+AI_Smart_SpeedUp:
+; Greatly encourage speed buffs if an X Accuracy-buffed OHKO is immediately
+; available to the player, and the enemy's speed hasn't been fully buffed yet
+	; dismiss if fully buffed
+	ld a, [wEnemySpdLevel]
+	cp MAX_STAT_LEVEL
+	jp nc, AIDiscourageMove
+	; do nothing if X Accuracy hasn't been used
+	ld a, [wPlayerSubStatus4]
+	bit SUBSTATUS_X_ACCURACY, a
+	ret z
+	; do nothing if no OHKO move is available
+	ld b, EFFECT_OHKO
+	call AIPlayerHasMove
+	ret nc
+	; greatly encourage otherwise
+	; this is the AI's attempt to outspeed so that the OHKO move always
+	; misses.
+	dec [hl]
+	dec [hl]
+	dec [hl]
+	ret
 
 AI_Smart_Smokescreen:
 ; accuracy down, but can reverse scoring, depending on poison and final score
@@ -2976,6 +3001,37 @@ AIHasLowAccuracy:
 	scf
 	ret
 
+AIPlayerHasMove:
+; Return carry if the Player has move b.
+
+	push hl
+	ld hl, wBattleMonMoves
+	ld c, NUM_MOVES
+
+.checkmove
+	ld a, [hli]
+	and a
+	jr z, .no
+
+	call AIGetPlayerMove
+
+	ld a, [wEnemyMoveStruct + MOVE_EFFECT]
+	cp b
+	jr z, .yes
+
+	dec c
+	jr nz, .checkmove
+
+.no
+	pop hl
+	and a
+	ret
+
+.yes
+	pop hl
+	scf
+	ret
+
 INCLUDE "data/battle/ai/useful_moves.asm"
 
 AI_Opportunist:
@@ -3335,6 +3391,37 @@ AIDiscourageMove:
 	add 10
 	ld [hl], a
 	ret
+
+AIGetPlayerMove:
+; Load attributes of move a into ram
+
+	push hl
+	push de
+	push bc
+	dec a
+	ld hl, Moves
+	ld bc, MOVE_LENGTH
+	call AddNTimes
+
+	ld de, wPlayerMoveStruct
+	ld a, BANK(Moves)
+	call FarCopyBytes
+
+	pop bc
+	pop de
+	pop hl
+	ret
+
+AI_80_20:
+	call Random
+	cp 20 percent - 1
+	ret
+
+AI_50_50:
+	call Random
+	cp 50 percent + 1
+	ret
+
 
 AIGetEnemyMove:
 ; Load attributes of move a into ram
