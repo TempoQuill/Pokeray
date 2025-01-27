@@ -38,7 +38,7 @@ MoveDeletion:
 	jr c, .declined
 	call .DeleteMove
 	call WaitSFX
-	ld de, SFX_MOVE_DELETED
+	ld de, SFX_ESCAPE_ROPE
 	call PlaySFX
 	call WaitSFX
 	ld hl, .DeleterForgotMoveText

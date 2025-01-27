@@ -670,7 +670,7 @@ _PokecenterPlayersPCText::
 	prompt
 
 _PokecenterOaksPCText::
-	text "PROF.OAK's PC"
+	text "PROF.LARCH's PC"
 	line "accessed."
 
 	para "#DEX Rating"
@@ -699,7 +699,7 @@ _OakPCText3::
 	text_ram wStringBuffer4
 	text " #MON owned"
 
-	para "PROF.OAK's"
+	para "PROF.LARCH's"
 	line "Rating:"
 	done
 
@@ -852,7 +852,7 @@ _OakRating19::
 
 _OakPCText4::
 	text "The link to PROF."
-	line "OAK's PC closed."
+	line "LARCH's PC closed."
 	done
 
 _ItemsTossOutHowManyText::
