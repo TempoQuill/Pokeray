@@ -53,7 +53,6 @@
 	const GERONIMO_CHAVEZ    ; "  GERONIMO CHAVEZ   "
 	const SOLO_ACAPELLO      ; "   SOLO ACAPELLO    "
 	const JACK_GETSCHMAN     ; "   JACK GETSCHMAN   "
-;	const ANDREW_STEIN       ; "    ANDREW STEIN    "
 	const SCOTT_CHENEY       ; "    SCOTT CHENEY    "
 	const SAMUEL_KERSSY      ; "   SAMUEL KERSSY    "
 	const JENNIFER_NICHOLSON ; " JENNIFER NICHOLSON "

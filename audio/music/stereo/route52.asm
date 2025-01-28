@@ -1,4 +1,4 @@
-Music_Route52: ; ANDREW STEIN
+Music_Route52:
 ; engine, wav
 ; AUG 20 2019
 	channel_count 4

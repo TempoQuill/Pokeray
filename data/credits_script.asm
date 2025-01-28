@@ -100,15 +100,14 @@ CreditsScript:
 
 	db         CREDIT_MUSIC, 0
 	db         JOSHUA_CRAPO, 1
-;	db         ANDREW_STEIN, 2
-	db        SOLO_ACAPELLO, 3
+	db        SOLO_ACAPELLO, 2
+	db         SCOTT_CHENEY, 3
 
 	db CREDITS_WAIT, 12
 
 	db         CREDIT_MUSIC, 0
-	db         SCOTT_CHENEY, 1
-	db        MINAKO_HAMANO, 2
-	db       JACK_GETSCHMAN, 3
+	db        MINAKO_HAMANO, 1
+	db       JACK_GETSCHMAN, 2
 
 	db CREDITS_WAIT, 12
 
