@@ -1,6 +1,6 @@
 	dw TRIFOX ; 268
 
-	db  20,  22,  21,  42,  31,  42
+	db  31,  34,  33,  54,  42,  54
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, FIRE ; type

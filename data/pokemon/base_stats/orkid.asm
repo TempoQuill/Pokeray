@@ -1,6 +1,6 @@
 	dw ORKID ; 257
 
-	db 102,  39, 102,  70,  98,  11
+	db  80,  35,  80,  60,  70,  10
 	;   hp  atk  def  spd  sat  sdf
 
 	db GRASS, GRASS ; type

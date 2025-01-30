@@ -1,6 +1,6 @@
 	dw FOLICORN ; 283
 
-	db  38,  72,  43,  77,  53,  53
+	db  25,  50,  35,  55,  45,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, FIRE ; type

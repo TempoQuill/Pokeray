@@ -5,6 +5,6 @@
 	next "DNA mutates at the"
 	next "texture of factory"
 
-	page "STEEL of certain"
+	page "STEEL in certain"
 	next "#MON, thus it"
 	next "adapts with armor.@"

@@ -2840,7 +2840,7 @@ HoundourEvosAttacks:
 	db 0 ; no more level-up moves
 
 HoundoomEvosAttacks:
-;	evolve HELD, NIGHT_ARMOR, HOUNDREAD
+	evolve HELD, NIGHT_ARMOR, HOUNDREAD
 	db 0 ; no more evolutions
 	db 1, LEER
 	db 1, EMBER
@@ -3896,22 +3896,33 @@ AliduskEvosAttacks:
 	db 48, PSYCHIC_M	; S.T.A.B.
 	db 0 ; no more level-up moves
 
+AppuckEvosAttacks:
+	db 0 ; no more level-up moves
+	db 1, AGILITY
+	db 1, EMBER
+	db 3, LEER
+	db 8, DOUBLE_KICK
+	db 14, ROLLING_KICK
+	db 19, ROCK_THROW
+	db 25, STRENGTH
+	db 31, MEGA_KICK
+	db 36, LOW_KICK
+	db 0 ; no more evolutions
+
 SewmaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PSYWAVE
 	db 1, PAY_DAY
 	db 3, JUMP_KICK
-	db 5, FALSE_SWIPE
-	db 7, DOUBLESLAP
-	db 9, PSYCHIC_M
-	db 10, BIND
-	db 11, KINESIS
-	db 13, CURSE
-	db 14, RECOVER
-	db 16, PSYBEAM
-	db 18, SPIDER_WEB
-	db 20, ROCK_THROW
-	db 21, LIGHT_SCREEN
+	db 9, FALSE_SWIPE
+	db 16, DOUBLESLAP
+	db 22, PSYCHIC_M
+	db 22, BIND
+	db 22, KINESIS
+	db 29, PSYBEAM
+	db 35, SPIDER_WEB
+	db 42, ROCK_THROW
+	db 48, LIGHT_SCREEN
 	db 0 ; no more level-up moves
 
 SweoteEvosAttacks:
@@ -3950,4 +3961,50 @@ CoazigoastEvosAttacks:
 	db 51, PSYBEAM
 	db 51, SHADOW_BALL
 	db 53, PSYCHIC_M
+	db 0 ; no more level-up moves
+
+DrythonEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, LEER
+	db 1, WRAP
+	db 7, POISON_STING
+	db 13, HEADBUTT
+	db 19, GLARE
+	db 25, BITE
+	db 31, PIN_MISSILE
+	db 37, CRUNCH
+	db 0 ; no more level-up moves
+
+HoundreadEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, LEER
+	db 1, EMBER
+	db 33, FAINT_ATTACK
+	db 47, FLAMETHROWER
+	db 61, CRUNCH
+	db 0 ; no more level-up moves
+
+WindkittEvosAttacks:
+	evolve LEVEL, 15, TODBRUSH
+	db 0 ; no more evolutions
+	db 1, FUNNY_STUFF
+	db 1, TAIL_WHIP
+	db 5, SMOKESCREEN
+	db 9, EMBER
+	db 15, BITE
+	db 19, FLAME_WHEEL
+	db 23, CRUNCH
+	db 27, FLAMETHROWER
+	db 0 ; no more level-up moves
+
+TodbrushEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, FUNNY_STUFF
+	db 1, TAIL_WHIP
+	db 1, SMOKESCREEN
+	db 1, EMBER
+	db 23, BITE
+	db 29, FLAME_WHEEL
+	db 35, CRUNCH
+	db 41, FLAMETHROWER
 	db 0 ; no more level-up moves

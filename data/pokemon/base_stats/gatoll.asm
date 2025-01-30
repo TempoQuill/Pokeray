@@ -1,6 +1,6 @@
 	dw GATOLL ; 281
 
-	db  73,  21,  87,  68,  49,  68
+	db  70,  20,  85,  65,  45,  65
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, DARK ; type
@@ -9,7 +9,7 @@
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 20 ; step cycles to hatch
-INCBIN "gfx/pokemon/cointen/front.dimensions"
+INCBIN "gfx/pokemon/gatoll/front.dimensions"
 	db GROWTH_FAST ; growth rate
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 

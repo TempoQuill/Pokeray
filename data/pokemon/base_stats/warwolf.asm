@@ -1,6 +1,6 @@
 	dw WARWOLF ; 298
 
-	db 159, 157, 132,  57, 153, 144
+	db 110, 120,  45,  45, 110,  60
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, ICE ; type

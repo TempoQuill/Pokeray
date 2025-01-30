@@ -1,6 +1,6 @@
 	dw SYNTIQUE ; 258
 
-	db 112,  42, 112,  77, 108,  12
+	db 100,  45, 100,  75,  90,  15
 	;   hp  atk  def  spd  sat  sdf
 
 	db GRASS, GRASS ; type

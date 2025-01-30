@@ -1,6 +1,6 @@
 	dw COSMOREAS ; 063
 
-	db  56, 115,  86, 135, 106,  99
+	db  49,  99,  74, 117,  91,  85
 	;   hp  atk  def  spd  sat  sdf
 
 	db FLYING, FLYING ; type

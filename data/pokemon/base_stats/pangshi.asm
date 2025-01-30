@@ -1,6 +1,6 @@
 	dw PANGSHI ; 295
 
-	db  45, 180,  90,  15, 180,  90
+	db  35, 155,  75,  15, 155,  75
 	;   hp  atk  def  spd  sat  sdf
 
 	db GHOST, DARK ; type

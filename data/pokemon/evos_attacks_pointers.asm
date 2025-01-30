@@ -300,8 +300,8 @@ endr
 	dw BellboyantEvosAttacks
 	dw -1
 	dw -1
-	dw -1
-	dw -1
+	dw UnilightEvosAttacks
+	dw AliduskEvosAttacks
 	dw -1
 	dw FolicornEvosAttacks
 	dw WhispeonEvosAttacks
@@ -311,7 +311,7 @@ endr
 	dw -1
 	dw -1
 	dw TiruffEvosAttacks
-	dw -1
+	dw AppuckEvosAttacks
 	dw -1
 	dw -1
 	dw -1
@@ -331,7 +331,7 @@ endr
 	dw -1
 	dw -1
 	dw PluxEvosAttacks
-	dw -1
+	dw HoundreadEvosAttacks
 	dw WolfmanEvosAttacks
 	dw WarwolfEvosAttacks
 	dw PorysphiaEvosAttacks
@@ -356,7 +356,7 @@ endr
 	dw CoazigoastEvosAttacks
 	dw -1
 	dw -1
-	dw -1
+	dw SewmaEvosAttacks
 	dw -1
 	dw -1
 	dw -1
@@ -368,7 +368,7 @@ endr
 	dw -1
 	dw -1
 	dw -1
-	dw -1
+	dw DrythonEvosAttacks
 	dw -1
 	dw -1
 	dw -1

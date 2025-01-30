@@ -81,11 +81,11 @@
 	const CRY_CROW_OLD       ; 47
 	const CRY_DERBLE_4_OLD   ; 48
 	const CRY_ROAR_2_OLD     ; 49
-	const CRY_TRIFOX         ; 4a
+	const CRY_HOOTING_1      ; 4a
 	const CRY_HOOTHOOT_OLD   ; 4b
-	const CRY_DODAERIE       ; 4c
+	const CRY_HOOTING_2      ; 4c
 	const CRY_CROCODILE      ; 4d
-	const CRY_SMUJJ          ; 4e
+	const CRY_INSECT         ; 4e
 	const CRY_TIGER_OLD      ; 4f
 	const CRY_SNEASEL_OLD    ; 50
 	const CRY_FOLICORN       ; 51

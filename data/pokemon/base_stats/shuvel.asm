@@ -1,6 +1,6 @@
 	dw SHUVEL ; 328
 
-	db  22,  11, 255,  06,  11, 255
+	db  20,  10, 250,  05,  10, 250
 	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, ROCK ; type

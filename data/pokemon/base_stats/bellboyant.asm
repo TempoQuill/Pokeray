@@ -1,6 +1,6 @@
 	dw BELLBOYANT ; 282
 
-	db 119,  32, 130, 102,  74, 102
+	db 115,  30, 130, 100,  70, 100
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, DARK ; type
@@ -9,7 +9,7 @@
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 20 ; step cycles to hatch
-INCBIN "gfx/pokemon/cointen/front.dimensions"
+INCBIN "gfx/pokemon/bellboyant/front.dimensions"
 	db GROWTH_FAST ; growth rate
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 

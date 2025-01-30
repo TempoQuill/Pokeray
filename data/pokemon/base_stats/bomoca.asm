@@ -1,6 +1,6 @@
 	dw BOMOCA ; 290
 
-	db  86,  67,  76, 108, 113, 109
+	db  85,  65,  75, 105, 110, 105
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, WATER ; type
@@ -9,7 +9,7 @@
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 7 ; step cycles to hatch
-INCBIN "gfx/pokemon/belmitt/front.dimensions"
+INCBIN "gfx/pokemon/bomoca/front.dimensions"
 	db GROWTH_SLIGHTLY_FAST ; growth rate
 	db EGG_WATER_3, EGG_WATER_3 ; egg groups
 

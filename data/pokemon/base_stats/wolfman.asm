@@ -1,6 +1,6 @@
 	dw WOLFMAN ; 297
 
-	db 106, 105,  88,  38, 102,  96
+	db  75,  80,  30,  30,  75,  40
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, ICE ; type

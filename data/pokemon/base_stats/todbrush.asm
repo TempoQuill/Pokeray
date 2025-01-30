@@ -1,6 +1,6 @@
 	dw TODBRUSH ; 336
 
-	db 117,  77, 164, 144, 161, 127
+	db 110, 105,  60,  80,  75,  30
 	;   hp  atk  def  spd  sat  sdf
 
 	db GROUND, FIRE ; type
@@ -14,5 +14,5 @@ INCBIN "gfx/pokemon/todbrush/front.dimensions"
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 
 	; tm/hm learnset
-	tmhm CUT
+	tmhm CURSE, ROLLOUT, ROAR, HIDDEN_POWER, SUNNY_DAY, HYPER_BEAM, ENDURE, FRUSTRATION, IRON_TAIL, DRAGONBREATH, RETURN, DIG, MUD_SLAP, DOUBLE_TEAM, FIRE_BLAST, REST, ATTRACT, THIEF, CUT
 	; end

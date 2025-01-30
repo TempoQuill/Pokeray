@@ -1,6 +1,6 @@
 	dw KOTORA ; 291
 
-	db  83, 128,  78, 125, 104,  54
+	db  40,  75,  65,  75,  70,  60
 	;   hp  atk  def  spd  sat  sdf
 
 	db ELECTRIC, ELECTRIC ; type

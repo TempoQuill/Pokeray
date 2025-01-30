@@ -1,6 +1,6 @@
 	dw WINDKITT ; 335
 
-	db  90,  51, 126, 111, 124,  98
+	db  75,  70,  40,  55,  50,  20
 	;   hp  atk  def  spd  sat  sdf
 
 	db GROUND, FIRE ; type
@@ -14,5 +14,5 @@ INCBIN "gfx/pokemon/windkitt/front.dimensions"
 	dn EGG_GROUND, EGG_GROUND ; egg groups
 
 	; tm/hm learnset
-	tmhm CUT
+	tmhm CURSE, ROLLOUT, ROAR, HIDDEN_POWER, SUNNY_DAY, FRUSTRATION, IRON_TAIL, DRAGONBREATH, RETURN, DIG, MUD_SLAP, DOUBLE_TEAM, FIRE_BLAST, REST, ATTRACT, THIEF, CUT
 	; end

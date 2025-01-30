@@ -280,7 +280,7 @@ PokemonCries::
 	mon_cry CRY_YOSHI,        -123,   271 ; SNOBUSTER
 	mon_cry CRY_SNEASEL_OLD,  -144,   288 ; ARBUGS
 	mon_cry CRY_ORKID,        -122,   256 ; WILLOFUDD
-	mon_cry CRY_TRIFOX,        112,    96 ; TRIFOX
+	mon_cry CRY_HOOTING_1,     112,    96 ; TRIFOX
 	mon_cry CRY_ROAR_2_OLD,     96,   256 ; BURGELA
 	mon_cry CRY_EARTHTRON,    -511,   224 ; TENTACRIME
 	mon_cry CRY_TIGER_OLD,       0,   256 ; NUMPUFF
@@ -299,7 +299,7 @@ PokemonCries::
 	mon_cry CRY_DERBLE_4_OLD,   47,   549 ; METABEAK
 	mon_cry CRY_BOMOCA,         58,   256 ; CRANEST
 	mon_cry CRY_SPEAROW_OLD,   463,   121 ; LYKWYSE
-	mon_cry CRY_DODAERIE,      160,   256 ; DODAERIE
+	mon_cry CRY_HOOTING_2,     160,   256 ; DODAERIE
 	mon_cry CRY_BOMOCA,        -40,   132 ; SUNTHESIA
 	mon_cry CRY_TOUFENSE,       30,   304 ; TOUFENSE
 	mon_cry CRY_FELINE,         48,   256 ; SIAMAIS		; GF
@@ -316,7 +316,7 @@ PokemonCries::
 	mon_cry CRY_BOMOCA,        164,   240 ; WHISPEON
 	mon_cry CRY_TOUFENSE,      224,   288 ; ASSEMBLEON
 	mon_cry CRY_GUARNID,       192,   165 ; TURBANN
-	mon_cry CRY_SMUJJ,        -264,   320 ; SMUJJ		; GF
+	mon_cry CRY_INSECT,       -264,   320 ; SMUJJ		; GF
 	mon_cry CRY_TIGER_OLD,     543,   302 ; DRAGONISCE
 	mon_cry CRY_KICLOUD,       208,   170 ; KICLOUD
 	mon_cry CRY_SPEAROW_OLD,   370,   128 ; TIRUFF

@@ -1,6 +1,6 @@
 	dw CIRRIFFON ; 063
 
-	db  38,  77,  57,  90,  71,  66
+	db  35,  71,  53,  84,  65,  61
 	;   hp  atk  def  spd  sat  sdf
 
 	db FLYING, FLYING ; type

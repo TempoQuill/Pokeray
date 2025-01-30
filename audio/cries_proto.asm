@@ -22,16 +22,16 @@ ProtoCry_Roar2:
 	channel 6, ProtoCry_Roar2_Ch6
 	channel 8, ProtoCry_Roar2_Ch8
 
-ProtoCry_HOHO_1:
+ProtoCry_Hooting_1:
 	channel_count 3
-	channel 5, ProtoCry_HOHO_Ch5
-	channel 6, ProtoCry_HOHO_Ch6
-	channel 8, ProtoCry_HOHO_Ch8
+	channel 5, ProtoCry_Hooting_Ch5
+	channel 6, ProtoCry_Hooting_Ch6
+	channel 8, ProtoCry_Hooting_Ch8
 
-ProtoCry_HOHO_2:
+ProtoCry_Hooting_2:
 	channel_count 2
-	channel 5, ProtoCry_HOHO_Ch5
-	channel 6, ProtoCry_HOHO_Ch6
+	channel 5, ProtoCry_Hooting_Ch5
+	channel 6, ProtoCry_Hooting_Ch6
 
 ProtoCry_Hoothoot:
 	channel_count 3
@@ -57,7 +57,7 @@ ProtoCry_Crocodile:
 	channel 6, ProtoCry_Crocodile_Ch6
 	channel 8, ProtoCry_Crocodile_Ch8
 
-ProtoCry_MUSI:
+ProtoCry_Insect:
 	channel_count 2
 	channel 5, Cry_Derble1_Ch6
 	channel 8, ProtoCry_Roar1_Ch8
@@ -183,18 +183,18 @@ ProtoCry_Roar2_Ch8:
 	noise_note 7, 5, 2, 79
 	sound_ret
 
-ProtoCry_HOHO_Ch5:
+ProtoCry_Hooting_Ch5:
 	pitch_offset 32
 	duty_cycle 2
-	sound_jump ProtoCry_HOHO_Ch6_0100
-ProtoCry_HOHO_Ch6:
+	sound_jump ProtoCry_Hooting_Ch6.body
+ProtoCry_Hooting_Ch6:
 	duty_cycle_pattern 0, 1, 2, 3
-ProtoCry_HOHO_Ch6_0100:
+.body:
 	sound_call Cry_Phanpy_Ch6.body
 	square_note 4, 0, 0, 0
-	sound_loop 2, ProtoCry_HOHO_Ch6_0100
+	sound_loop 2, .body
 	sound_ret
-ProtoCry_HOHO_Ch8:
+ProtoCry_Hooting_Ch8:
 .loop:
 	sound_call Cry_Phanpy_Ch8
 	noise_note 4, 0, 0, 0

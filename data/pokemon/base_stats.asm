@@ -299,82 +299,107 @@ INCLUDE "data/pokemon/base_stats/aquacent.asm"
 INCLUDE "data/pokemon/base_stats/aquaria.asm"
 INCLUDE "data/pokemon/base_stats/croven.asm"
 INCLUDE "data/pokemon/base_stats/astroven.asm"
+	ds BASE_DATA_SIZE, 0 ; noctglide
+	ds BASE_DATA_SIZE, 0 ; snoburi
+	ds BASE_DATA_SIZE, 0 ; snobuster
+	ds BASE_DATA_SIZE, 0 ; arbugs
+	ds BASE_DATA_SIZE, 0 ; willofudd
 INCLUDE "data/pokemon/base_stats/trifox.asm"
 INCLUDE "data/pokemon/base_stats/burgela.asm"
-INCLUDE "data/pokemon/base_stats/numpuff.asm"
+	ds BASE_DATA_SIZE, 0 ; tentacrime
+INCLUDE "data/pokemon/base_stats/numpuff.asm"		; str "look up"
+	ds BASE_DATA_SIZE, 0 ; mightalex
+	ds BASE_DATA_SIZE, 0 ; quagami
+INCLUDE "data/pokemon/base_stats/quailter.asm"
+INCLUDE "data/pokemon/base_stats/staffbird.asm"
 INCLUDE "data/pokemon/base_stats/orschul.asm"
 INCLUDE "data/pokemon/base_stats/moundiver.asm"
 INCLUDE "data/pokemon/base_stats/molambino.asm"
 INCLUDE "data/pokemon/base_stats/angore.asm"
 INCLUDE "data/pokemon/base_stats/grotess.asm"
+	ds BASE_DATA_SIZE, 0 ; sailwing
 INCLUDE "data/pokemon/base_stats/parabud.asm"
+	ds BASE_DATA_SIZE, 0 ; tieracnid
+	ds BASE_DATA_SIZE, 0 ; metabeak
+	ds BASE_DATA_SIZE, 0 ; cranest
 INCLUDE "data/pokemon/base_stats/lykwyse.asm"
 INCLUDE "data/pokemon/base_stats/dodaerie.asm"
+	ds BASE_DATA_SIZE, 0 ; sunthesia
+	ds BASE_DATA_SIZE, 0 ; toufense
 INCLUDE "data/pokemon/base_stats/siamais.asm"
+	ds BASE_DATA_SIZE, 0 ; rakuki
 INCLUDE "data/pokemon/base_stats/cointen.asm"
 INCLUDE "data/pokemon/base_stats/gatoll.asm"
 INCLUDE "data/pokemon/base_stats/bellboyant.asm"
+	ds BASE_DATA_SIZE, 0 ; starello
+	ds BASE_DATA_SIZE, 0 ; liodew
+INCLUDE "data/pokemon/base_stats/unilight.asm"
+INCLUDE "data/pokemon/base_stats/alidusk.asm"
+	ds BASE_DATA_SIZE, 0 ; lediury
 INCLUDE "data/pokemon/base_stats/folicorn.asm"
 INCLUDE "data/pokemon/base_stats/whispeon.asm"
 INCLUDE "data/pokemon/base_stats/assembleon.asm"
 INCLUDE "data/pokemon/base_stats/turbann.asm"
 INCLUDE "data/pokemon/base_stats/smujj.asm"
+INCLUDE "data/pokemon/base_stats/dragonisce.asm"
+	ds BASE_DATA_SIZE, 0 ; kicloud
 INCLUDE "data/pokemon/base_stats/tiruff.asm"
+INCLUDE "data/pokemon/base_stats/appuck.asm"
+INCLUDE "data/pokemon/base_stats/alrem.asm"		; str
+	ds BASE_DATA_SIZE, 0 ; murphelt
+	ds BASE_DATA_SIZE, 0 ; tiarant
+	ds BASE_DATA_SIZE, 0 ; silvealth
+	ds BASE_DATA_SIZE, 0 ; searchle
 INCLUDE "data/pokemon/base_stats/belmitt.asm"
+	ds BASE_DATA_SIZE, 0 ; milcalf
 INCLUDE "data/pokemon/base_stats/bomoca.asm"
+	ds BASE_DATA_SIZE, 0 ; delflap
 INCLUDE "data/pokemon/base_stats/kotora.asm"
 INCLUDE "data/pokemon/base_stats/raitora.asm"
 INCLUDE "data/pokemon/base_stats/madame.asm"
 INCLUDE "data/pokemon/base_stats/kurstraw.asm"
 INCLUDE "data/pokemon/base_stats/pangshi.asm"
+	ds BASE_DATA_SIZE, 0 ; scafarow
+	ds BASE_DATA_SIZE, 0 ; reclinax
+	ds BASE_DATA_SIZE, 0 ; moscarf
+	ds BASE_DATA_SIZE, 0 ; flider
 INCLUDE "data/pokemon/base_stats/plux.asm"
+	ds BASE_DATA_SIZE, 0 ; houndread
 INCLUDE "data/pokemon/base_stats/wolfman.asm"
 INCLUDE "data/pokemon/base_stats/warwolf.asm"
 INCLUDE "data/pokemon/base_stats/porysphia.asm"
-INCLUDE "data/pokemon/base_stats/alphape.asm"
-INCLUDE "data/pokemon/base_stats/alrem.asm"
+	ds BASE_DATA_SIZE, 0 ; ravermin
+	ds BASE_DATA_SIZE, 0 ; magneven
+	ds BASE_DATA_SIZE, 0 ; donkrank
+	ds BASE_DATA_SIZE, 0 ; choaking
+	ds BASE_DATA_SIZE, 0 ; sandscour
+	ds BASE_DATA_SIZE, 0 ; tearow
+	ds BASE_DATA_SIZE, 0 ; nohtyp
+	ds BASE_DATA_SIZE, 0 ; venoknight
+	ds BASE_DATA_SIZE, 0 ; dugquintet
+	ds BASE_DATA_SIZE, 0 ; empeduck
+INCLUDE "data/pokemon/base_stats/alphape.asm"		; str
 	ds BASE_DATA_SIZE, 0 ; pinchler
 	ds BASE_DATA_SIZE, 0 ; pouchent
-	ds BASE_DATA_SIZE, 0 ; mightalex
-	ds BASE_DATA_SIZE, 0 ; murphelt
-	ds BASE_DATA_SIZE, 0 ; omanova
+INCLUDE "data/pokemon/base_stats/omanova.asm"		; str
 	ds BASE_DATA_SIZE, 0 ; kaboulder
-	ds BASE_DATA_SIZE, 0 ; reclinax
 	ds BASE_DATA_SIZE, 0 ; coatret
-	ds BASE_DATA_SIZE, 0 ; noctglide
-	ds BASE_DATA_SIZE, 0 ; lediury
-	ds BASE_DATA_SIZE, 0 ; tieracnid
-	ds BASE_DATA_SIZE, 0 ; sunthesia
-	ds BASE_DATA_SIZE, 0 ; guagami
-	ds BASE_DATA_SIZE, 0 ; shuvel
-	ds BASE_DATA_SIZE, 0 ; delflap
-	ds BASE_DATA_SIZE, 0 ; metabeak
-	ds BASE_DATA_SIZE, 0 ; cranest
-	ds BASE_DATA_SIZE, 0 ; houndread
-	ds BASE_DATA_SIZE, 0 ; milcalf
-INCLUDE "data/pokemon/base_stats/abream.asm"
+INCLUDE "data/pokemon/base_stats/shuvel.asm"
+INCLUDE "data/pokemon/base_stats/coazigoast.asm"
 INCLUDE "data/pokemon/base_stats/windkitt.asm"
 INCLUDE "data/pokemon/base_stats/todbrush.asm"
-	ds BASE_DATA_SIZE, 0 ; 
-	ds BASE_DATA_SIZE, 0 ; 
-	ds BASE_DATA_SIZE, 0 ; 
-	ds BASE_DATA_SIZE, 0 ; 
-	ds BASE_DATA_SIZE, 0 ; 
-	ds BASE_DATA_SIZE, 0 ; 
-INCLUDE "data/pokemon/base_stats/unlight.asm"
-INCLUDE "data/pokemon/base_stats/alidusk.asm"
-	ds BASE_DATA_SIZE, 0 ; kicloud
-	ds BASE_DATA_SIZE, 0 ; appuck
 	ds BASE_DATA_SIZE, 0 ; sewma
 INCLUDE "data/pokemon/base_stats/animadise.asm"
 	ds BASE_DATA_SIZE, 0 ; marloon
 	ds BASE_DATA_SIZE, 0 ; assisdra
 	ds BASE_DATA_SIZE, 0 ; scooten
-	ds BASE_DATA_SIZE, 0 ; searchle
-	ds BASE_DATA_SIZE, 0 ; sweote
-	ds BASE_DATA_SIZE, 0 ; tiarant
-	ds BASE_DATA_SIZE, 0 ; silvealth
+INCLUDE "data/pokemon/base_stats/sweote.asm"
 INCLUDE "data/pokemon/base_stats/griflet.asm"
 INCLUDE "data/pokemon/base_stats/cirriffon.asm"
 INCLUDE "data/pokemon/base_stats/cosmoreas.asm"
+	ds BASE_DATA_SIZE, 0 ; laroon
+	ds BASE_DATA_SIZE, 0 ; caditen
+	ds BASE_DATA_SIZE, 0 ; chrysalty
+INCLUDE "data/pokemon/base_stats/drython.asm"
 
+; str = "subject to rebalancing"
