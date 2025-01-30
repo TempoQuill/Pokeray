@@ -354,8 +354,8 @@ endr
 	dw -1
 	dw -1
 	dw CoazigoastEvosAttacks
-	dw -1
-	dw -1
+	dw WindkittEvosAttacks
+	dw TodbrushEvosAttacks
 	dw SewmaEvosAttacks
 	dw -1
 	dw -1
