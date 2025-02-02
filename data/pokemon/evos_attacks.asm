@@ -285,7 +285,7 @@ SpearowEvosAttacks:
 	db 0 ; no more level-up moves
 
 FearowEvosAttacks:
-;	evolve QUALITY_OF_LIFE, TEAROW
+	evolve QUALITY_OF_LIFE, TEAROW
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 1, GROWL
@@ -2948,6 +2948,7 @@ SmoochumEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 1, LICK
+	db 1, PECK
 	db 9, SWEET_KISS
 	db 13, POWDER_SNOW
 	db 21, CONFUSION

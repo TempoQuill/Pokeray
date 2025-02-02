@@ -273,12 +273,12 @@ endr
 	dw -1
 	dw TrifoxEvosAttacks
 	dw BurgelaEvosAttacks
-	dw -1
+	dw TentacrimeEvosAttacks
 	dw NumpuffEvosAttacks
 	dw -1
 	dw -1
-	dw -1
-	dw -1
+	dw QuailterEvosAttacks
+	dw StaffBirdEvosAttacks
 	dw OrschulEvosAttacks
 	dw MoundiverEvosAttacks
 	dw MolambinoEvosAttacks
@@ -298,7 +298,7 @@ endr
 	dw CointenEvosAttacks
 	dw GatollEvosAttacks
 	dw BellboyantEvosAttacks
-	dw -1
+	dw StarelloEvosAttacks
 	dw -1
 	dw UnilightEvosAttacks
 	dw AliduskEvosAttacks
@@ -308,7 +308,7 @@ endr
 	dw AssembleonEvosAttacks
 	dw TurbannEvosAttacks
 	dw SmujjEvosAttacks
-	dw -1
+	dw DragonisceEvosAttacks
 	dw -1
 	dw TiruffEvosAttacks
 	dw AppuckEvosAttacks
@@ -335,18 +335,18 @@ endr
 	dw WolfmanEvosAttacks
 	dw WarwolfEvosAttacks
 	dw PorysphiaEvosAttacks
+	dw RaverminEvosAttacks
+	dw -1
+	dw -1
+	dw -1
 	dw ChoakingEvosAttacks
 	dw SandscourEvosAttacks
-	dw DragonisceEvosAttacks
-	dw RaverminEvosAttacks
-	dw StarelloEvosAttacks
 	dw TearowEvosAttacks
 	dw NohtypEvosAttacks
 	dw VenoknightEvosAttacks
 	dw DugquintetEvosAttacks
 	dw EmpeduckEvosAttacks
 	dw AlphapeEvosAttacks
-	dw TentacrimeEvosAttacks
 	dw -1
 	dw -1
 	dw -1
