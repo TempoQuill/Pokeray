@@ -18,15 +18,6 @@
 	const SFX_REGISTER_EMAIL              ; 0f
 	const SFX_POKE_BALL                   ; 10
 	const SFX_1ST_PLACE                   ; 11
-
-	const SFX_3RD_PLACE                   ; 12
-	const SFX_GET_EGG                     ; 13
-	const SFX_MOVE_DELETED                ; 14
-	const SFX_QUIT_SLOTS                  ; 15
-	const SFX_KEEP_AT_IT                  ; 16
-	const SFX_NOT_TOO_SHABBY              ; 17
-	const SFX_ALMOST_FINISHED             ; 18
-
 	const SFX_POKEBALLS_PLACED_ON_TABLE   ; 19
 	const SFX_POTION                      ; 1a
 	const SFX_FULL_HEAL                   ; 1b

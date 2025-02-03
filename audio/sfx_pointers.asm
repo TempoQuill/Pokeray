@@ -18,14 +18,6 @@ SFX:
 	dba Sfx_EmailAddressRegistered
 	dba Sfx_PokeBall
 	dba Sfx_Prize
-; leftover from G/S
-	dba Sfx_3rdPlace
-	dba Sfx_GetEgg
-	dba Sfx_MoveDeleted
-	dba Sfx_QuitSlots
-	dba Sfx_KeepAtIt
-	dba Sfx_NotTooShabby
-	dba Sfx_AlmostFinished
 ; normal SFX
 	dba Sfx_PokeballsPlacedOnTable
 	dba Sfx_Potion
