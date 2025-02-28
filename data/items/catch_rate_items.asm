@@ -5,7 +5,7 @@
 ; but has many more items appear on the table, even story-related items
 ; some of these entries are unused because pokemon can't hold key items
 
-TimeCapsule_CatchRateItems:
+TimeCapsule_ConversionItems:
 	db ITEM_73,      BERRY
 	db ITEM_74,      BERRY
 	db MACHINE_PART, BERRY

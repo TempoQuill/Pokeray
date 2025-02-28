@@ -6569,38 +6569,43 @@ ApplyStatLevelMultiplier:
 INCLUDE "data/battle/stat_multipliers_2.asm"
 
 BadgeStatBoosts:
-; Raise the stats of the battle mon in wBattleMon
-; depending on which badges have been obtained.
+; Raise the stats of the battle mon in wBattleMon depending on which badges
+; have been obtained.
 
-; Every other badge boosts a stat, starting from the first.
-; DashBadge also boosts Special Defense
+; whichever boost applies is parallel to the type the corresponding badge is
+; centered around
 
-; 	GadgetBadge:  Attack
-; 	VenomBadge:   Speed
-; 	RodeoBadge:   Defense
-; 	DashBadge:    Special Attack and Special Defense
-
-; The boosted stats are in order, except PlainBadge and MineralBadge's boosts are swapped.
+; 	DashBadge:    Attack
+; 	RodeoBadge:   Speed
+; 	VenomBadge:   Defense
+; 	GadgetBadge:  Special Attack
+;	VideoBadge:   Special Defense
 
 	ld a, [wLinkMode]
 	and a
 	ret nz
 
-.CheckBadge:
-	ld a, b
-	srl b
-	push af
-	call c, BoostStat
-	pop af
+; hl = stat
+; b = badges
+
+	bit DASHBADGE, b
+	call nz, BoostStat
 	inc hl
 	inc hl
-; Check every other badge.
-	srl b
-	dec c
-	jr nz, .CheckBadge
-; Check DashBadge again for Special Defense.
-	srl a
-	ret nc
+	bit RODEOBADGE, b
+	call nz, BoostStat
+	inc hl
+	inc hl
+	bit VENOMBADGE, b
+	call nz, BoostStat
+	inc hl
+	inc hl
+	bit GADGETBADGE, b
+	call nz, BoostStat
+	inc hl
+	inc hl
+	bit VIDEOBADGE, b
+	ret z
 
 BoostStat:
 ; Raise stat at hl by 1/8.
@@ -6797,9 +6802,9 @@ GiveExperiencePoints:
 ; all yields are the highest two bits of the MON's base stats
 	ld a, [wTempMonPokerusStatus]
 	and a
-	jr z, .calc_wo_rus
 	ld hl, wBaseStats
 	ld de, wTempMonStatEv
+	jr z, .calc_wo_rus
 	call .add_evs_rus ; hp
 	call .add_evs_rus ; atk
 	call .add_evs_rus ; def
@@ -7835,7 +7840,6 @@ StartBattle:
 
 	ld a, [wTempWildMonSpecies]
 	ld [wCurPartySpecies], a
-	ld [wTempEnemyMonSpecies], a
 	push af
 	ld a, [wTempWildMonSpecies + 1]
 	ld [wCurPartySpecies + 1], a

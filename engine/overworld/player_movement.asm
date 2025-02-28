@@ -39,6 +39,8 @@ DoPlayerMovement::
 	jr z, .Surf
 	cp PLAYER_SURF_PIKA
 	jr z, .Surf
+	cp PLAYER_SURF_BOARD
+	jr z, .Surf
 	cp PLAYER_BIKE
 	jr z, .Normal
 	cp PLAYER_SKATE
@@ -261,6 +263,8 @@ DoPlayerMovement::
 	cp PLAYER_SURF
 	jr z, .TrySurf
 	cp PLAYER_SURF_PIKA
+	jr z, .TrySurf
+	cp PLAYER_SURF_BOARD
 	jr z, .TrySurf
 
 	call .CheckLandPerms

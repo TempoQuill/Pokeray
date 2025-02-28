@@ -319,7 +319,7 @@ PokemonCries::
 	mon_cry CRY_INSECT,       -264,   320 ; SMUJJ		; GF
 	mon_cry CRY_TIGER_OLD,     543,   302 ; DRAGONISCE
 	mon_cry CRY_KICLOUD,       208,   170 ; KICLOUD
-	mon_cry CRY_SPEAROW_OLD,   370,   128 ; TIRUFF
+	mon_cry CRY_SPEAROW_OLD,   370,   128 ; RUFFY
 	mon_cry CRY_APPUCK,          0,   256 ; APPUCK
 	mon_cry CRY_SELENUMIA,      64,   160 ; ALREM
 	mon_cry CRY_MURPHELT,        0,   256 ; MURPHELT
@@ -352,7 +352,7 @@ PokemonCries::
 	mon_cry CRY_SANDSCOUR,     -24,   272 ; SANDSCOUR
 	mon_cry CRY_TEAROW,        864,   192 ; TEAROW
 	mon_cry CRY_TEAROW,        430,   208 ; NOHTYP
-	mon_cry CRY_EARTHTRON,     128,   171 ; VENOKNIGHT
+	mon_cry CRY_EARTHTRON,     128,   171 ; VENOCLOTH
 	mon_cry CRY_DUGQUINTET,    -48,   384 ; DUGQUINTET
 	mon_cry CRY_SPEAROW_OLD,   192,   251 ; EMPEDUCK
 	mon_cry CRY_POUCHENT,     2040,   224 ; ALPHAPE

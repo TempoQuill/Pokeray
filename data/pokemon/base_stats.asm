@@ -343,7 +343,7 @@ INCLUDE "data/pokemon/base_stats/turbann.asm"
 INCLUDE "data/pokemon/base_stats/smujj.asm"
 INCLUDE "data/pokemon/base_stats/dragonisce.asm"
 	ds BASE_DATA_SIZE, 0 ; kicloud
-INCLUDE "data/pokemon/base_stats/tiruff.asm"
+INCLUDE "data/pokemon/base_stats/ruffy.asm"
 INCLUDE "data/pokemon/base_stats/appuck.asm"
 INCLUDE "data/pokemon/base_stats/alrem.asm"		; str
 	ds BASE_DATA_SIZE, 0 ; murphelt
@@ -375,7 +375,7 @@ INCLUDE "data/pokemon/base_stats/porysphia.asm"
 	ds BASE_DATA_SIZE, 0 ; sandscour
 	ds BASE_DATA_SIZE, 0 ; tearow
 	ds BASE_DATA_SIZE, 0 ; nohtyp
-	ds BASE_DATA_SIZE, 0 ; venoknight
+	ds BASE_DATA_SIZE, 0 ; venocloth
 	ds BASE_DATA_SIZE, 0 ; dugquintet
 	ds BASE_DATA_SIZE, 0 ; empeduck
 INCLUDE "data/pokemon/base_stats/alphape.asm"		; str

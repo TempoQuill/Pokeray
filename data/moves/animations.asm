@@ -1441,7 +1441,7 @@ BattleAnim_RockSlide:
 
 BattleAnim_Sing:
 	anim_1gfx ANIM_GFX_NOISE
-	anim_sound 16, 2, SFX_SING
+	anim_sound 16, 2, SFX_RBY_SING
 .loop
 	anim_obj ANIM_OBJ_SING, 64, 92, $0
 	anim_wait 8
@@ -2413,19 +2413,19 @@ BattleAnim_Mimic:
 	anim_obj ANIM_OBJ_MIMIC, 132, 44, $28
 	anim_obj ANIM_OBJ_MIMIC, 132, 44, $30
 	anim_obj ANIM_OBJ_MIMIC, 132, 44, $38
-	anim_sound 0, 0, SFX_MIMIC_D8
-	anim_wait 8
-	anim_sound 0, 0, SFX_MIMIC_D9
-	anim_wait 8
-	anim_sound 0, 0, SFX_MIMIC_DA
-	anim_wait 8
-	anim_sound 0, 0, SFX_MIMIC_DB
-	anim_wait 8
-	anim_sound 0, 0, SFX_MIMIC_DC
+	anim_sound 0, 0, SFX_MIMIC_DE
 	anim_wait 8
 	anim_sound 0, 0, SFX_MIMIC_DD
 	anim_wait 8
-	anim_sound 0, 0, SFX_MIMIC_DE
+	anim_sound 0, 0, SFX_MIMIC_DC
+	anim_wait 8
+	anim_sound 0, 0, SFX_MIMIC_DB
+	anim_wait 8
+	anim_sound 0, 0, SFX_MIMIC_DA
+	anim_wait 8
+	anim_sound 0, 0, SFX_MIMIC_D9
+	anim_wait 8
+	anim_sound 0, 0, SFX_MIMIC_D8
 	anim_wait 128
 	anim_ret
 
@@ -3982,6 +3982,7 @@ BattleAnim_Present:
 	anim_sound 0, 1, SFX_PRESENT
 	anim_obj ANIM_OBJ_PRESENT, 64, 88, $6c
 	anim_wait 56
+	anim_sound 0, 1, SFX_SHOCK_EMOTE
 	anim_obj ANIM_OBJ_AMNESIA, 104, 48, $0
 	anim_wait 48
 	anim_incobj 2
@@ -3997,7 +3998,7 @@ BattleAnim_Present:
 	anim_ret
 
 .heal
-	anim_sound 0, 1, SFX_METRONOME
+	anim_sound 0, 1, SFX_GAME_FREAK_PRESENTS
 .loop2
 	anim_obj ANIM_OBJ_RECOVER, 132, 48, $24
 	anim_wait 8

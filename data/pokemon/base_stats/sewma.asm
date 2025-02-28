@@ -1,15 +1,15 @@
-	dw SWEOTE ; 220
+	dw SEWMA
 
-	db  61,  45,  45,  50,  65,  65
+	db  64,  55,  55,  60,  85,  85
 	;   hp  atk  def  spd  sat  sdf
 
-	db PSYCHIC_TYPE, NORMAL ; type
-	db 112 ; catch rate
-	db 50 ; base exp
-	db BERRY, FILLINGBERRY ; items
+	db PSYCHIC_TYPE, ROCK ; type
+	db 100 ; catch rate
+	db 80 ; base exp
+	db NEEDLE, NEEDLE ; items
 	db GENDER_F100 ; gender ratio
-	db 23 ; step cycles to hatch
-INCBIN "gfx/pokemon/sweote/front.dimensions"
+	db 30 ; step cycles to hatch
+INCBIN "gfx/pokemon/sewma/front.dimensions"
 	db GROWTH_SLOW ; growth rate
 	dn EGG_NONE, EGG_NONE ; egg groups
 

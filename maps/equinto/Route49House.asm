@@ -12,8 +12,8 @@ Route49House_MapScripts:
 
 .InitialEntrance:
 	turnobject ROUTE49HOUSE_GENTLEMAN, DOWN
-	showemote EMOTE_SHOCK, ROUTE49HOUSE_GENTLEMAN, 15
 	playsound SFX_EMOTE
+	showemote EMOTE_SHOCK, ROUTE49HOUSE_GENTLEMAN, 15
 	opentext
 	writetext InitialEntranceText1
 	promptbutton
@@ -23,6 +23,7 @@ Route49House_MapScripts:
 	opentext
 	writetext InitialEntranceText2
 	playsound SFX_ENTRUSTMENT
+	waitsfx
 	giveitem OLD_AMBER
 	setevent EVENT_GOT_OLD_AMBER
 	writetext InitialEntranceText3
@@ -30,9 +31,9 @@ Route49House_MapScripts:
 	closetext
 	special FadeBlackQuickly
 	special ReloadSpritesNoPalettes
-	playmusic MUSIC_RG_OLD_HEAL
+	playmusic MUSIC_NON_PC_HEAL
 	special HealParty
-	pause 60
+	pause 159
 	special FadeInQuickly
 	special RestartMapMusic
 	opentext
@@ -45,6 +46,7 @@ Route49House_MapScripts:
 	cry EEVEE
 	opentext
 	writetext EeveeGaveDexText
+	waitsfx
 	setflag ENGINE_POKEDEX
 	waitbutton
 	closetext

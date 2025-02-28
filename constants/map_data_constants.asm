@@ -108,8 +108,21 @@ NUM_SPAWNS EQU const_value
 	const_def
 EQUINTO_FLYPOINT EQU const_value
 	const FLY_COTTAGE
+	const FLY_SOLAR
 	const FLY_TRAVERSAL
 	const FLY_FOLIAGE
+	const FLY_PORTITE
+	const FLY_HAVOC
+	const FLY_HYPERCOIN
+	const FLY_STAMP
+	const FLY_SAUNA
+	const FLY_BREWERY
+	const FLY_EVEREST
+	const FLY_NORGEO
+	const FLY_PASTEL
+	const FLY_EAST_COAST_STOP
+	const FLY_TABLET_HARBOR
+	const FLY_MT_SABER
 NUM_FLYPOINTS EQU const_value
 
 MAX_OUTDOOR_SPRITES EQU 11 ; see engine/overworld/overworld.asm

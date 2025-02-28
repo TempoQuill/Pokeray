@@ -3,6 +3,11 @@ _CantSurfText::
 	line "here."
 	prompt
 
+_CyclingIsFunText::
+	text "Cycling is fun!"
+	line "Forget SURFing!"
+	prompt
+
 _AlreadySurfingText::
 	text "You're already"
 	line "SURFING."
@@ -703,27 +708,27 @@ _OakPCText3::
 	line "Rating:"
 	done
 
-_OakRating01::
+_LarchRating01::
 	text "No good!"
 
 	para "Look for #MON"
 	line "in grassy areas!"
 	done
 
-_OakRating02::
+_LarchRating02::
 	text "Good. I see you"
 	line "understand how to"
 	cont "use # BALLS."
 	done
 
-_OakRating03::
+_LarchRating03::
 	text "You're progressing!"
 
 	para "But you've got a"
 	line "long way to go."
 	done
 
-_OakRating04::
+_LarchRating04::
 	text "You need to fill"
 	line "up the #DEX."
 
@@ -731,7 +736,7 @@ _OakRating04::
 	line "kinds of #MON!"
 	done
 
-_OakRating05::
+_LarchRating05::
 	text "You're trying--I"
 	line "can see that."
 
@@ -739,7 +744,7 @@ _OakRating05::
 	line "coming together."
 	done
 
-_OakRating06::
+_LarchRating06::
 	text "To evolve, some"
 	line "#MON grow."
 
@@ -747,7 +752,7 @@ _OakRating06::
 	line "effects of ITEMS."
 	done
 
-_OakRating07::
+_LarchRating07::
 	text "Well, well, well!"
 	line "You've caught as"
 
@@ -758,14 +763,14 @@ _OakRating07::
 	line "and use some rods!"
 	done
 
-_OakRating08::
+_LarchRating08::
 	text "Awesome!"
 
 	para "Do you like to"
 	line "collect things?"
 	done
 
-_OakRating09::
+_LarchRating09::
 	text "Some #MON only"
 	line "appear during"
 
@@ -773,13 +778,13 @@ _OakRating09::
 	line "the day."
 	done
 
-_OakRating10::
+_LarchRating10::
 	text "Your #DEX is"
 	line "filling up. Keep"
 	cont "up the good work!"
 	done
 
-_OakRating11::
+_LarchRating11::
 	text "I'm impressed."
 	line "You're evolving"
 
@@ -787,7 +792,7 @@ _OakRating11::
 	line "catching them."
 	done
 
-_OakRating12::
+_LarchRating12::
 	text "I never thought"
 	line "you'd pass 250 so"
 
@@ -798,7 +803,7 @@ _OakRating12::
 	line "offer! Keep at it!"
 	done
 
-_OakRating13::
+_LarchRating13::
 	text "Stop by the #-"
 	line "MON CENTERS here!"
 
@@ -806,19 +811,19 @@ _OakRating13::
 	line "using toolboxes!"
 	done
 
-_OakRating14::
+_LarchRating14::
 	text "Spectacular! Now,"
 	line "trade with some"
 	cont "friends!"
 	done
 
-_OakRating15::
+_LarchRating15::
 	text "Wow! You've hit"
 	line "300! Your #DEX"
 	cont "is looking great!"
 	done
 
-_OakRating16::
+_LarchRating16::
 	text "You've found so"
 	line "many #MON!"
 
@@ -826,7 +831,7 @@ _OakRating16::
 	line "OAK so much!"
 	done
 
-_OakRating17::
+_LarchRating17::
 	text "Stunning! You"
 	line "could become a"
 
@@ -834,7 +839,7 @@ _OakRating17::
 	line "right now!"
 	done
 
-_OakRating18::
+_LarchRating18::
 	text "Your #DEX is"
 	line "amazing! You're"
 
@@ -842,7 +847,7 @@ _OakRating18::
 	line "professional!"
 	done
 
-_OakRating19::
+_LarchRating19::
 	text "A perfect score!"
 	line "This only happened"
 

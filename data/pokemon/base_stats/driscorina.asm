@@ -1,0 +1,22 @@
+	dw DRISCORINA ; 044
+
+	db 100,  60, 120, 100, 100, 120
+	;   hp  atk  def  spd  sat  sdf
+
+	db DRAGON, DRAGON ; type
+	db 3 ; catch rate
+	db 220 ; base exp
+	db STROBE_LIGHT, STROBE_LIGHT ; items
+	db GENDER_UNKNOWN ; gender ratio
+	db 100 ; step cycles to hatch
+IF DEF(_RAY)
+	INCBIN "gfx/pokemon/driscorina/front_gold.dimensions"
+ELIF DEF(_SHADE)
+	INCBIN "gfx/pokemon/driscorina/front_silver.dimensions"
+ENDC
+	db GROWTH_SLOW ; growth rate
+	dn EGG_NONE, EGG_NONE ; egg groups
+
+	; tm/hm learnset
+	tmhm CURSE, ROLLOUT, TOXIC, ZAP_CANNON, PSYCH_UP, HIDDEN_POWER, SUNNY_DAY, SWEET_SCENT, BLIZZARD, HYPER_BEAM, ICY_WIND, PROTECT, RAIN_DANCE, FRUSTRATION, SOLARBEAM, IRON_TAIL, DRAGONBREATH, THUNDER, RETURN, DIG, PSYCHIC, SHADOW_BALL, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLUDGE_BOMB, SANDSTORM, FIRE_BLAST, SWIFT, DEFENSE_CURL, DREAM_EATER, DETECT, ATTRACT, THIEF, STEEL_WING, FURY_CUTTER, NIGHTMARE, CUT, FLY, SURF, STRENGTH, FLASH
+	; end

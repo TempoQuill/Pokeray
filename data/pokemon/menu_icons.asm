@@ -312,7 +312,7 @@ MonMenuIcons:
 	db ICON_BLOB        ; SMUJJ
 	db ICON_HO_OH
 	db ICON_HO_OH
-	db ICON_FOX         ; TIRUFF
+	db ICON_FOX         ; RUFFY
 	db ICON_HO_OH
 	db ICON_HO_OH
 	db ICON_HO_OH

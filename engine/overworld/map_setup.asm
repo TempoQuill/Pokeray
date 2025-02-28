@@ -129,6 +129,8 @@ CheckUpdatePlayerSprite::
 	jr z, .surfing
 	cp PLAYER_SURF_PIKA
 	jr z, .surfing
+	cp PLAYER_SURF_BOARD
+	jr z, .surfing
 	call GetMapEnvironment
 	cp INDOOR
 	jr z, .no_biking
@@ -158,6 +160,8 @@ CheckUpdatePlayerSprite::
 	cp PLAYER_SURF
 	jr z, .is_surfing
 	cp PLAYER_SURF_PIKA
+	jr z, .is_surfing
+	cp PLAYER_SURF_BOARD
 	jr z, .is_surfing
 	ld a, PLAYER_SURF
 	ld [wPlayerState], a

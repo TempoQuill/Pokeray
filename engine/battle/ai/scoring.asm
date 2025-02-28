@@ -528,8 +528,8 @@ AI_Smart_Freeze:
 	ret
 
 AI_Smart_Sleep:
-; Greatly encourage sleep inducing moves if the enemy has either Dream Eater or Nightmare.
-; 50% chance to greatly encourage sleep inducing moves otherwise.
+; 50% chance to greatly encourage sleep inducing moves if the enemy has either
+; Dream Eater or Nightmare. Do nothing otherwise.
 
 	ld b, EFFECT_DREAM_EATER
 	call AIHasMoveEffect

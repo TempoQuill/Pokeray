@@ -5,10 +5,10 @@ TrainerClassDVs:
 	dn 15, 15, 15, 15 ; CINDY
 	dn 15, 15, 15, 15 ; ZACH
 	dn 15, 15, 15, 15 ; GLADMAN
-	dn  9,  8,  8,  8 ; WOODY
-	dn  9,  8,  8,  8 ; GORDON
-	dn  9,  8,  8,  8 ; BRIAN
-	dn  7, 12, 13, 13 ; BELLE
+	dn 15, 15, 15, 15 ; WOODY
+	dn 15, 15, 15, 15 ; GORDON
+	dn 15, 15, 15, 15 ; BRIAN
+	dn 15, 15, 15, 15 ; BELLE
 	dn 13, 13, 13, 13 ; RIVAL1
 	dn  9,  8,  8,  8 ; POKEMON_PROF
 	dn 13, 12, 13, 13

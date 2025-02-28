@@ -189,17 +189,13 @@ ItemsForMon:
 	ld [wCurPartySpecies + 1], a
 	ld hl, wEquintoBadges
 	ld d, [hl]
-	xor a
+	ld a, 5
 .loop3
 	rr d
 	jr z, .endloop
-	add 5 ; add 5 N times (8 badges = level 40)
+	add 5 ; add 5 N times (8th badge = level 40)
 	jr .loop3
 .endloop
-	and a
-	jr nz, .gotlevel
-	ld a, 5
-.gotlevel
 	ld [wCurPartyLevel], a
 	xor a
 	ld [wCurItem], a

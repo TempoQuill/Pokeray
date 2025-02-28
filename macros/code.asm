@@ -1,5 +1,5 @@
 ; Syntactic sugar macros
-
+; compare register variable
 cbcv: MACRO
 	ld a, [bc]
 	inc bc

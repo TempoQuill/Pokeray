@@ -165,7 +165,7 @@ MankeyEggMoves:
 	db BEAT_UP
 	db -1 ; end
 
-TiruffEggMoves:
+RuffyEggMoves:
 	db BODY_SLAM
 	db SAFEGUARD
 	db CRUNCH

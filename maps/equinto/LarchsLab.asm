@@ -145,8 +145,8 @@ OrkidPokeballScript:
 	iftrue LookAtBallScript
 	turnobject LARCHLAB_PROF_LARCH, UP
 	refreshscreen
-	pokepic CHIKORITA
-	cry CHIKORITA
+	pokepic ORKID
+	cry ORKID
 	waitbutton
 	closepokepic
 	opentext
@@ -160,12 +160,12 @@ OrkidPokeballScript:
 	writetext ChoseMonText
 	promptbutton
 	waitsfx
-	getmonname STRING_BUFFER_3, CHIKORITA
+	getmonname STRING_BUFFER_3, ORKID
 	writetext GotMonText
 	playsound SFX_1ST_PLACE
 	waitsfx
 	promptbutton
-	givepoke CHIKORITA, 5, BERRY
+	givepoke ORKID, 5, BERRY
 	closetext
 	applymovement PLAYER, FromBall3Movement
 	sjump GetLarchEmailScript
@@ -175,8 +175,8 @@ CruzPokeballScript:
 	iftrue LookAtBallScript
 	turnobject LARCHLAB_PROF_LARCH, UP
 	refreshscreen
-	pokepic TOTODILE
-	cry TOTODILE
+	pokepic CRUZ
+	cry CRUZ
 	waitbutton
 	closepokepic
 	opentext
@@ -190,12 +190,12 @@ CruzPokeballScript:
 	writetext ChoseMonText
 	promptbutton
 	waitsfx
-	getmonname STRING_BUFFER_3, TOTODILE
+	getmonname STRING_BUFFER_3, CRUZ
 	writetext GotMonText
 	playsound SFX_1ST_PLACE
 	waitsfx
 	promptbutton
-	givepoke TOTODILE, 5, BERRY
+	givepoke CRUZ, 5, BERRY
 	closetext
 	applymovement PLAYER, FromBall2Movement
 	sjump GetLarchEmailScript
@@ -205,8 +205,8 @@ FlambearPokeballScript:
 	iftrue LookAtBallScript
 	turnobject LARCHLAB_PROF_LARCH, UP
 	refreshscreen
-	pokepic CYNDAQUIL
-	cry CYNDAQUIL
+	pokepic FLAMBEAR
+	cry FLAMBEAR
 	waitbutton
 	closepokepic
 	opentext
@@ -220,12 +220,12 @@ FlambearPokeballScript:
 	writetext ChoseMonText
 	promptbutton
 	waitsfx
-	getmonname STRING_BUFFER_3, CYNDAQUIL
+	getmonname STRING_BUFFER_3, FLAMBEAR
 	writetext GotMonText
 	playsound SFX_1ST_PLACE
 	waitsfx
 	promptbutton
-	givepoke CYNDAQUIL, 5, BERRY
+	givepoke FLAMBEAR, 5, BERRY
 	closetext
 	readvar VAR_FACING
 	ifequal RIGHT, SpecialMovement

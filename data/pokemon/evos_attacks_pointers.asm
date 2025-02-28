@@ -310,7 +310,7 @@ endr
 	dw SmujjEvosAttacks
 	dw DragonisceEvosAttacks
 	dw -1
-	dw TiruffEvosAttacks
+	dw RuffyEvosAttacks
 	dw AppuckEvosAttacks
 	dw -1
 	dw -1
@@ -343,7 +343,7 @@ endr
 	dw SandscourEvosAttacks
 	dw TearowEvosAttacks
 	dw NohtypEvosAttacks
-	dw VenoknightEvosAttacks
+	dw VenoclothEvosAttacks
 	dw DugquintetEvosAttacks
 	dw EmpeduckEvosAttacks
 	dw AlphapeEvosAttacks

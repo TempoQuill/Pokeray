@@ -18,16 +18,16 @@ TrainerGroups:
 	dw KarenGroup
 	dw KogaGroup
 	dw ChampionGroup
-	dw BrockGroup
-	dw MistyGroup
-	dw LtSurgeGroup
+	dw ChannelerGroup
+	dw JanitorGroup
+	dw WriterGroup
 	dw ScientistGroup
-	dw ErikaGroup
+	dw EngineerGroup
 	dw YoungsterGroup
 	dw SchoolboyGroup
 	dw BirdKeeperGroup
 	dw LassGroup
-	dw JanineGroup
+	dw PartyHostGroup
 	dw CooltrainerMGroup
 	dw CooltrainerFGroup
 	dw BeautyGroup
@@ -36,7 +36,7 @@ TrainerGroups:
 	dw GentlemanGroup
 	dw SkierGroup
 	dw TeacherGroup
-	dw SabrinaGroup
+	dw ArtistGroup
 	dw BugCatcherGroup
 	dw FisherGroup
 	dw SwimmerMGroup
@@ -47,7 +47,7 @@ TrainerGroups:
 	dw GuitaristGroup
 	dw HikerGroup
 	dw BikerGroup
-	dw BlaineGroup
+	dw SportsmanGroup
 	dw BurglarGroup
 	dw FirebreatherGroup
 	dw JugglerGroup
@@ -65,7 +65,7 @@ TrainerGroups:
 	dw TwinsGroup
 	dw PokefanFGroup
 	dw RedGroup
-	dw BlueGroup
+	dw MagicianGroup
 	dw OfficerGroup
 	dw GruntFGroup
 	dw JaceVGroup

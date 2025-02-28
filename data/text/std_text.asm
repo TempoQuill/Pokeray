@@ -455,8 +455,10 @@ ToolBoxText5:
 ToolBoxText6:
 	text "Congrats! You've"
 	line "made a new friend!"
+	done
 
-	para "It's a @"
+ToolBoxText7:
+	text "It's a @"
 	text_ram wStringBuffer1
 	text_start
 	text "!"

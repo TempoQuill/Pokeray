@@ -1,4 +1,4 @@
-	dw TIRUFF ; 288
+	dw RUFFY ; 288
 
 	db  34,  45,  25,  38,  49,  31
 	;   hp  atk  def  spd  sat  sdf
@@ -9,7 +9,7 @@
 	db SPICY_BERRY, SPICY_BERRY ; items
 	db GENDER_F25 ; gender ratio
 	db 20 ; step cycles to hatch
-INCBIN "gfx/pokemon/tiruff/front.dimensions"
+INCBIN "gfx/pokemon/ruffy/front.dimensions"
 	db GROWTH_SLOW ; growth rate
 	dn EGG_NONE, EGG_NONE ; egg groups
 

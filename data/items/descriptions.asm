@@ -352,10 +352,6 @@ MaxElixerDesc:
 	db   "Restores a #-"
 	next "MON's Power Points.@"
 
-MetalWreathDesc:
-	db   "For STARYU, sell"
-	next "very high.@"
-
 HPUpDesc:
 	db   "Aids a #MON's"
 	next "Hit Points.@"
@@ -752,14 +748,6 @@ BerserkGeneDesc:
 	db   "Aids ATTACK but"
 	next "confuses holder.@"
 
-PowerBallDesc:
-	db   "Allows earnings"
-	next "for all battles.@"
-
-ComfyBallDesc:
-	db   "A BALL that boosts"
-	next "base life quality.@"
-
 SacredAshDesc:
 	db   "Revives #-"
 	next "MON in the party.@"
@@ -782,10 +770,6 @@ LureBallDesc:
 FastBallDesc:
 	db   "A BALL for fleeing"
 	next "#MON.@"
-
-ToolBallDesc:
-	db   "A special BALL for"
-	next "assembled #MON."
 
 LightBallDesc:
 	db   "PIKACHU's weapon"
@@ -828,10 +812,6 @@ SquirtBottleDesc:
 	db   "A mystical feather"
 	next "of rainbow colors.@"
 
-SurfBoardDesc:
-	db   "Catch a ride with-"
-	next "out using #MON.@"
-
 BrickPieceDesc:
 	db   "A rare chunk of"
 	next "brick.@"
@@ -864,6 +844,26 @@ MusicMailDesc:
 
 MirageMailDesc:
 	db   "MEW-print MAIL.@"
+
+MetalWreathDesc:
+	db   "For STARYU, sell"
+	next "very high.@"
+
+PowerBallDesc:
+	db   "Allows earnings"
+	next "for all battles.@"
+
+ComfyBallDesc:
+	db   "A BALL that boosts"
+	next "base life quality.@"
+
+ToolBallDesc:
+	db   "A special BALL for"
+	next "assembled #MON."
+
+SurfBoardDesc:
+	db   "Catch a ride with-"
+	next "out using #MON.@"
 
 HelixFossilDesc:
 DomeFossilDesc:

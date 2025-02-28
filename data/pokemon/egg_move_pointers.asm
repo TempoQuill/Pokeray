@@ -319,7 +319,7 @@ EggMovePointers::
 	dw SmujjEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw TiruffEggMoves
+	dw RuffyEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves

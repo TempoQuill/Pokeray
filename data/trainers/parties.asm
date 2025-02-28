@@ -92,12 +92,6 @@ MortyGroup:
 	db -1 ; end
 
 	; GLADMAN
-;	db "GLADMAN@", TRAINERTYPE_ITEM_MOVES
-;	trainim 25, ELEKID,    FRIDGE,       SWIFT, LEER, LIGHT_SCREEN, THUNDERPUNCH
-;	trainim 24, RAITORA,   NEEDLE,       QUICK_ATTACK, ZAP_CANNON, ROAR, PURSUIT
-;	trainim 23, PIKACHU,   LIGHT_BALL,   ZAP_CANNON, CHARM, TAIL_WHIP, DOUBLE_TEAM
-;	trainim 22, VOLTORB,   BRIGHTPOWDER, TACKLE, SONICBOOM, ZAP_CANNON, SCREECH
-;	trainim 25, MAGNEMITE, MANGNET,      TACKLE, SONICBOOM, ZAP_CANNON, SUPERSONIC
 	; comes with Super Potion and X Accuracy
 	; last 3 mons have Zap Cannon, a 50% accurate move
 	; However, Gladman may use X Accuracy on Molambino
@@ -308,16 +302,16 @@ ChampionGroup:
 	trainm 50, DRAGONITE,  FIRE_BLAST, SAFEGUARD, OUTRAGE, HYPER_BEAM
 	db -1 ; end
 
-BrockGroup:
-MistyGroup:
-LtSurgeGroup:
+ChannelerGroup:
+JanitorGroup:
+WriterGroup:
 ScientistGroup:
-ErikaGroup:
+EngineerGroup:
 YoungsterGroup:
 SchoolboyGroup:
 BirdKeeperGroup:
 LassGroup:
-JanineGroup:
+PartyHostGroup:
 CooltrainerMGroup:
 CooltrainerFGroup:
 BeautyGroup:
@@ -326,7 +320,7 @@ GruntMGroup:
 GentlemanGroup:
 SkierGroup:
 TeacherGroup:
-SabrinaGroup:
+ArtistGroup:
 BugCatcherGroup:
 FisherGroup:
 SwimmerMGroup:
@@ -397,7 +391,7 @@ Rival2Group:
 GuitaristGroup:
 HikerGroup:
 BikerGroup:
-BlaineGroup:
+SportsmanGroup:
 BurglarGroup:
 FirebreatherGroup:
 JugglerGroup:
@@ -414,7 +408,7 @@ PokefanMGroup:
 KimonoGirlGroup:
 TwinsGroup:
 PokefanFGroup:
-BlueGroup:
+MagicianGroup:
 OfficerGroup:
 GruntFGroup:
 RedGroup:

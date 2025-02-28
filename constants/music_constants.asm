@@ -8,8 +8,8 @@
 	const MUSIC_RS_OPENING_2                 ; 03
 	const MUSIC_MAIN_MENU                    ; 04
 	const MUSIC_HEAL                         ; 05
-	const MUSIC_RG_OLD_HEAL                  ; 06 ; NON_PC_HEAL
-	const MUSIC_ROUTE_29                     ; 07 ; ROUTE_49
+	const MUSIC_NON_PC_HEAL                  ; 06
+	const MUSIC_ROUTE_49                     ; 07
 	const MUSIC_ROUTE_55                     ; 08
 	const MUSIC_EQUINTO_LEAGUE               ; 09 ; unused
 	const MUSIC_ROUTE_61                     ; 0a ; unused
@@ -17,7 +17,7 @@
 	const MUSIC_TIME_CAPSULE_MENU            ; 0c
 	const MUSIC_MOM                          ; 0d
 	const MUSIC_SHOW_ME_AROUND               ; 0e
-	const MUSIC_RBY_FM_TRADE                 ; 0f ; HOUSE_ENROUTE
+	const MUSIC_HOUSE_ENROUTE                ; 0f
 	const MUSIC_POKEMON_CENTER               ; 10
 	const MUSIC_DILAP_POKEMON_CENTER         ; 11 ; unused
 	const MUSIC_COTTAGE_TOWN                 ; 12
@@ -25,9 +25,9 @@
 	const MUSIC_WILD_BATTLE                  ; 14
 	const MUSIC_TRAINER_BATTLE               ; 15
 	const MUSIC_GYM_LEADER_BATTLE            ; 16
-	const MUSIC_PARTY_HOST_BATTLE            ; 17
-	const MUSIC_SHAGGY_BATTLE                ; 18
-	const MUSIC_PARKER_BATTLE                ; 19
+	const MUSIC_PARKER_BATTLE                ; 17
+	const MUSIC_PARTY_HOST_BATTLE            ; 18
+	const MUSIC_SHAGGY_BATTLE                ; 19
 	const MUSIC_OFFICER_ENCOUNTER            ; 1a
 	const MUSIC_LASS_ENCOUNTER               ; 1b
 	const MUSIC_HIKER_ENCOUNTER              ; 1c
@@ -59,7 +59,7 @@
 	const MUSIC_LIGHTHOUSE                   ; 36 ; unused
 	const MUSIC_EAST_COAST_STOP              ; 37 ; unused
 	const MUSIC_HYPERCOIN_CITY               ; 38 ; unused
-	const MUSIC_DIGLETT_CAVE                 ; 39 ; MT_VACUUM
+	const MUSIC_MT_VACUUM                    ; 39
 	const MUSIC_HAVOC_THEME                  ; 3a
 	const MUSIC_NORGEO_TOWN                  ; 3b ; unused
 	const MUSIC_PORTITE_CITY                 ; 3c ; unused

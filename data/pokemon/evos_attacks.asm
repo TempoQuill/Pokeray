@@ -607,7 +607,7 @@ VenonatEvosAttacks:
 	db 0 ; no more level-up moves
 
 VenomothEvosAttacks:
-;	evolve HELD, NIGHT_ARMOR, VENOKNIGHT
+;	evolve HELD, NIGHT_ARMOR, VENOCLOTH
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, DISABLE
@@ -3399,6 +3399,7 @@ OrschulEvosAttacks:
 
 MoundiverEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, ICE_BEAM
 	db 20, ICE_BEAM
 	db 22, POWDER_SNOW
 	db 25, DRAGON_RAGE
@@ -3605,7 +3606,7 @@ SmujjEvosAttacks:
 	db 50, SLUDGE_BOMB
 	db 0 ; no more level-up moves
 
-TiruffEvosAttacks:
+RuffyEvosAttacks:
 	evolve ITEM, FIRE_STONE, GROWLITHE
 	db 0 ; no more evolutions
 	db 1, BITE
@@ -3822,7 +3823,7 @@ NohtypEvosAttacks:
 	db 61, HYPER_BEAM
 	db 0 ; no more level-up moves
 
-VenoknightEvosAttacks:
+VenoclothEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, DISABLE
@@ -4008,4 +4009,65 @@ TodbrushEvosAttacks:
 	db 29, FLAME_WHEEL
 	db 35, CRUNCH
 	db 41, FLAMETHROWER
+	db 0 ; no more level-up moves
+
+KicloudEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, JUMP_KICK
+	db 1, GUST
+	db 5, THUNDERSHOCK
+	db 9, THUNDERPUNCH
+	db 15, WING_ATTACK
+	db 22, AGILITY
+	db 30, THUNDERBOLT
+	db 37, RAIN_DANCE
+	db 42, HI_JUMP_KICK
+	db 47, THUNDER
+	db 0 ; no more level-up moves
+
+GrifletEvosAttacks:
+	evolve LEVEL, 25, CIRRIFFON
+	db 0 ; no more evolutions
+	db 1, PECK
+	db 1, TAIL_WHIP
+	db 8, GROWL
+	db 14, WING_ATTACK
+	db 20, LEER
+	db 25, PAY_DAY
+	db 31, ROAR
+	db 38, DRILL_PECK
+	db 44, SKY_ATTACK
+	db 0 ; no more level-up moves
+
+CirriffonEvosAttacks:
+	evolve LEVEL, 45, COSMOREAS
+	db 0 ; no more evolutions
+	db 1, PECK
+	db 1, TAIL_WHIP
+	db 1, GROWL
+	db 1, WING_ATTACK
+	db 25, LEER
+	db 31, PAY_DAY
+	db 38, ROAR
+	db 47, DRILL_PECK
+	db 55, SKY_ATTACK
+	db 0 ; no more level-up moves
+
+CosmoreasEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, PECK
+	db 1, TAIL_WHIP
+	db 1, GROWL
+	db 1, WING_ATTACK
+	db 51, DRILL_PECK
+	db 60, SKY_ATTACK
+	db 0 ; no more level-up moves
+
+GlabbitEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, PECK
+	db 1, TAIL_WHIP
+	db 30, FLY
+	db 40, MIRROR_MOVE
+	db 50, SKY_ATTACK
 	db 0 ; no more level-up moves

@@ -163,12 +163,12 @@ GOLDMON_STAT_EXP EQU const_value
 	const_skip 3
 	const GOLDMON_HAPPINESS ; 27
 	const GOLDMON_PKRUS     ; 28
-	const GOLDMON_UNKNOWN_1 ; 29
+	const GOLDMON_UNKNOWN_1 ; 29 ; caught data in Crystal
 	const GOLDMON_UNKNOWN_2 ; 30
 	const GOLDMON_LEVEL     ; 31
 GOLD_BOXMON_STRUCT_LENGTH EQU const_value
 	const GOLDMON_STATUS    ; 32
-	const GOLDMON_UNUSED    ; 33
+	const GOLDMON_UNUSED    ; 33 ; redundant level
 	const GOLDMON_HP        ; 34
 	const_skip
 	const GOLDMON_MAX_HP    ; 36
@@ -192,7 +192,6 @@ PARTY_LENGTH EQU 6
 ; boxes
 MONS_PER_BOX EQU 20
 NUM_BOXES    EQU 21
-NUM_BOXES_JAPANESE EQU 9
 
 ; hall of fame
 HOF_MON_LENGTH EQU 1 + 2 + 2 + 1 + (MON_NAME_LENGTH - 1) ; species, id, dvs, level, nick
@@ -201,14 +200,14 @@ NUM_HOF_TEAMS EQU 30
 
 ; evolution types (used in data/pokemon/evos_attacks.asm)
 	const_def 1
-	const EVOLVE_LEVEL
-	const EVOLVE_ITEM
-	const EVOLVE_TRADE
-	const EVOLVE_HAPPINESS
-	const EVOLVE_STAT
-	const EVOLVE_HELD
-	const EVOLVE_QUALITY_OF_LIFE
-	const EVOLVE_ASM
+	const EVOLVE_LEVEL ; simply grinding to a given level
+	const EVOLVE_ITEM ; using a given item
+	const EVOLVE_TRADE ; trading under given conditions
+	const EVOLVE_HAPPINESS ; leveling up with high happiness
+	const EVOLVE_STAT ; hitting given level with a given balance of attack & defense
+	const EVOLVE_HELD ; leveling up with a given held item
+	const EVOLVE_QUALITY_OF_LIFE ; leveling up with high quality of life
+	const EVOLVE_ASM ; leveling up from an assembled steel type
 
 ; EVOLVE_HAPPINESS triggers
 	const_def 1
@@ -305,8 +304,8 @@ HAPPINESS_THRESHOLD_2 EQU FRIEND_BALL_HAPPINESS
 BASE_QUALITY_OF_LIFE        EQU BASE_HAPPINESS             ; 70
 COMFY_BALL_QUALITY_OF_LIFE  EQU FRIEND_BALL_HAPPINESS      ; 200
 QUALITY_OF_LIFE_TO_EVOLVE   EQU COMFY_BALL_QUALITY_OF_LIFE ; 200
-QUALITY_OF_LIFE_THREShOLD_1 EQU HAPPINESS_THRESHOLD_1      ; 100
-QUALITY_OF_LIFE_THREShOLD_2 EQU COMFY_BALL_QUALITY_OF_LIFE ; 200
+QUALITY_OF_LIFE_THRESHOLD_1 EQU HAPPINESS_THRESHOLD_1      ; 100
+QUALITY_OF_LIFE_THRESHOLD_2 EQU COMFY_BALL_QUALITY_OF_LIFE ; 200
 
 BASE_EV_MASK  EQU %11000000
 BASE_STAT_XOR EQU %00111111

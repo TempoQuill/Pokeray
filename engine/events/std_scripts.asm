@@ -525,7 +525,12 @@ AssemblePokemonScript:
 	ifequal 1, .noitem
 	writetext ToolBoxText5
 	special ItemsForMon
+	pause 160
 	writetext ToolBoxText6
+	waitbutton
+	special PlayCurMonCry
+	writetext ToolBoxText7
+	waitsfx
 	sjump .done
 
 .noitem:

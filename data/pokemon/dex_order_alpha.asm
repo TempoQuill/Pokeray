@@ -284,6 +284,7 @@ AlphabeticalPokedexOrder:
 	dw REMORAID
 	dw RHYDON
 	dw RHYHORN
+	dw RUFFY
 	dw SAILWING
 	dw SANDSCOUR
 	dw SANDSHREW
@@ -346,7 +347,6 @@ AlphabeticalPokedexOrder:
 	dw TENTACRUEL
 	dw TIARANT
 	dw TIERACNID
-	dw TIRUFF
 	dw TODBRUSH
 	dw TOGEPI
 	dw TOGETIC
@@ -362,7 +362,7 @@ AlphabeticalPokedexOrder:
 	dw UNOWN
 	dw URSARING
 	dw VAPOREON
-	dw VENOKNIGHT
+	dw VENOCLOTH
 	dw VENOMOTH
 	dw VENONAT
 	dw VENUSAUR

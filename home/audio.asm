@@ -401,19 +401,19 @@ SpecialMapMusic::
 	cp NUM_MUSIC_IDS
 	jr nc, .randomize
 	ld a, [wPlayerState]
-	cp PLAYER_BIKE
-	jr z, .bike
-	cp PLAYER_SURF
-	jr z, .surf
-	cp PLAYER_SURF_PIKA
-	jr z, .surf
-	cp PLAYER_SURF_BOARD
-	jr z, .surf
 	and a
+	ret z ; -> walking
+	cp PLAYER_SURF_BOARD
+	jr nc, .surf ; -> surfing
+	cp PLAYER_SKATE
+	jr nc, .skate ; -> skating
+	; cycling
+	ld de, MUSIC_BICYCLE
+	scf
 	ret
 
-.bike
-	ld de, MUSIC_BICYCLE
+.skate
+	ld de, MUSIC_GAME_CORNER
 	scf
 	ret
 

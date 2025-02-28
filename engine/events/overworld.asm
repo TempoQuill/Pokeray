@@ -319,11 +319,12 @@ SurfFunction:
 	dw .DoSurf
 	dw .FailSurf
 	dw .AlreadySurfing
+	dw .FailSurfCycling
 
 .TrySurf:
 	ld hl, wBikeFlags
 	bit BIKEFLAGS_ALWAYS_ON_BIKE_F, [hl]
-	jr nz, .cannotsurf
+	jr nz, .stuckonbike_cannotsurf
 	ld a, [wPlayerState]
 	cp PLAYER_SURF
 	jr z, .alreadyfail
@@ -345,6 +346,9 @@ SurfFunction:
 .cannotsurf
 	ld a, $2
 	ret
+.stuckonbike_cannotsurf
+	ld a, $4
+	ret
 
 .DoSurf:
 	call GetSurfType
@@ -357,6 +361,12 @@ SurfFunction:
 
 .FailSurf:
 	ld hl, CantSurfText
+	call MenuTextboxBackup
+	ld a, $80
+	ret
+
+.FailSurfCycling:
+	ld hl, CyclingIsFunText
 	call MenuTextboxBackup
 	ld a, $80
 	ret
@@ -419,6 +429,10 @@ UsedSurfText:
 
 CantSurfText:
 	text_far _CantSurfText
+	text_end
+
+CyclingIsFunText:
+	text_far _CyclingIsFunText
 	text_end
 
 AlreadySurfingText:

@@ -523,7 +523,7 @@ Text_RejectMonWithNewMove:
 	text "."
 
 	para "That move is too"
-	line "new to trade witb."
+	line "new to trade with."
 	prompt
 
 Text_RejectMonWithMail:

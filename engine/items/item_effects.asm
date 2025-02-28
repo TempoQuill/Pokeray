@@ -2366,7 +2366,7 @@ PokeFluteEffect:
 	ld a, [wTimeOfDay]
 	bit NITE_F, a
 	ld de, SFX_POKEFLUTE_NIGHT ; Luna's castle
-	ret z
+	ret nz
 	ld de, SFX_POKEFLUTE ; OG flute theme
 	ret
 

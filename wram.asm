@@ -2099,27 +2099,28 @@ wItemsEnd:: ; d598
 
 wNumKeyItems:: db ; d598
 wKeyItems:: ds MAX_KEY_ITEMS + 1 ; d599
-wKeyItemsEnd:: ; d5af
+wKeyItemsEnd:: ; d5b0
+	ds 1
 
-wNumBalls:: db ; d5b3
-wBalls:: ds MAX_BALLS * 2 + 1 ; d5b4
-wBallsEnd:: ; d5cd
+wNumBalls:: db ; d5b1
+wBalls:: ds MAX_BALLS * 2 + 1 ; d5b2
+wBallsEnd:: ; d5cb
 
-wNumMedicine:: db ; d5cd
-wMedicine:: ds MAX_MEDICINE * 2 + 1 ; d5ce
-wMedicineEnd::
+wNumMedicine:: db ; d5cb
+wMedicine:: ds MAX_MEDICINE * 2 + 1 ; d5cc
+wMedicineEnd:: ; d5f1
 
-wNumFruit:: db ; d5f3
-wFruit:: ds MAX_FRUIT * 2 + 1 ; d5f4
-wFruitEnd::
+wNumFruit:: db ; d5f1
+wFruit:: ds MAX_FRUIT * 2 + 1 ; d5f2
+wFruitEnd:: ; d611
 
-wNumAssemblyItems:: db ; d609
-wAssemblyItems:: ds MAX_ASM_ITEMS * 2 + 1 ; d60a
-wAssemblyItemsEnd::
+wNumAssemblyItems:: db ; d611
+wAssemblyItems:: ds MAX_ASM_ITEMS * 2 + 1 ; d612
+wAssemblyItemsEnd:: ; d635
 
-wNumEvolutionItems:: db ; d633
-wEvolutionItems:: ds MAX_EVO_ITEMS * 2 + 1 ; d634
-wEvolutionItemsEnd::
+wNumEvolutionItems:: db ; d635
+wEvolutionItems:: ds MAX_EVO_ITEMS * 2 + 1 ; d636
+wEvolutionItemsEnd:: ; d659
 
 wNumPCItems:: db ; d65d
 wPCItems:: ds MAX_PC_ITEMS * 2 + 1 ; d65e

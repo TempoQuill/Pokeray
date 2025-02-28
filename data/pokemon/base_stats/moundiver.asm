@@ -1,5 +1,6 @@
 	dw MOUNDIVER ; 272
 
+	;    1    1    1    1      1
 	db  95,  79, 125,  81, 100,  60
 	;   hp  atk  def  spd  sat  sdf
 

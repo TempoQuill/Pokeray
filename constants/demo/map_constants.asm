@@ -66,9 +66,11 @@ MAP_DUNGEON EQU const_value
 
 	newgroup                        ; 5
 
-	map_const ROUTE_52,              20, 30 ; 1
-	map_const ROUTE_53,              40, 20 ; 2
-	map_const PORTITE_CITY,          40, 20 ; 3
+	map_const ROUTE_52,               9, 27 ; 1
+	map_const ROUTE_53,              36, 18 ; 2
+	map_const PORTITE_CITY,          36, 18 ; 3
+	map_const ROUTE_54,              36,  9 ; 4
+	map_const TEAM_HAVOC_VILLAGE,     9, 18 ; 5
 
 	newgroup
 

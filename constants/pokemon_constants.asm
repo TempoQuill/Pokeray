@@ -329,7 +329,7 @@ EQUINTO_MONS    EQU 1
 	const SMUJJ      ; 135 ; nob
 	const DRAGONISCE ; 136
 	const KICLOUD    ; 137
-	const TIRUFF     ; 138
+	const RUFFY      ; 138
 	const APPUCK     ; 139
 	const ALREM      ; 13a
 	const MURPHELT   ; 13b
@@ -362,7 +362,7 @@ EQUINTO_MONS    EQU 1
 	const SANDSCOUR  ; 156
 	const TEAROW     ; 157
 	const NOHTYP     ; 158
-	const VENOKNIGHT ; 159
+	const VENOCLOTH  ; 159
 	const DUGQUINTET ; 15a
 	const EMPEDUCK   ; 15b
 	const ALPHAPE    ; 15c

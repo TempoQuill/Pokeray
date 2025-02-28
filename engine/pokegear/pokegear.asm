@@ -2088,7 +2088,6 @@ FlyMap:
 	ld c, a
 	call GetWorldMapLocation
 .NormalFlyMap:
-; Note that .NoKanto should be modified in tandem with this branch
 	push af
 	ld a, EQUINTO_FLYPOINT ; first Equinto flypoint
 	ld [wTownMapPlayerIconLandmark], a ; first one is default (Cottage Town)

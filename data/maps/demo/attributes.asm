@@ -108,11 +108,32 @@ ENDM
 	connection EAST,  TraversalCity, TRAVERSAL_CITY, -9
 
 	map_attributes TraversalCity, TRAVERSAL_CITY, $05, WEST
-	connection WEST, Route50, ROUTE_50, 9
+	connection WEST, Route50,        ROUTE_50,       9
 
 	map_attributes Route51, ROUTE_51, $05, NORTH | EAST
-	connection NORTH, Route_49,      ROUTE_49,       12
+	connection NORTH, Route49,       ROUTE_49,       12
 	connection EAST,  FoliageCity,   FOLIAGE_CITY,   0
+
+	map_attributes FoliageCity, FOLIAGE_CITY, $05, WEST
+	connection WEST,  Route51,       ROUTE_51,       0
+
+	map_attributes Route52, ROUTE_52, $05, NORTH | EAST
+	connection NORTH, Route54,  ROUTE_54, 0
+	connection EAST,  Ruute53,  ROUTE_53, 22
+
+	map_attributes Route53, ROUTE_53, $05, WEST | EAST
+	connection WEST,  Route52,     ROUTE_52,     -22
+	connection EAST,  PortiteCity, PORTITE_CITY, 0
+
+	map_attributes PortiteCity, PORTITE_CITY, $35, WEST
+	connection WEST,  Route53, ROUTE_53, 0
+
+	map_attributes Route54, ROUTE_54, $05, SOUTH | EAST
+	connection SOUTH, Route52,          ROUTE_52,           0
+	connection EAST,  TeamHavocVillage, TEAM_HAVOC_VILLAGE, 6
+
+	map_attributes TeamHavocVillage, TEAM_HAVOC_VILLAGE, $05, WEST
+	connection WEST,  Route54, ROUTE_54, -6
 
 	map_attributes PlayersHouse1F,     PLAYERS_HOUSE_1F,      $00, 0
 	map_attributes PlayersHouse2F,     PLAYERS_HOUSE_2F,      $00, 0
